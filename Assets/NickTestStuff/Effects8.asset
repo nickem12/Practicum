@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a3bdb2cd68f901469e7cc149151eb49, type: 3}
-  m_Name: Effects
+  m_Name: Effects8
   m_EditorClassIdentifier: 
   debugViews:
     m_Enabled: 1
@@ -33,7 +33,7 @@ MonoBehaviour:
     m_Settings:
       method: 0
       fxaaSettings:
-        preset: 4
+        preset: 2
       taaSettings:
         jitterSpread: 0.75
         sharpen: 0.3
@@ -42,7 +42,7 @@ MonoBehaviour:
   ambientOcclusion:
     m_Enabled: 0
     m_Settings:
-      intensity: 1.2
+      intensity: 1
       radius: 0.3
       sampleCount: 10
       downsampling: 1
@@ -94,15 +94,15 @@ MonoBehaviour:
       adaptationType: 0
       speedUp: 2
       speedDown: 1
-      logMin: -16
-      logMax: 5
+      logMin: -8
+      logMax: 4
   bloom:
     m_Enabled: 0
     m_Settings:
       bloom:
         intensity: 0.5
         threshold: 1.1
-        softKnee: 0.23
+        softKnee: 0.5
         radius: 4
         antiFlicker: 0
       lensDirt:
@@ -123,8 +123,8 @@ MonoBehaviour:
         postExposure: 0
         temperature: 0
         tint: 0
-        hueShift: -0.44
-        saturation: 1
+        hueShift: 0
+        saturation: 0.65
         contrast: 1
       channelMixer:
         red: {x: 1, y: 0, z: 0}
@@ -284,14 +284,14 @@ MonoBehaviour:
     m_Enabled: 0
     m_Settings:
       spectralTexture: {fileID: 0}
-      intensity: 0
+      intensity: 0.1
   grain:
     m_Enabled: 0
     m_Settings:
-      colored: 0
-      intensity: 0
-      size: 3
-      luminanceContribution: 0
+      colored: 1
+      intensity: 0.5
+      size: 1
+      luminanceContribution: 0.8
   vignette:
     m_Enabled: 0
     m_Settings:

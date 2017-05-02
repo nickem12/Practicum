@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PostProcessing;
+
 
 public class PlayerStat : MonoBehaviour {
 
@@ -24,6 +26,8 @@ public class PlayerStat : MonoBehaviour {
     public Texture text1;
     public Texture text2;
     public Texture text3;
+
+    public PostProcessingProfile[] cameraEffects;
     // Use this for initialization
     void Start () {
         currentHealth = 100;
@@ -38,6 +42,8 @@ public class PlayerStat : MonoBehaviour {
         hungerTimer = 36f;
         hydrationTimer = 18f;
         regenTimer = 15f;
+        motivationTimer = 2f;
+        
 	}
 	
 	// Update is called once per frame
@@ -56,11 +62,17 @@ public class PlayerStat : MonoBehaviour {
         if(motivationTimer<=0)
         {
             currentMotivation -= 1;
-            motivationTimer = 36f;
+            motivationTimer = 2f;
 
             if (currentMotivation < 0) currentMotivation = 0;
         }
-        Debug.Log(currentMotivation);
+        int index = (int)currentMotivation / 5;
+        if (index >= 20) index = 19;
+        Debug.Log(index);
+        this.GetComponentInChildren<PostProcessingBehaviour>().profile = cameraEffects[index];
+        //cameraEffects.colorGrading.enabled = false;
+
+        //Debug.Log(currentMotivation);
     }
     void HungerUpdate()
     {

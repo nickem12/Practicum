@@ -7,7 +7,7 @@ namespace UnityEditor.PostProcessing
     [CustomEditor(typeof(PostProcessingBehaviour))]
     public class PostProcessingBehaviourEditor : Editor
     {
-        SerializedProperty m_Profile;
+        public SerializedProperty m_Profile;
 
         public void OnEnable()
         {

@@ -226,7 +226,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 407148, guid: b7afa95f349924b41bffe9ab3b500d5c, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7afa95f349924b41bffe9ab3b500d5c, type: 2}
@@ -408,3 +408,24 @@ MonoBehaviour:
   text1: {fileID: 0}
   text2: {fileID: 0}
   text3: {fileID: 0}
+  cameraEffects:
+  - {fileID: 11400000, guid: 946c27713b9a4d9418c4a54cd5960bc4, type: 2}
+  - {fileID: 11400000, guid: d2bf499b6b336584099ba8578cb53f19, type: 2}
+  - {fileID: 11400000, guid: 2b0eb8f15a1d7ee409da729d129ba7e9, type: 2}
+  - {fileID: 11400000, guid: e750f8a165ebafe47822b2541f4752d9, type: 2}
+  - {fileID: 11400000, guid: a777569c70880d1499cf52f09cb1100d, type: 2}
+  - {fileID: 11400000, guid: 29e204221f735574b8236b73975277f7, type: 2}
+  - {fileID: 11400000, guid: 8b435e06d7e9fdc4597eabb08c3ec9bd, type: 2}
+  - {fileID: 11400000, guid: 1d0b231cb5179354c83aa9c37c859067, type: 2}
+  - {fileID: 11400000, guid: 3e4e19fa841c7c742ba8857bb3d7fafc, type: 2}
+  - {fileID: 11400000, guid: 23426c01f68fccc42a476b36b7a10148, type: 2}
+  - {fileID: 11400000, guid: 4cebf7ed7bd40fd4ab9ac46861665bd2, type: 2}
+  - {fileID: 11400000, guid: ebbe9bbe108846643a3661367c16a0db, type: 2}
+  - {fileID: 11400000, guid: 48d8233cd63aedf4da2366126821e136, type: 2}
+  - {fileID: 11400000, guid: 91a0a893cc3e39e4e996ae3ac1343e7c, type: 2}
+  - {fileID: 11400000, guid: 42974c1e2f2d0074a8dbb6d7c01b4596, type: 2}
+  - {fileID: 11400000, guid: 1f8239c54aaeae84b95672ac3a2b0db6, type: 2}
+  - {fileID: 11400000, guid: 4f30114bc5c87da44ab782cbd112dfc9, type: 2}
+  - {fileID: 11400000, guid: 53b5bec6f1f4bfd45807eb5ee9f34449, type: 2}
+  - {fileID: 11400000, guid: 087d79c1821e48b47b0666fba8f87a7d, type: 2}
+  - {fileID: 11400000, guid: 8bc5ba1bb0a45544dbbaa0293ed788cf, type: 2}
