@@ -8,3 +8,66 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Models/SimpleApocalypse/_Demo/SA_Demo.unity
     guid: 04369fb899db60f48a62f06cb460ce80
+  - enabled: 1
+    path: Assets/Scenes/Apartments/Apartment1.unity
+    guid: dfe7d1d09e2119048a6a6bf22cd0aeac
+  - enabled: 0
+    path: Assets/Scenes/Apartments/Apartment_Template.unity
+    guid: 6ac745d0c71033b488f1eadd94711dcf
+  - enabled: 1
+    path: Assets/Scenes/Motel_Template/Motel_1.unity
+    guid: d8991e2f33b232b44a482753c70337b3
+  - enabled: 1
+    path: Assets/Scenes/Motel_Template/Motel_2.unity
+    guid: acf3d39f0d8d1924eb51b65ce8c7a79f
+  - enabled: 1
+    path: Assets/Scenes/Motel_Template/Motel_3.unity
+    guid: 987553ae38666b2439882557dab16c6c
+  - enabled: 1
+    path: Assets/Scenes/Motel_Template/Motel_4.unity
+    guid: b46c3dce1c7db9a49aa9e7e173bb4cac
+  - enabled: 1
+    path: Assets/Scenes/Motel_Template/Motel_5.unity
+    guid: 4bfd29212feede244a1010f00f18e742
+  - enabled: 1
+    path: Assets/Scenes/Motel_Template/Motel_6.unity
+    guid: 7eb658f07f9d5534c8c033080659a3d9
+  - enabled: 1
+    path: Assets/Scenes/Motel_Template/Motel_7.unity
+    guid: 3cca4257e7a15184fa7546c0e5069980
+  - enabled: 1
+    path: Assets/Scenes/Work In Progress/Trailers/Trailer_3.unity
+    guid: 878e92a15531582468c741308607ca7a
+  - enabled: 1
+    path: Assets/Scenes/Work In Progress/Trailers/Trailer_1.unity
+    guid: a667ee34e7845f547818865e83ca0dc3
+  - enabled: 1
+    path: Assets/Scenes/Work In Progress/Trailers/Trailer_2.unity
+    guid: 41c8107018bdd96499080065f25b2386
+  - enabled: 1
+    path: Assets/Scenes/Work In Progress/Trailers/Trailer_4.unity
+    guid: 19dd9f704c66d5243942ffe17c85bee4
+  - enabled: 1
+    path: Assets/Scenes/Work In Progress/Trailers/Trailer_5.unity
+    guid: 2cdfbc0cbd4c2c24c82548481c39bc1e
+  - enabled: 1
+    path: Assets/Scenes/Work In Progress/Trailers/Trailer_6.unity
+    guid: 17b26b2ba0109bc4db486203b1c27b03
+  - enabled: 1
+    path: Assets/Scenes/Work In Progress/Trailers/Trailer_7.unity
+    guid: 6dd08e54197b4b14d83e0bb623e38b70
+  - enabled: 1
+    path: Assets/Scenes/Work In Progress/Trailers/Trailer_9.unity
+    guid: 957072d2b6b22b141b84717eb24f903c
+  - enabled: 1
+    path: Assets/Scenes/Work In Progress/Trailers/Trailer_8.unity
+    guid: 28feb4e1a1d3c014fb41b4c0023630bd
+  - enabled: 1
+    path: Assets/Scenes/Work In Progress/Trailers/Trailer_10.unity
+    guid: dd9dff094f2123943a648ad999e7a2f1
+  - enabled: 1
+    path: Assets/Scenes/Work In Progress/Trailers/Trailer_11.unity
+    guid: ad2b2250799e5844cab487c369862992
+  - enabled: 1
+    path: Assets/Scenes/Work In Progress/Trailers/Trailer_12.unity
+    guid: 00000000000000000000000000000000

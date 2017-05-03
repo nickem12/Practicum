@@ -401,13 +401,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9a646e517689c743a8ac40e116843d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthRegen: 0
   currentHealth: 0
   currentMotivation: 0
   currentHunger: 0
   currentHydration: 0
-  text1: {fileID: 0}
-  text2: {fileID: 0}
-  text3: {fileID: 0}
+  text1: {fileID: 2800000, guid: ea3fc2698b3cd204c887bbce1c822f6d, type: 3}
+  text2: {fileID: 2800000, guid: 7ccc8f4f77c228044a8127f0ac05764e, type: 3}
+  text3: {fileID: 2800000, guid: 5133ebe9a22d0f441abd862dfdfe65ea, type: 3}
   cameraEffects:
   - {fileID: 11400000, guid: 946c27713b9a4d9418c4a54cd5960bc4, type: 2}
   - {fileID: 11400000, guid: d2bf499b6b336584099ba8578cb53f19, type: 2}
