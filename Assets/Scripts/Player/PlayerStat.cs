@@ -29,6 +29,9 @@ public class PlayerStat : MonoBehaviour {
     public Texture text3;
 
     public PostProcessingProfile[] cameraEffects;
+
+    public Inventory inventory;
+
     // Use this for initialization
     void Start () {
         currentHealth = 100;
@@ -141,5 +144,20 @@ public class PlayerStat : MonoBehaviour {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), text3);
         }
 
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        //Debug.Log("I'm hitting you.");
+
+        if(other.tag == "Item")
+        {
+            //Debug.Log("You are in me.");
+            //if(Input.GetKeyDown(KeyCode.E))
+            //{
+                inventory.AddItem(other.GetComponent<Item>());
+              //  Destroy(other.gameObject);
+              //  Debug.Log("Added the item.");
+            //}
+        }
     }
 }

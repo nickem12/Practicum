@@ -228,6 +228,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 154084, guid: b7afa95f349924b41bffe9ab3b500d5c, type: 2}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7afa95f349924b41bffe9ab3b500d5c, type: 2}
   m_IsPrefabParent: 0
@@ -277,6 +281,38 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1042039000 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 154084, guid: b7afa95f349924b41bffe9ab3b500d5c, type: 2}
+  m_PrefabInternal: {fileID: 324132165}
+--- !u!114 &1042039001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1042039000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a73fa05eaff07914caabfa7ac832a126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  spriteNeutral: {fileID: 21300000, guid: fe87e9a569a55c54bb275552813f6371, type: 3}
+  spriteHighlighted: {fileID: 21300000, guid: 28f80f319a06a474eaa5ab12a6602206, type: 3}
+  maxSize: 1
+--- !u!136 &1042039002
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1042039000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.1879997
+  m_Height: 2.3759995
+  m_Direction: 1
+  m_Center: {x: 0.011838198, y: 1.0117989, z: -0.2115469}
 --- !u!1001 &1160220904
 Prefab:
   m_ObjectHideFlags: 0
@@ -500,6 +536,19 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_PrefabInternal: {fileID: 422345596}
+--- !u!136 &1614997662
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1614997661}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2.3388948
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.025834084, z: 0}
 --- !u!114 &1614997667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -540,6 +589,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 53b5bec6f1f4bfd45807eb5ee9f34449, type: 2}
   - {fileID: 11400000, guid: 087d79c1821e48b47b0666fba8f87a7d, type: 2}
   - {fileID: 11400000, guid: 8bc5ba1bb0a45544dbbaa0293ed788cf, type: 2}
+  inventory: {fileID: 1702843844}
 --- !u!1 &1702843840
 GameObject:
   m_ObjectHideFlags: 0

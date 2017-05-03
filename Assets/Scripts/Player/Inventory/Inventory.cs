@@ -72,6 +72,7 @@ public class Inventory : MonoBehaviour {
     }
     public bool AddItem(Item item)
     {
+        Debug.Log("Called This Function.");
         if(item.maxSize == 1)
         {
             PlaceEmpty(item);
@@ -92,6 +93,7 @@ public class Inventory : MonoBehaviour {
                     emptySlots--;
                     return true;
                 }
+                //Debug.Log("Shouldn't be here.");
             }
         }
         return false;
