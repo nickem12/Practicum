@@ -6,6 +6,7 @@ using UnityEngine.PostProcessing;
 
 public class PlayerStat : MonoBehaviour {
 
+    public bool healthRegen;
     public float currentHealth;
     private float maxHealth;
     [SerializeField]
@@ -34,7 +35,7 @@ public class PlayerStat : MonoBehaviour {
         maxHealth = 100;
         currentMotivation = 100;
         maxMotivation = 100;
-        currentHunger = 100;
+        currentHunger = 100;                                        //The start function will initialize all our variables
         maxHunger = 100;
         currentHydration = 100;
         maxHydration = 100;
@@ -43,7 +44,8 @@ public class PlayerStat : MonoBehaviour {
         hydrationTimer = 18f;
         regenTimer = 15f;
         motivationTimer = 2f;
-        
+
+        healthRegen = false;
 	}
 	
 	// Update is called once per frame
@@ -61,18 +63,15 @@ public class PlayerStat : MonoBehaviour {
 
         if(motivationTimer<=0)
         {
-            currentMotivation -= 1;
-            motivationTimer = 2f;
+            currentMotivation -= 1;                                                 //Decrement motivation after a certain amount of time
+            motivationTimer = 2f;                                                   //Reset the timer.
 
-            if (currentMotivation < 0) currentMotivation = 0;
+            if (currentMotivation < 0) currentMotivation = 0;                       //check so that motivation doesn't go under 0
         }
-        int index = (int)currentMotivation / 5;
-        if (index >= 20) index = 19;
-        Debug.Log(index);
-        this.GetComponentInChildren<PostProcessingBehaviour>().profile = cameraEffects[index];
-        //cameraEffects.colorGrading.enabled = false;
+        int index = (int)currentMotivation / 5;                                     //get the index for the greyinng out of the screen
+        if (index >= 20) index = 19;                                                //check if the index is outside the array
 
-        //Debug.Log(currentMotivation);
+        this.GetComponentInChildren<PostProcessingBehaviour>().profile = cameraEffects[index];              //set the grey scale
     }
     void HungerUpdate()
     {
@@ -80,12 +79,11 @@ public class PlayerStat : MonoBehaviour {
 
         if (hungerTimer <= 0)
         {
-            currentHunger -= 1;
-            hungerTimer = 36f;
+            currentHunger -= 1;                                                      //Decrement hunger after a certain amount of time
+            hungerTimer = 36f;                                                       //Reset the timer
          
-            if (currentHunger < 0) currentHunger = 0;
+            if (currentHunger < 0) currentHunger = 0;                                //Check so that hunger doesn't go under 0
         }
-        //Debug.Log(currentHunger);
     }
     void HydrationUpdate()
     {
@@ -93,44 +91,40 @@ public class PlayerStat : MonoBehaviour {
 
         if (hydrationTimer <= 0)
         {
-            currentHydration -= 1;
-            hydrationTimer = 18f;
+            currentHydration -= 1;                                                    //Decrement hydration after a certain amount of time
+            hydrationTimer = 18f;                                                     //Reset the timer
             
-            if (currentHydration < 0) currentHydration = 0;
+            if (currentHydration < 0) currentHydration = 0;                           //Check so that hydration doesn't go under 0
         }
-        //Debug.Log(currentHydration);
     }
     void HealthUpdate()
     {
-        if (currentHunger >= 80 && currentHydration >= 80)
+        if (currentHunger >= 80 && currentHydration >= 80 && healthRegen)             //check to see if we have the correct conditions to regen health
         {
             regenTimer -= Time.deltaTime;
             if (regenTimer <= 0)
             {
-                currentHealth += 1;
-                regenTimer = 15f;
+                currentHealth += 1;                                                   //Increment health after a certain amount of time
+                regenTimer = 15f;                                                     //Reset the timer
 
-                if (currentHealth > 100) currentHealth = 100;
-                //Debug.Log(currentHealth);
+                if (currentHealth > maxHealth) currentHealth = maxHealth;             //Make sure we don't go over the max health
             }
         }
-        else if (currentHunger <= 25 && currentHydration <= 25)
+        else if (currentHunger <= 25 && currentHydration <= 25)                       //check to see if we have the correct conditions to decrement health
         {
             regenTimer -= Time.deltaTime;
             if (regenTimer <= 0)
             {
-                currentHealth -= 1;
-                regenTimer = 15f;
+                currentHealth -= 1;                                                   //Decrement health after a certain amount of time
+                regenTimer = 15f;                                                     //Reset the timer
                 
-                if (currentHealth < 0) currentHealth = 0;
-                //Debug.Log(currentHealth);
+                if (currentHealth < 0) currentHealth = 0;                             //Check so that health doesn't go under 0
             }
         }
         else
         {
             regenTimer = 15f;
         }
-        //Debug.Log(currentHealth);
     }
     void OnGUI()
     {
@@ -146,10 +140,6 @@ public class PlayerStat : MonoBehaviour {
         {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), text3);
         }
-
-    }
-    void NotifyPlayer(float playerStat)
-    {
 
     }
 }
