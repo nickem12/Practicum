@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Slot : MonoBehaviour {
+public class Slot : MonoBehaviour, IPointerClickHandler {
 
     private Stack<Item> items;
 
@@ -11,19 +13,39 @@ public class Slot : MonoBehaviour {
 
     public Sprite slotEmpty;
     public Sprite slotHighlighted;
-
+    public bool IsAvailable
+    {
+        get { return CurrentItem.maxSize > Items.Count; }
+    }
+    public Item CurrentItem
+    {
+        get { return Items.Peek(); }
+    }
     public bool IsEmpty
     {
-        get { return items.Count == 0; }
+        get { return Items.Count == 0; }
     }
 
-	// Use this for initialization
-	void Start () {
+    public Stack<Item> Items
+    {
+        get
+        {
+            return items;
+        }
 
-        items = new Stack<Item>();
+        set
+        {
+            items = value;
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
+
+        Items = new Stack<Item>();
 
         RectTransform slotRect = GetComponent<RectTransform>();
-        RectTransform txtRect = GetComponent<RectTransform>();
+        RectTransform txtRect = stackText.GetComponent<RectTransform>();
 
         int textScaleFactor = (int)(slotRect.sizeDelta.x * 0.60);
 
@@ -50,12 +72,47 @@ public class Slot : MonoBehaviour {
 
     public void AddItem(Item item)
     {
-        items.Push(item);
+        Items.Push(item);
 
-        if(items.Count>1)
+        if(Items.Count>1)
         {
-            stackText.text = items.Count.ToString(); 
+            stackText.text = Items.Count.ToString(); 
         }
         ChangeSprite(item.spriteNeutral, item.spriteHighlighted);
+    }
+    public void AddItems(Stack<Item> items)
+    {
+        this.Items = new Stack<Item>(items);
+        stackText.text = items.Count > 1 ? items.Count.ToString() : string.Empty;
+        ChangeSprite(CurrentItem.spriteNeutral, CurrentItem.spriteHighlighted);
+    }
+    private void UseItem()
+    {
+        if(!IsEmpty)
+        {
+            Items.Pop().Use();
+
+            stackText.text = Items.Count > 1 ? Items.Count.ToString() : string.Empty;
+            if(IsEmpty)
+            {
+                ChangeSprite(slotEmpty, slotHighlighted);
+
+                Inventory.EmptySlots++;
+            }
+        }
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if(eventData.button == PointerEventData.InputButton.Right)
+        {
+            UseItem();
+        }
+    }
+    public void ClearSlot()
+    {
+        items.Clear();
+        ChangeSprite(slotEmpty, slotHighlighted);
+        stackText.text = string.Empty;
     }
 }

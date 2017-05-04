@@ -113,7 +113,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114262222285508536}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114060040951614964, guid: 786cbe12fd87426449e1b3c463c3f539,
+          type: 2}
+        m_MethodName: MoveItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1111962596332974}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114348068575689524

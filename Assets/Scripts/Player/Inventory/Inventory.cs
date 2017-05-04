@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour {
 
@@ -21,7 +22,15 @@ public class Inventory : MonoBehaviour {
 
     private List<GameObject> allSlots;
 
-    private int emptySlots;
+    private static int emptySlots;
+
+    private Slot from, to;
+
+    public static int EmptySlots
+    {
+        get { return emptySlots; }
+        set { emptySlots = value; }
+    }
 	// Use this for initialization
 	void Start () {
 
@@ -72,11 +81,30 @@ public class Inventory : MonoBehaviour {
     }
     public bool AddItem(Item item)
     {
-        Debug.Log("Called This Function.");
+        //Debug.Log("Called This Function.");
         if(item.maxSize == 1)
         {
             PlaceEmpty(item);
             return true;
+        }
+        else
+        {
+            foreach (GameObject slot in allSlots)
+            {
+                Slot temp = slot.GetComponent<Slot>();
+                if(!temp.IsEmpty)
+                {
+                    if(temp.CurrentItem.type == item.type && temp.IsAvailable)
+                    {
+                        temp.AddItem(item);
+                        return true;
+                    }
+                }
+            }
+            if(emptySlots>0)
+            {
+                PlaceEmpty(item);
+            }
         }
         return false;
     }
@@ -97,5 +125,36 @@ public class Inventory : MonoBehaviour {
             }
         }
         return false;
+    }
+    public void MoveItem(GameObject clicked)
+    {
+        if(from == null)
+        {
+            if(!clicked.GetComponent<Slot>().IsEmpty)
+            {
+                from = clicked.GetComponent<Slot>();
+                from.GetComponent<Image>().color = Color.gray;
+            }
+        }
+        else if(to == null)
+        {
+            to = clicked.GetComponent<Slot>();
+        }
+        if(to != null && from !=null)
+        {
+            Stack<Item> tempto = new Stack<Item>(to.Items);
+            to.AddItems(from.Items);
+            if(tempto.Count == 0)
+            {
+                from.ClearSlot();
+            }
+            else
+            {
+                from.AddItems(tempto);
+            }
+            from.GetComponent<Image>().color = Color.white;
+            to = null;
+            from = null;
+        }
     }
 }

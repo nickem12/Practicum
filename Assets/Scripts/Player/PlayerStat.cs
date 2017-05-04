@@ -145,19 +145,19 @@ public class PlayerStat : MonoBehaviour {
         }
 
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         //Debug.Log("I'm hitting you.");
 
         if(other.tag == "Item")
         {
             //Debug.Log("You are in me.");
-            //if(Input.GetKeyDown(KeyCode.E))
-            //{
+            if(Input.GetButtonDown("Submit"))
+            {
                 inventory.AddItem(other.GetComponent<Item>());
-              //  Destroy(other.gameObject);
-              //  Debug.Log("Added the item.");
-            //}
+                Destroy(other.gameObject);
+                //Debug.Log("Added the item.");
+            }
         }
     }
 }
