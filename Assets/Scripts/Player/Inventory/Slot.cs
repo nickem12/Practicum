@@ -13,14 +13,17 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
 
     public Sprite slotEmpty;
     public Sprite slotHighlighted;
+
     public bool IsAvailable
     {
         get { return CurrentItem.maxSize > Items.Count; }
     }
+
     public Item CurrentItem
     {
         get { return Items.Peek(); }
     }
+
     public bool IsEmpty
     {
         get { return Items.Count == 0; }
@@ -28,15 +31,9 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
 
     public Stack<Item> Items
     {
-        get
-        {
-            return items;
-        }
+        get{ return items; }
 
-        set
-        {
-            items = value;
-        }
+        set{ items = value; }
     }
 
     // Use this for initialization
@@ -80,12 +77,14 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
         }
         ChangeSprite(item.spriteNeutral, item.spriteHighlighted);
     }
+
     public void AddItems(Stack<Item> items)
     {
         this.Items = new Stack<Item>(items);
         stackText.text = items.Count > 1 ? items.Count.ToString() : string.Empty;
         ChangeSprite(CurrentItem.spriteNeutral, CurrentItem.spriteHighlighted);
     }
+
     private void UseItem()
     {
         if(!IsEmpty)
@@ -109,6 +108,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
             UseItem();
         }
     }
+
     public void ClearSlot()
     {
         items.Clear();

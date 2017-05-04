@@ -157,4 +157,9 @@ public class Inventory : MonoBehaviour {
             from = null;
         }
     }
+
+    public void UseItem(GameObject clicked)
+    {
+        
+    }
 }
