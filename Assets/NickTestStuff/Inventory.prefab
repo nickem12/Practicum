@@ -45,7 +45,7 @@ MonoBehaviour:
   paddingLeft: 5
   paddingTop: 5
   slotSize: 30
-  slotPrefab: {fileID: 1111962596332974, guid: b992857c8029c7c4b965bee21efa1461, type: 2}
+  slotPrefab: {fileID: 1770679418660878, guid: a3341082f66ce1648868dd4150a9c59e, type: 2}
 --- !u!114 &114574633885307310
 MonoBehaviour:
   m_ObjectHideFlags: 1

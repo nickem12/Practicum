@@ -19,6 +19,7 @@ public class Inventory : MonoBehaviour {
     public float slotSize;
 
     public GameObject slotPrefab;
+    public GameObject menuPrefab;
 
     private List<GameObject> allSlots;
 
@@ -78,6 +79,16 @@ public class Inventory : MonoBehaviour {
                 allSlots.Add(newSlot);
             }
         }
+        GameObject newMenu = (GameObject)Instantiate(menuPrefab);
+        RectTransform menurect = newMenu.GetComponent<RectTransform>();
+
+        newMenu.name = "Menu";
+        newMenu.transform.SetParent(this.transform.parent);
+
+        menurect.localPosition = inventoryRect.localPosition;
+
+        menurect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, slotSize);
+        menurect.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, slotSize);
     }
     public bool AddItem(Item item)
     {

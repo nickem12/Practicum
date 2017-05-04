@@ -31,7 +31,7 @@ public class PlayerStat : MonoBehaviour {
     public PostProcessingProfile[] cameraEffects;
 
     public Inventory inventory;
-
+    public Canvas pickUp;
     // Use this for initialization
     void Start () {
         currentHealth = 100;
@@ -156,6 +156,7 @@ public class PlayerStat : MonoBehaviour {
             {
                 inventory.AddItem(other.GetComponent<Item>());
                 Destroy(other.gameObject);
+                pickUp.gameObject.SetActive(false);
                 //Debug.Log("Added the item.");
             }
         }
