@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
@@ -42,6 +43,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+        public Canvas inventoryCanvas;
+        public EventSystem eventSystem;
+        private bool inventoryOn;
         // Use this for initialization
         private void Start()
         {
@@ -55,6 +59,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+            inventoryOn = false;
         }
 
 
@@ -62,6 +67,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private void Update()
         {
             RotateView();
+            if(Input.GetButtonDown("Inventory"))
+            {
+                inventoryOn = !inventoryOn;
+                eventSystem.SetSelectedGameObject(inventoryCanvas.gameObject.transform.GetChild(1).gameObject);
+            }
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
             {
@@ -81,6 +91,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
+            inventoryCanvas.GetComponent<Canvas>().enabled = inventoryOn;
         }
 
 
