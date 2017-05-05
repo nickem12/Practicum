@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 477842}
   - component: {fileID: 3354224}
   - component: {fileID: 2315082}
+  - component: {fileID: 64803912295166318}
   m_Layer: 0
   m_Name: SA_Bld_HouseLarge_Damaged_03
   m_TagString: Untagged
@@ -220,3 +221,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 179280}
   m_IsPrefabParent: 1
+--- !u!64 &64803912295166318
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179280}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 93f6d48802c776d4eacae98662b9e01b, type: 3}

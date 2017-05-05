@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 405932}
   - component: {fileID: 3333954}
   - component: {fileID: 2384604}
+  - component: {fileID: 65291024227026430}
   m_Layer: 0
   m_Name: SA_Item_Mousetrap
   m_TagString: Untagged
@@ -150,3 +151,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 158098}
   m_IsPrefabParent: 1
+--- !u!65 &65291024227026430
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158098}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.37108135, y: 0.11799969, z: 0.6077076}
+  m_Center: {x: 0.007535681, y: 0.058999844, z: 0}

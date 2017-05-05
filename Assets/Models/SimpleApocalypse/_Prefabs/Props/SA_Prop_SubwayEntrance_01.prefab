@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 422392}
   - component: {fileID: 3352640}
   - component: {fileID: 2393372}
+  - component: {fileID: 65475780051637296}
   m_Layer: 0
   m_Name: SA_Prop_SubwayEntrance_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165260}
   m_IsPrefabParent: 1
+--- !u!65 &65475780051637296
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165260}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.9307861, y: 3.6793683, z: 6.8802567}
+  m_Center: {x: 0, y: 1.8396841, z: 0}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 424698}
   - component: {fileID: 3362158}
   - component: {fileID: 2335318}
+  - component: {fileID: 64203417942485790}
   m_Layer: 0
   m_Name: SA_Wep_SledgeHammer
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 164972}
   m_IsPrefabParent: 1
+--- !u!64 &64203417942485790
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164972}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 13b60417e38232b46b8e15342627de1f, type: 3}

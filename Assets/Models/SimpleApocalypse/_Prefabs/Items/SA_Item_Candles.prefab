@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 487142}
   - component: {fileID: 3353030}
   - component: {fileID: 2372420}
+  - component: {fileID: 65355184028554814}
   m_Layer: 0
   m_Name: SA_Item_Candles
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 109484}
   m_IsPrefabParent: 1
+--- !u!65 &65355184028554814
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109484}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.37064362, y: 0.62407327, z: 0.43204165}
+  m_Center: {x: 0.0000038146973, y: 0.31203663, z: -0.00000023841858}

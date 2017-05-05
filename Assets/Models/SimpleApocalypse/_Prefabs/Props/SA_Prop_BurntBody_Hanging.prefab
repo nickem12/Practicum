@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 474066}
   - component: {fileID: 3306698}
   - component: {fileID: 2376672}
+  - component: {fileID: 65717037172566266}
   m_Layer: 0
   m_Name: SA_Prop_BurntBody_Hanging
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 190812}
   m_IsPrefabParent: 1
+--- !u!65 &65717037172566266
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190812}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 147.09172, y: 290.78052, z: 94.7553}
+  m_Center: {x: -14.182291, y: 190.25153, z: 14.578476}

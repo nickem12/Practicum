@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 484388}
   - component: {fileID: 3345090}
   - component: {fileID: 2354116}
+  - component: {fileID: 64033077856435550}
   m_Layer: 0
   m_Name: SA_Bld_BurntHouse_01
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 188830}
   m_IsPrefabParent: 1
+--- !u!64 &64033077856435550
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 188830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: ea24a2e3fdfe4a1408e7ec4730106ff5, type: 3}

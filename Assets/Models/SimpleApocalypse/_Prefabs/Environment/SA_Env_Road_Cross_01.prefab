@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 486264}
   - component: {fileID: 3342908}
   - component: {fileID: 2350450}
+  - component: {fileID: 64550291770460966}
   m_Layer: 0
   m_Name: SA_Env_Road_Cross_01
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 161902}
   m_IsPrefabParent: 1
+--- !u!64 &64550291770460966
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161902}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 1624998e2bde87248b984d1e371f53df, type: 3}

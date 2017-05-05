@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 449178}
   - component: {fileID: 3388034}
   - component: {fileID: 2347484}
+  - component: {fileID: 65623389121802624}
   m_Layer: 0
   m_Name: SA_Prop_BurntBlack_RV_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 130272}
   m_IsPrefabParent: 1
+--- !u!65 &65623389121802624
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.593131, y: 3.3156667, z: 9.138329}
+  m_Center: {x: -0.00000047683716, y: 1.3932779, z: 0}

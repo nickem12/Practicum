@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 452442}
   - component: {fileID: 3335974}
   - component: {fileID: 2350962}
+  - component: {fileID: 65185398668192544}
   m_Layer: 0
   m_Name: SA_Prop_GuardTower_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 179732}
   m_IsPrefabParent: 1
+--- !u!65 &65185398668192544
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179732}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.2070465, y: 13.242672, z: 4.519161}
+  m_Center: {x: 0, y: 6.3346567, z: 0}

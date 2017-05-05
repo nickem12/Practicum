@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 413390}
   - component: {fileID: 3302154}
   - component: {fileID: 2369744}
+  - component: {fileID: 65625103462135722}
   m_Layer: 0
   m_Name: SA_Prop_Campfire_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 132230}
   m_IsPrefabParent: 1
+--- !u!65 &65625103462135722
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132230}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0276477, y: 0.967608, z: 2.0099359}
+  m_Center: {x: 0, y: 0.26358968, z: 0.0000005364418}

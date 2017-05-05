@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 464062}
   - component: {fileID: 3344764}
   - component: {fileID: 2361296}
+  - component: {fileID: 65436098179901992}
   m_Layer: 0
   m_Name: SA_Prop_CarEngine_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 122066}
   m_IsPrefabParent: 1
+--- !u!65 &65436098179901992
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3530579, y: 0.8578899, z: 0.9302139}
+  m_Center: {x: 0, y: 1.2120693, z: 0}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 485186}
   - component: {fileID: 3368850}
   - component: {fileID: 2360988}
+  - component: {fileID: 64767584531152816}
   m_Layer: 0
   m_Name: SA_Wep_RevolvingGrenadeLauncher
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 158978}
   m_IsPrefabParent: 1
+--- !u!64 &64767584531152816
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 80cfa6bbfe06d134da234339c60da2d0, type: 3}

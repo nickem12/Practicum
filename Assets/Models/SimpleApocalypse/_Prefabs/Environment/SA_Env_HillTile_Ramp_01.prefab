@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 476202}
   - component: {fileID: 3395286}
   - component: {fileID: 2319846}
+  - component: {fileID: 64715667302776630}
   m_Layer: 0
   m_Name: SA_Env_HillTile_Ramp_01
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 182270}
   m_IsPrefabParent: 1
+--- !u!64 &64715667302776630
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182270}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: b5083a1895a52d847b2eca01252c67c5, type: 3}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 413972}
   - component: {fileID: 3379184}
   - component: {fileID: 2312424}
+  - component: {fileID: 65715815596977796}
   m_Layer: 0
   m_Name: SA_Item_Lighter
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 104770}
   m_IsPrefabParent: 1
+--- !u!65 &65715815596977796
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07364352, y: 0.3359835, z: 0.13560632}
+  m_Center: {x: -0.0000000055879354, y: 0.16799176, z: 0}

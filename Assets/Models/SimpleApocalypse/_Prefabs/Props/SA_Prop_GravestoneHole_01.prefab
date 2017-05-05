@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 410446}
   - component: {fileID: 3323094}
   - component: {fileID: 2392644}
+  - component: {fileID: 65805937068125018}
   m_Layer: 0
   m_Name: SA_Prop_GravestoneHole_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 157920}
   m_IsPrefabParent: 1
+--- !u!65 &65805937068125018
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157920}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.3272295, y: 3.7357523, z: 6.9806747}
+  m_Center: {x: 0.00000047683716, y: 1.7818068, z: 0}

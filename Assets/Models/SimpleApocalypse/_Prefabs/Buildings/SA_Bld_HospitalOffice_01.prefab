@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 443370}
   - component: {fileID: 3376724}
   - component: {fileID: 2339850}
+  - component: {fileID: 64339956049930062}
   m_Layer: 0
   m_Name: SA_Bld_HospitalOffice_01
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 106432}
   m_IsPrefabParent: 1
+--- !u!64 &64339956049930062
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 832e22a8a94fa02489f332ac9dc377fb, type: 3}

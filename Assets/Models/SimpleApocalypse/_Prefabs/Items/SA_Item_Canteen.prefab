@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 462138}
   - component: {fileID: 3360796}
   - component: {fileID: 2320578}
+  - component: {fileID: 65739321726283794}
   m_Layer: 0
   m_Name: SA_Item_Canteen
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 181750}
   m_IsPrefabParent: 1
+--- !u!65 &65739321726283794
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.24216773, y: 0.60636973, z: 0.46584344}
+  m_Center: {x: 0, y: 0.30318487, z: 0}

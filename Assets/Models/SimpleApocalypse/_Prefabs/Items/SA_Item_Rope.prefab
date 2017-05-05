@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 445580}
   - component: {fileID: 3346836}
   - component: {fileID: 2345118}
+  - component: {fileID: 65502242006638462}
   m_Layer: 0
   m_Name: SA_Item_Rope
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 125694}
   m_IsPrefabParent: 1
+--- !u!65 &65502242006638462
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2761493, y: 0.3140204, z: 1.031183}
+  m_Center: {x: -0.042721868, y: 0.12150639, z: 0.000000029802322}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 432422}
   - component: {fileID: 3331340}
   - component: {fileID: 2383594}
+  - component: {fileID: 65101489621483420}
   m_Layer: 0
   m_Name: SA_Prop_Container_01
   m_TagString: Untagged
@@ -150,3 +151,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 106632}
   m_IsPrefabParent: 1
+--- !u!65 &65101489621483420
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0634074, y: 0.3500675, z: 0.6921501}
+  m_Center: {x: -0.00000023841858, y: 0.17503375, z: 0.00000017881393}

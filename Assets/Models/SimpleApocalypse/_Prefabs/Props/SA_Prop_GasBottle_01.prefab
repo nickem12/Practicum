@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 437120}
   - component: {fileID: 3385766}
   - component: {fileID: 2396682}
+  - component: {fileID: 65471150714089194}
   m_Layer: 0
   m_Name: SA_Prop_GasBottle_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 133100}
   m_IsPrefabParent: 1
+--- !u!65 &65471150714089194
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 133100}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5532973, y: 1.044929, z: 0.55329704}
+  m_Center: {x: 0, y: 0.52359784, z: 0}

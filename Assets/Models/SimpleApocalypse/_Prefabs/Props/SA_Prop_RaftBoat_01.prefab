@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 498800}
   - component: {fileID: 3350456}
   - component: {fileID: 2364278}
+  - component: {fileID: 65470031724231894}
   m_Layer: 0
   m_Name: SA_Prop_RaftBoat_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 148316}
   m_IsPrefabParent: 1
+--- !u!65 &65470031724231894
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.7959566, y: 2.355679, z: 6.437887}
+  m_Center: {x: 0, y: 1.1778395, z: 0}

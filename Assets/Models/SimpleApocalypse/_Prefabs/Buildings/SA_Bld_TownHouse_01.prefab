@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 407930}
   - component: {fileID: 3321872}
   - component: {fileID: 2362040}
+  - component: {fileID: 64945796599016618}
   m_Layer: 0
   m_Name: SA_Bld_TownHouse_01
   m_TagString: Untagged
@@ -220,3 +221,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 166710}
   m_IsPrefabParent: 1
+--- !u!64 &64945796599016618
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166710}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 4d7a2731d4050f34eabb286a3b32ad3a, type: 3}

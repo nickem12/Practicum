@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 402028}
   - component: {fileID: 3345020}
   - component: {fileID: 2386550}
+  - component: {fileID: 64419214852116500}
   m_Layer: 0
   m_Name: SA_Env_DesertSquare_01
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 113626}
   m_IsPrefabParent: 1
+--- !u!64 &64419214852116500
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113626}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 9d216c1000600224fbcd9f2527aef895, type: 3}

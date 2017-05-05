@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 484114}
   - component: {fileID: 3333354}
   - component: {fileID: 2376046}
+  - component: {fileID: 64691019892112812}
   m_Layer: 0
   m_Name: SA_Wep_PipeBomb
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 137974}
   m_IsPrefabParent: 1
+--- !u!64 &64691019892112812
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137974}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 3f93c6d1ae899bf4eb3c1f2e66255cc9, type: 3}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 418260}
   - component: {fileID: 3386296}
   - component: {fileID: 2305778}
+  - component: {fileID: 65660592377061540}
   m_Layer: 0
   m_Name: SA_Prop_Rock_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 167328}
   m_IsPrefabParent: 1
+--- !u!65 &65660592377061540
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167328}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.874292, y: 4.64007, z: 3.9311066}
+  m_Center: {x: 0, y: 2.0543928, z: 0}

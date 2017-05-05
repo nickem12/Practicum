@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 423052}
   - component: {fileID: 3359518}
   - component: {fileID: 2366210}
+  - component: {fileID: 65644457384099890}
   m_Layer: 0
   m_Name: SA_Prop_Litter_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 121346}
   m_IsPrefabParent: 1
+--- !u!65 &65644457384099890
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121346}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.44307327, y: 0, z: 0.60575485}
+  m_Center: {x: 0.0000019073486, y: 0.0224234, z: 0}

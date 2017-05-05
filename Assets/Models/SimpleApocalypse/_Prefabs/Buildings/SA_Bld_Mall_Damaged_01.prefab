@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 464564}
   - component: {fileID: 3327128}
   - component: {fileID: 2328882}
+  - component: {fileID: 64975956386897068}
   m_Layer: 0
   m_Name: SA_Bld_Mall_Damaged_01
   m_TagString: Untagged
@@ -220,3 +221,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 159456}
   m_IsPrefabParent: 1
+--- !u!64 &64975956386897068
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159456}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: c006577ec5ad7d9479857dd229e902dd, type: 3}

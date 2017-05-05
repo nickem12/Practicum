@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 498794}
   - component: {fileID: 3381378}
   - component: {fileID: 2361734}
+  - component: {fileID: 65477025308240810}
   m_Layer: 0
   m_Name: SA_Prop_Fence_Iron_Damaged_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 109120}
   m_IsPrefabParent: 1
+--- !u!65 &65477025308240810
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6368332, y: 1.6332786, z: 5.597954}
+  m_Center: {x: 0.18945694, y: 0.8166393, z: 2.798977}

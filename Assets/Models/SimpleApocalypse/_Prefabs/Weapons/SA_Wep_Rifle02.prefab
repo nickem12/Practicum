@@ -61,6 +61,7 @@ GameObject:
   - component: {fileID: 425194}
   - component: {fileID: 3391622}
   - component: {fileID: 2331378}
+  - component: {fileID: 64373682330229150}
   m_Layer: 0
   m_Name: SA_Wep_Rifle02
   m_TagString: Untagged
@@ -430,3 +431,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 185532}
   m_IsPrefabParent: 1
+--- !u!64 &64373682330229150
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185532}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: aa1fd70ea9195e44d8919c91910d7436, type: 3}

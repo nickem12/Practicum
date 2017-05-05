@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 487420}
   - component: {fileID: 3353438}
   - component: {fileID: 2333474}
+  - component: {fileID: 65184458484616298}
   m_Layer: 0
   m_Name: SA_Prop_TrafficLight_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 163468}
   m_IsPrefabParent: 1
+--- !u!65 &65184458484616298
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163468}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1386948, y: 7.8774753, z: 1.3677673}
+  m_Center: {x: -0.016058385, y: 3.942941, z: 0.20477688}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 451028}
   - component: {fileID: 3390862}
   - component: {fileID: 2399554}
+  - component: {fileID: 64861634821983598}
   m_Layer: 0
   m_Name: SA_Wep_DynamiteStick
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 132378}
   m_IsPrefabParent: 1
+--- !u!64 &64861634821983598
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132378}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: ab912318d68bd2b45a38e484bfea186d, type: 3}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 498108}
   - component: {fileID: 3343410}
   - component: {fileID: 2321372}
+  - component: {fileID: 64348281749582250}
   m_Layer: 0
   m_Name: SA_Wep_C4
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 109980}
   m_IsPrefabParent: 1
+--- !u!64 &64348281749582250
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109980}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: f7591728efc9bb74baf167aea839fd47, type: 3}

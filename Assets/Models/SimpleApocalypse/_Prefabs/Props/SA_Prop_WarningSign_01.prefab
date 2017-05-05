@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 415920}
   - component: {fileID: 3300750}
   - component: {fileID: 2374248}
+  - component: {fileID: 65562223055889916}
   m_Layer: 0
   m_Name: SA_Prop_WarningSign_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 110700}
   m_IsPrefabParent: 1
+--- !u!65 &65562223055889916
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110700}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2207165, y: 3.05017, z: 0.58529663}
+  m_Center: {x: 0.015355229, y: 1.525085, z: -0.03087148}

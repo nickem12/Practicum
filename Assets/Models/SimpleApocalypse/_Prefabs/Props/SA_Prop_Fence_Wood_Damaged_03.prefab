@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 443512}
   - component: {fileID: 3303028}
   - component: {fileID: 2398718}
+  - component: {fileID: 65416872623268820}
   m_Layer: 0
   m_Name: SA_Prop_Fence_Wood_Damaged_03
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 109132}
   m_IsPrefabParent: 1
+--- !u!65 &65416872623268820
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109132}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.308845, y: 3.1293473, z: 5.0297937}
+  m_Center: {x: 1.1544225, y: 1.5646734, z: 2.5148969}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 414886}
   - component: {fileID: 3304350}
   - component: {fileID: 2346222}
+  - component: {fileID: 65713477425242330}
   m_Layer: 0
   m_Name: SA_Prop_PowerLine_01
   m_TagString: Untagged
@@ -150,3 +151,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 110416}
   m_IsPrefabParent: 1
+--- !u!65 &65713477425242330
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.0779614, y: 9.76365, z: 3.0156689}
+  m_Center: {x: -0.00000023841858, y: 4.881825, z: 0}

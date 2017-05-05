@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 486606}
   - component: {fileID: 3370674}
   - component: {fileID: 2356436}
+  - component: {fileID: 64969396336306444}
   m_Layer: 0
   m_Name: SA_Bld_PetrolStation_Damaged_01
   m_TagString: Untagged
@@ -150,3 +151,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 117474}
   m_IsPrefabParent: 1
+--- !u!64 &64969396336306444
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117474}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 3a88d2adf0c69c0488b3d9dac7aeac31, type: 3}

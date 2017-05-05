@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 408942}
   - component: {fileID: 3384324}
   - component: {fileID: 2388182}
+  - component: {fileID: 65230677728661106}
   m_Layer: 0
   m_Name: SA_Prop_BeerCan_02
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 141972}
   m_IsPrefabParent: 1
+--- !u!65 &65230677728661106
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141972}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16231811, y: 0.3548658, z: 0.16230822}
+  m_Center: {x: 0, y: 1.6205602, z: 0}

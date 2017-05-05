@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 441860}
   - component: {fileID: 3396748}
   - component: {fileID: 2371832}
+  - component: {fileID: 64421731277499554}
   m_Layer: 0
   m_Name: SA_Bld_PowerLineLarge_Defended_01
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 139118}
   m_IsPrefabParent: 1
+--- !u!64 &64421731277499554
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139118}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: c794dce2fae71ac41b0ef695ab3420db, type: 3}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 479000}
   - component: {fileID: 3395216}
   - component: {fileID: 2373594}
+  - component: {fileID: 64478247568472112}
   m_Layer: 0
   m_Name: SA_Bld_WarehouseOldSmall_01
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 116354}
   m_IsPrefabParent: 1
+--- !u!64 &64478247568472112
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116354}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 79f5e5d86a54dd34fb4aefa4215d7f80, type: 3}

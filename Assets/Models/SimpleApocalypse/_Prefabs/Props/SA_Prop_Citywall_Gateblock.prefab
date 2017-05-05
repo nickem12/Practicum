@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 404446}
   - component: {fileID: 3302612}
   - component: {fileID: 2338596}
+  - component: {fileID: 65290695483079170}
   m_Layer: 0
   m_Name: SA_Prop_Citywall_Gateblock
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 154406}
   m_IsPrefabParent: 1
+--- !u!65 &65290695483079170
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.7589045, y: 6.7698693, z: 0.5740288}
+  m_Center: {x: 0, y: 3.3849347, z: 0}

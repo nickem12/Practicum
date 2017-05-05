@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 424000}
   - component: {fileID: 3358202}
   - component: {fileID: 2373666}
+  - component: {fileID: 65930976022478680}
   m_Layer: 0
   m_Name: SA_Prop_SafehouseDoor_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 185672}
   m_IsPrefabParent: 1
+--- !u!65 &65930976022478680
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8587112, y: 4.138443, z: 1.3624306}
+  m_Center: {x: -0.043115616, y: 2.0589852, z: -0.48389435}

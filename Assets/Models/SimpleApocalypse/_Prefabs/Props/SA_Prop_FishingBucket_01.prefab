@@ -61,6 +61,7 @@ GameObject:
   - component: {fileID: 443216}
   - component: {fileID: 3328998}
   - component: {fileID: 2380988}
+  - component: {fileID: 65833709320836032}
   m_Layer: 0
   m_Name: SA_Prop_FishingBucket_01
   m_TagString: Untagged
@@ -430,3 +431,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 177524}
   m_IsPrefabParent: 1
+--- !u!65 &65833709320836032
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177524}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7677994, y: 0.7720102, z: 0.7530651}
+  m_Center: {x: -0.09061813, y: 0.38605422, z: -0.022598743}

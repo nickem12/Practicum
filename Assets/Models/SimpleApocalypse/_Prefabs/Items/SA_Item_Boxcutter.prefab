@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 422234}
   - component: {fileID: 3362062}
   - component: {fileID: 2321768}
+  - component: {fileID: 65434043647255926}
   m_Layer: 0
   m_Name: SA_Item_Boxcutter
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 154518}
   m_IsPrefabParent: 1
+--- !u!65 &65434043647255926
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.116755486, y: 0.055909485, z: 0.70068955}
+  m_Center: {x: 0, y: 0.027954742, z: -0.000000014901161}

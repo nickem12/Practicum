@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 443668}
   - component: {fileID: 3362958}
   - component: {fileID: 2378558}
+  - component: {fileID: 65909187977034868}
   m_Layer: 0
   m_Name: SA_Prop_TreePine_03
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 171666}
   m_IsPrefabParent: 1
+--- !u!65 &65909187977034868
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171666}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1708755, y: 19.26617, z: 3.145691}
+  m_Center: {x: 0.0000038146973, y: 9.442371, z: 0}

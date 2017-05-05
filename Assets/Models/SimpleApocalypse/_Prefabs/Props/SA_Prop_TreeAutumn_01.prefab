@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 471298}
   - component: {fileID: 3351202}
   - component: {fileID: 2384672}
+  - component: {fileID: 65772293075073892}
   m_Layer: 0
   m_Name: SA_Prop_TreeAutumn_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 185966}
   m_IsPrefabParent: 1
+--- !u!65 &65772293075073892
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185966}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9927063, y: 4.734415, z: 1.8925323}
+  m_Center: {x: 0, y: 2.2268167, z: -0.0000076293945}

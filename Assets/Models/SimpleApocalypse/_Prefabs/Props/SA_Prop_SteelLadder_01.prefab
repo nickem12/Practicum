@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 472018}
   - component: {fileID: 3327980}
   - component: {fileID: 2348748}
+  - component: {fileID: 65634482833385568}
   m_Layer: 0
   m_Name: SA_Prop_SteelLadder_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 123248}
   m_IsPrefabParent: 1
+--- !u!65 &65634482833385568
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1713715, y: 9.29287, z: 0.1686554}
+  m_Center: {x: 0, y: 4.646435, z: 0}

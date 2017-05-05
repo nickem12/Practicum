@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 433892}
   - component: {fileID: 3315016}
   - component: {fileID: 2336512}
+  - component: {fileID: 65422468999271124}
   m_Layer: 0
   m_Name: SA_Prop_SecurityWallGate_01
   m_TagString: Untagged
@@ -150,3 +151,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 119688}
   m_IsPrefabParent: 1
+--- !u!65 &65422468999271124
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119688}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16, y: 7.745112, z: 2.7925568}
+  m_Center: {x: 0, y: 3.869126, z: -0.0000076293945}

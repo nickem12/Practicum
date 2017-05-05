@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 440070}
   - component: {fileID: 3328388}
   - component: {fileID: 2356098}
+  - component: {fileID: 64950672170724724}
   m_Layer: 0
   m_Name: SA_Bld_OfficeGrey_03
   m_TagString: Untagged
@@ -150,3 +151,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 185598}
   m_IsPrefabParent: 1
+--- !u!64 &64950672170724724
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: b5130c0a683047d4ca0e1c79a64d08b6, type: 3}

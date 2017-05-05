@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 429614}
   - component: {fileID: 3341584}
   - component: {fileID: 2302520}
+  - component: {fileID: 65298588105957994}
   m_Layer: 0
   m_Name: SA_Item_Ammo_Shotgun
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 128406}
   m_IsPrefabParent: 1
+--- !u!65 &65298588105957994
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7600517, y: 0.31818342, z: 0.6969013}
+  m_Center: {x: -0.0000019073486, y: 0.15909171, z: 0}

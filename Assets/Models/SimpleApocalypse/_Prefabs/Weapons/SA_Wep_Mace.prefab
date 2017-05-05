@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 463268}
   - component: {fileID: 3382056}
   - component: {fileID: 2326894}
+  - component: {fileID: 64854492308702034}
   m_Layer: 0
   m_Name: SA_Wep_Mace
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165144}
   m_IsPrefabParent: 1
+--- !u!64 &64854492308702034
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: a73ea4b3820921240996e77e5b79ea58, type: 3}

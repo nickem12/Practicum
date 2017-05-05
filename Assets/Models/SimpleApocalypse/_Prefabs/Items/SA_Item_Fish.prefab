@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 401854}
   - component: {fileID: 3367198}
   - component: {fileID: 2335992}
+  - component: {fileID: 65595561142563184}
   m_Layer: 0
   m_Name: SA_Item_Fish
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145182}
   m_IsPrefabParent: 1
+--- !u!65 &65595561142563184
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145182}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1899961, y: 0.4575662, z: 0.9707236}
+  m_Center: {x: 0, y: 0.2287831, z: 0.000000014901161}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 410378}
   - component: {fileID: 3350568}
   - component: {fileID: 2373856}
+  - component: {fileID: 65139797650167324}
   m_Layer: 0
   m_Name: SA_Prop_BBQSmall_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 170048}
   m_IsPrefabParent: 1
+--- !u!65 &65139797650167324
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170048}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0910356, y: 0.67705584, z: 1.0910356}
+  m_Center: {x: 0, y: 0.33852792, z: 0}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 415364}
   - component: {fileID: 3388518}
   - component: {fileID: 2368176}
+  - component: {fileID: 65294761938528828}
   m_Layer: 0
   m_Name: SA_Item_DuctTape
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 171436}
   m_IsPrefabParent: 1
+--- !u!65 &65294761938528828
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171436}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.48985207, y: 0.22598696, z: 0.45309657}
+  m_Center: {x: 0.028684318, y: 0.11299348, z: 0.011573046}

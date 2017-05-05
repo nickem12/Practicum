@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 475452}
   - component: {fileID: 3316492}
   - component: {fileID: 2332628}
+  - component: {fileID: 64399449175532424}
   m_Layer: 0
   m_Name: SA_Env_BeachSection_OuterCorner_01
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 130308}
   m_IsPrefabParent: 1
+--- !u!64 &64399449175532424
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130308}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: e6f65875bce569941bff8ea7072d7d4c, type: 3}

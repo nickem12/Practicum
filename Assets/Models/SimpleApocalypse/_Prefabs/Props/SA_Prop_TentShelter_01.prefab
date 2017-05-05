@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 419614}
   - component: {fileID: 3333164}
   - component: {fileID: 2315626}
+  - component: {fileID: 65805335187664630}
   m_Layer: 0
   m_Name: SA_Prop_TentShelter_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 184956}
   m_IsPrefabParent: 1
+--- !u!65 &65805335187664630
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184956}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.284521, y: 9.793636, z: 12.720894}
+  m_Center: {x: 0, y: 4.759554, z: 0}

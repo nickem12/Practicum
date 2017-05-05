@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 475296}
   - component: {fileID: 3324960}
   - component: {fileID: 2386566}
+  - component: {fileID: 65601964403380636}
   m_Layer: 0
   m_Name: SA_Prop_DeadBody_OnCarTop_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 117470}
   m_IsPrefabParent: 1
+--- !u!65 &65601964403380636
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 221.79526, y: 163.09834, z: 238.94992}
+  m_Center: {x: 0.9234047, y: 113.99398, z: 50.673473}

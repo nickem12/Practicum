@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 447424}
   - component: {fileID: 3331872}
   - component: {fileID: 2340880}
+  - component: {fileID: 64864329582180000}
   m_Layer: 0
   m_Name: SA_Wep_Flaregun
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 157784}
   m_IsPrefabParent: 1
+--- !u!64 &64864329582180000
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157784}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: f55f1dcefcc191d49a5b6d1f7f3a6129, type: 3}

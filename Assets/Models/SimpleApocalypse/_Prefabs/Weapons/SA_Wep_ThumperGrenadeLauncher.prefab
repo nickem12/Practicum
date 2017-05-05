@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 415544}
   - component: {fileID: 3386062}
   - component: {fileID: 2320220}
+  - component: {fileID: 64337338281337480}
   m_Layer: 0
   m_Name: SA_Wep_ThumperGrenadeLauncher
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 102082}
   m_IsPrefabParent: 1
+--- !u!64 &64337338281337480
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102082}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: ecb530ff37dcd8f4a8a00433a59424a5, type: 3}

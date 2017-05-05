@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 406484}
   - component: {fileID: 3316710}
   - component: {fileID: 2331344}
+  - component: {fileID: 65598631126088066}
   m_Layer: 0
   m_Name: SA_Item_RakeAxeTrap
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 139228}
   m_IsPrefabParent: 1
+--- !u!65 &65598631126088066
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139228}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.81653595, y: 0.44711244, z: 2.7620707}
+  m_Center: {x: 0, y: 0.20321646, z: -1.3459868}

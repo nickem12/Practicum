@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 416832}
   - component: {fileID: 3305284}
   - component: {fileID: 2350952}
+  - component: {fileID: 65002228452644236}
   m_Layer: 0
   m_Name: SA_Prop_Pallet_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 116172}
   m_IsPrefabParent: 1
+--- !u!65 &65002228452644236
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1634712, y: 0.48653552, z: 3.088941}
+  m_Center: {x: 0, y: 0.22026165, z: 0}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 493050}
   - component: {fileID: 3365590}
   - component: {fileID: 2354150}
+  - component: {fileID: 65938739757596482}
   m_Layer: 0
   m_Name: SA_Prop_Statue_Damaged_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193480}
   m_IsPrefabParent: 1
+--- !u!65 &65938739757596482
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193480}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.304123, y: 5.661464, z: 9.055992}
+  m_Center: {x: 0.9999161, y: 1.9548466, z: 0.8416023}

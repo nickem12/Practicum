@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 412914}
   - component: {fileID: 3371568}
   - component: {fileID: 2330242}
+  - component: {fileID: 64225357677586266}
   m_Layer: 0
   m_Name: SA_Env_RoadLane_NoLines_straight_01
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 110654}
   m_IsPrefabParent: 1
+--- !u!64 &64225357677586266
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110654}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 2a95864b155dc73459a4e21d341876ab, type: 3}

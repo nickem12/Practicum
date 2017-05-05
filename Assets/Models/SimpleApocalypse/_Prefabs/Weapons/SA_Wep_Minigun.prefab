@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 407272}
   - component: {fileID: 3344098}
   - component: {fileID: 2376910}
+  - component: {fileID: 64835027402803204}
   m_Layer: 0
   m_Name: SA_Wep_Minigun
   m_TagString: Untagged
@@ -150,3 +151,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 176706}
   m_IsPrefabParent: 1
+--- !u!64 &64835027402803204
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 2b353dea1ad0e084582b92446598f0be, type: 3}

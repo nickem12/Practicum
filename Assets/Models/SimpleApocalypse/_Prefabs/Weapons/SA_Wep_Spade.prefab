@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 448612}
   - component: {fileID: 3324320}
   - component: {fileID: 2339408}
+  - component: {fileID: 64103476944450396}
   m_Layer: 0
   m_Name: SA_Wep_Spade
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 191116}
   m_IsPrefabParent: 1
+--- !u!64 &64103476944450396
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191116}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 9eaa970fa0fce794fa56313d27519e7a, type: 3}

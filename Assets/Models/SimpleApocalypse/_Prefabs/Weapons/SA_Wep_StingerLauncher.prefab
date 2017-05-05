@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 463648}
   - component: {fileID: 3306506}
   - component: {fileID: 2368792}
+  - component: {fileID: 64616477348926224}
   m_Layer: 0
   m_Name: SA_Wep_StingerLauncher
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 180926}
   m_IsPrefabParent: 1
+--- !u!64 &64616477348926224
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180926}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 9f9265e5bc44dd24995560da68e3669b, type: 3}

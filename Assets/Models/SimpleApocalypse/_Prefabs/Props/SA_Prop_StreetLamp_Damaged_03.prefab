@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 453570}
   - component: {fileID: 3370152}
   - component: {fileID: 2375712}
+  - component: {fileID: 65804185780642240}
   m_Layer: 0
   m_Name: SA_Prop_StreetLamp_Damaged_03
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 174658}
   m_IsPrefabParent: 1
+--- !u!65 &65804185780642240
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 174658}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.1824646, y: 3.3001268, z: 5.7886925}
+  m_Center: {x: -1.2100868, y: 1.6473914, z: -2.3211632}

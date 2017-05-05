@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 405604}
   - component: {fileID: 3360538}
   - component: {fileID: 2397270}
+  - component: {fileID: 65641029112966690}
   m_Layer: 0
   m_Name: SA_Prop_PlantFence_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 117822}
   m_IsPrefabParent: 1
+--- !u!65 &65641029112966690
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117822}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0422287, y: 2.0780163, z: 3.467636}
+  m_Center: {x: 0.0000038146973, y: 1.0470695, z: 0.000038146973}

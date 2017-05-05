@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 465234}
   - component: {fileID: 3380252}
   - component: {fileID: 2376112}
+  - component: {fileID: 65346927603094966}
   m_Layer: 0
   m_Name: SA_Prop_WaterContainerSpill_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 172078}
   m_IsPrefabParent: 1
+--- !u!65 &65346927603094966
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172078}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5243738, y: 0.5247292, z: 1.7177047}
+  m_Center: {x: 0, y: 0.2623646, z: -0.6479861}

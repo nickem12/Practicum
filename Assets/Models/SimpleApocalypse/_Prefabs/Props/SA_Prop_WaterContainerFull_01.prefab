@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 415176}
   - component: {fileID: 3352584}
   - component: {fileID: 2342190}
+  - component: {fileID: 65446056202866254}
   m_Layer: 0
   m_Name: SA_Prop_WaterContainerFull_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 104890}
   m_IsPrefabParent: 1
+--- !u!65 &65446056202866254
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5185394, y: 0.8316474, z: 0.5247292}
+  m_Center: {x: 0.0013222694, y: 0.41640544, z: 0.00014311075}

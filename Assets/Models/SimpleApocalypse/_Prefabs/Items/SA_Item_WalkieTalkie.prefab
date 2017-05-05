@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 499548}
   - component: {fileID: 3392888}
   - component: {fileID: 2365590}
+  - component: {fileID: 65120716750114496}
   m_Layer: 0
   m_Name: SA_Item_WalkieTalkie
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 149176}
   m_IsPrefabParent: 1
+--- !u!65 &65120716750114496
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149176}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.22875786, y: 0.15402356, z: 0.778178}
+  m_Center: {x: 0, y: 0.07701178, z: 0}

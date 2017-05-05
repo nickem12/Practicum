@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 442146}
   - component: {fileID: 3361170}
   - component: {fileID: 2367596}
+  - component: {fileID: 65289708836789062}
   m_Layer: 0
   m_Name: SA_Prop_BurntBlack_Ute_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 151218}
   m_IsPrefabParent: 1
+--- !u!65 &65289708836789062
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.826374, y: 2.4956481, z: 7.054455}
+  m_Center: {x: -0.0000019073486, y: 1.2478241, z: 0.0000019073486}

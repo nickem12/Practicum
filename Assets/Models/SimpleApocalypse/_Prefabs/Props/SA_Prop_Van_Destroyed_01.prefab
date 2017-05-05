@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 477550}
   - component: {fileID: 3376524}
   - component: {fileID: 2358754}
+  - component: {fileID: 65015592258930176}
   m_Layer: 0
   m_Name: SA_Prop_Van_Destroyed_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 117156}
   m_IsPrefabParent: 1
+--- !u!65 &65015592258930176
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117156}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.8018265, y: 8.420814, z: 7.572485}
+  m_Center: {x: 0, y: 4.210407, z: -0.0000009536743}

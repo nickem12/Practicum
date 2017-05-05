@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 426168}
   - component: {fileID: 3379126}
   - component: {fileID: 2363150}
+  - component: {fileID: 65285891456577910}
   m_Layer: 0
   m_Name: SA_Item_Checkers
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 149634}
   m_IsPrefabParent: 1
+--- !u!65 &65285891456577910
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149634}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3451118, y: 0.15284394, z: 1.8913388}
+  m_Center: {x: 0, y: 0.07642197, z: 0}

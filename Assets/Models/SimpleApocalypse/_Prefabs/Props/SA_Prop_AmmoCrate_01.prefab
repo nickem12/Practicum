@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 458122}
   - component: {fileID: 3305928}
   - component: {fileID: 2341964}
+  - component: {fileID: 65560088826481176}
   m_Layer: 0
   m_Name: SA_Prop_AmmoCrate_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 130302}
   m_IsPrefabParent: 1
+--- !u!65 &65560088826481176
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.592476, y: 1.5417806, z: 1.3675766}
+  m_Center: {x: 0, y: 0.7708903, z: 0}

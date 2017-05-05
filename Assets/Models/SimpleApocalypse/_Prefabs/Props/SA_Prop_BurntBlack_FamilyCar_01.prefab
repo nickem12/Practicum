@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 437278}
   - component: {fileID: 3380296}
   - component: {fileID: 2319094}
+  - component: {fileID: 65141115081591198}
   m_Layer: 0
   m_Name: SA_Prop_BurntBlack_FamilyCar_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 125344}
   m_IsPrefabParent: 1
+--- !u!65 &65141115081591198
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3632202, y: 2.5051844, z: 5.815132}
+  m_Center: {x: 0, y: 1.1057936, z: -0.00056648254}

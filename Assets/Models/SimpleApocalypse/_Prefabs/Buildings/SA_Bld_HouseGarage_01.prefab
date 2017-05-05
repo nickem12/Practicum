@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 448426}
   - component: {fileID: 3393074}
   - component: {fileID: 2370286}
+  - component: {fileID: 64324071980192066}
   m_Layer: 0
   m_Name: SA_Bld_HouseGarage_01
   m_TagString: Untagged
@@ -150,3 +151,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 172558}
   m_IsPrefabParent: 1
+--- !u!64 &64324071980192066
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172558}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: f0113214f07d1c948a2c448576ba0c85, type: 3}

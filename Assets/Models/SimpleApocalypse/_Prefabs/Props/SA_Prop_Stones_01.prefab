@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 487800}
   - component: {fileID: 3342600}
   - component: {fileID: 2371610}
+  - component: {fileID: 65842179348778446}
   m_Layer: 0
   m_Name: SA_Prop_Stones_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 129154}
   m_IsPrefabParent: 1
+--- !u!65 &65842179348778446
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.40555, y: 0.24934345, z: 0.7886677}
+  m_Center: {x: 0.0000009536743, y: -0.0000000037252903, z: 0}

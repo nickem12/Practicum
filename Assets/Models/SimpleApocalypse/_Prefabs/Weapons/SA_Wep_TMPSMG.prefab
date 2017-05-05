@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 408430}
   - component: {fileID: 3359650}
   - component: {fileID: 2300754}
+  - component: {fileID: 64860078715036212}
   m_Layer: 0
   m_Name: SA_Wep_TMPSMG
   m_TagString: Untagged
@@ -430,3 +431,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 150732}
   m_IsPrefabParent: 1
+--- !u!64 &64860078715036212
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150732}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: aa23547def9e624448b8710667d42126, type: 3}

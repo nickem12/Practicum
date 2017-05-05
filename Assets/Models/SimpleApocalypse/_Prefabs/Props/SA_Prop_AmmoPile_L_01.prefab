@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 463176}
   - component: {fileID: 3324920}
   - component: {fileID: 2312864}
+  - component: {fileID: 65257080040330794}
   m_Layer: 0
   m_Name: SA_Prop_AmmoPile_L_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 148370}
   m_IsPrefabParent: 1
+--- !u!65 &65257080040330794
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.2914352, y: 2.4030821, z: 4.3132534}
+  m_Center: {x: 0, y: 1.1460425, z: -0.0000010728836}

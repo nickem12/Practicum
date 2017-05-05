@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 453500}
   - component: {fileID: 3394646}
   - component: {fileID: 2345370}
+  - component: {fileID: 65626138518084630}
   m_Layer: 0
   m_Name: SA_Prop_TV_Damaged_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 119436}
   m_IsPrefabParent: 1
+--- !u!65 &65626138518084630
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119436}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6627102, y: 0.92471313, z: 1.406517}
+  m_Center: {x: -0.093203545, y: 0.44001377, z: -0.11325455}

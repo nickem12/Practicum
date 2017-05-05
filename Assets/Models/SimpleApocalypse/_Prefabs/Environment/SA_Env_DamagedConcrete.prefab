@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 423670}
   - component: {fileID: 3390116}
   - component: {fileID: 2387778}
+  - component: {fileID: 64059083947312514}
   m_Layer: 0
   m_Name: SA_Env_DamagedConcrete
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 120508}
   m_IsPrefabParent: 1
+--- !u!64 &64059083947312514
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120508}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 5a27a61256eef7c44b6503578d5bcb6b, type: 3}

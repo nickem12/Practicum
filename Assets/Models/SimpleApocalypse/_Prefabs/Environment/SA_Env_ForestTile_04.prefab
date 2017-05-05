@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 470378}
   - component: {fileID: 3305926}
   - component: {fileID: 2311822}
+  - component: {fileID: 64669903769158618}
   m_Layer: 0
   m_Name: SA_Env_ForestTile_04
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 199614}
   m_IsPrefabParent: 1
+--- !u!64 &64669903769158618
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199614}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 87cc3b2b3db0b6d4aa00bf48e80caf94, type: 3}

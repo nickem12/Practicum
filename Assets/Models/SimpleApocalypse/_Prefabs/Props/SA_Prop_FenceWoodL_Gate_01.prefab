@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 477512}
   - component: {fileID: 3385600}
   - component: {fileID: 2359226}
+  - component: {fileID: 65054139358328568}
   m_Layer: 0
   m_Name: SA_Prop_FenceWoodL_Gate_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134266}
   m_IsPrefabParent: 1
+--- !u!65 &65054139358328568
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134266}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.772621, y: 9.680743, z: 7.183922}
+  m_Center: {x: -0.019357681, y: 4.818341, z: 2.3058128}

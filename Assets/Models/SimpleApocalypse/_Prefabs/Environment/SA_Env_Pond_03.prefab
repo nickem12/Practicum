@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 409548}
   - component: {fileID: 3339858}
   - component: {fileID: 2317914}
+  - component: {fileID: 64759421477824170}
   m_Layer: 0
   m_Name: SA_Env_Pond_03
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 127720}
   m_IsPrefabParent: 1
+--- !u!64 &64759421477824170
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127720}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: d6398266513f7544e9c74180702f6619, type: 3}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 433760}
   - component: {fileID: 3393866}
   - component: {fileID: 2347860}
+  - component: {fileID: 64921464819274948}
   m_Layer: 0
   m_Name: SA_Wep_Bow
   m_TagString: Untagged
@@ -220,3 +221,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 137240}
   m_IsPrefabParent: 1
+--- !u!64 &64921464819274948
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137240}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 0a2fd50620d89f34b996347f263faefb, type: 3}

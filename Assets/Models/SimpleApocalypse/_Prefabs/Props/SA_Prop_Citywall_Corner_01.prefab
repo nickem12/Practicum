@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 419104}
   - component: {fileID: 3330088}
   - component: {fileID: 2353098}
+  - component: {fileID: 65508231335095426}
   m_Layer: 0
   m_Name: SA_Prop_Citywall_Corner_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 115976}
   m_IsPrefabParent: 1
+--- !u!65 &65508231335095426
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115976}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6968927, y: 19.959877, z: 2.6968927}
+  m_Center: {x: -1.3484464, y: 9.9799385, z: -1.3484464}

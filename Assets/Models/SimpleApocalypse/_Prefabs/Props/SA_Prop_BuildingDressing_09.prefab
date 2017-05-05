@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 422066}
   - component: {fileID: 3364878}
   - component: {fileID: 2311918}
+  - component: {fileID: 65234657353497558}
   m_Layer: 0
   m_Name: SA_Prop_BuildingDressing_09
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 187478}
   m_IsPrefabParent: 1
+--- !u!65 &65234657353497558
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187478}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.984688, y: 3.0405111, z: 0.14241028}
+  m_Center: {x: 0, y: 0, z: 0}

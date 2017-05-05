@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 477646}
   - component: {fileID: 3363966}
   - component: {fileID: 2379208}
+  - component: {fileID: 65221804436580420}
   m_Layer: 0
   m_Name: SA_Prop_Billboard_Burnt_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 158342}
   m_IsPrefabParent: 1
+--- !u!65 &65221804436580420
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.0505877, y: 5.063998, z: 2.2683487}
+  m_Center: {x: 0, y: 2.531999, z: 0}

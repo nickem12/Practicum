@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 463770}
   - component: {fileID: 3306314}
   - component: {fileID: 2387830}
+  - component: {fileID: 64427360883138230}
   m_Layer: 0
   m_Name: SA_Wep_Handaxe
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 110232}
   m_IsPrefabParent: 1
+--- !u!64 &64427360883138230
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: c630fc36c79947b48946d02049936a45, type: 3}

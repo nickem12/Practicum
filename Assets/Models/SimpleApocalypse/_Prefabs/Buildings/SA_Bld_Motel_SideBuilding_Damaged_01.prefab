@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 415616}
   - component: {fileID: 3390140}
   - component: {fileID: 2395724}
+  - component: {fileID: 64350514041479640}
   m_Layer: 0
   m_Name: SA_Bld_Motel_SideBuilding_Damaged_01
   m_TagString: Untagged
@@ -220,3 +221,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 156482}
   m_IsPrefabParent: 1
+--- !u!64 &64350514041479640
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 156482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 833a86cb485eddc408c979d6e2f581c3, type: 3}

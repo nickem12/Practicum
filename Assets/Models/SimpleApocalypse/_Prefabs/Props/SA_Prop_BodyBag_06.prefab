@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 485724}
   - component: {fileID: 3390610}
   - component: {fileID: 2377298}
+  - component: {fileID: 65247021460128534}
   m_Layer: 0
   m_Name: SA_Prop_BodyBag_06
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 197078}
   m_IsPrefabParent: 1
+--- !u!65 &65247021460128534
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197078}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3018036, y: 0.51860803, z: 3.130703}
+  m_Center: {x: 0, y: 0.25930408, z: 0}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 401620}
   - component: {fileID: 3379296}
   - component: {fileID: 2378610}
+  - component: {fileID: 65315701329789036}
   m_Layer: 0
   m_Name: SA_Item_Ammo_AssaultRifleMagazine
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 138200}
   m_IsPrefabParent: 1
+--- !u!65 &65315701329789036
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138200}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.24983692, y: 0.08893272, z: 0.8781804}
+  m_Center: {x: 0, y: 0.03435815, z: -0.000000059604645}

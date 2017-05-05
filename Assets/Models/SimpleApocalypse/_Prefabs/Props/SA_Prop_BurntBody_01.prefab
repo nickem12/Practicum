@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 427218}
   - component: {fileID: 3332082}
   - component: {fileID: 2371708}
+  - component: {fileID: 65893439940252858}
   m_Layer: 0
   m_Name: SA_Prop_BurntBody_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 164100}
   m_IsPrefabParent: 1
+--- !u!65 &65893439940252858
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164100}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 178.05356, y: 103.59433, z: 278.6186}
+  m_Center: {x: 0, y: 34.375374, z: 0}

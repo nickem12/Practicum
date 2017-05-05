@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 456348}
   - component: {fileID: 3316594}
   - component: {fileID: 2307186}
+  - component: {fileID: 65617376259517618}
   m_Layer: 0
   m_Name: SA_Item_RoadFlareStick
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165402}
   m_IsPrefabParent: 1
+--- !u!65 &65617376259517618
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.10595238, y: 0.10595244, z: 0.96038926}
+  m_Center: {x: 0, y: 0.05297622, z: 0.000000014901161}

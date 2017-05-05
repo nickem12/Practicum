@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 431536}
   - component: {fileID: 3371924}
   - component: {fileID: 2353446}
+  - component: {fileID: 65288536503394848}
   m_Layer: 0
   m_Name: SA_Prop_Bloodstain_03
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 124566}
   m_IsPrefabParent: 1
+--- !u!65 &65288536503394848
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.64398, y: 0.023945559, z: 1.003753}
+  m_Center: {x: 0, y: 0.011972779, z: -0.00000011920929}

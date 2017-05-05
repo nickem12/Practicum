@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 490966}
   - component: {fileID: 3322782}
   - component: {fileID: 2321216}
+  - component: {fileID: 64870254178005280}
   m_Layer: 0
   m_Name: SA_Wep_CriketBat
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 152472}
   m_IsPrefabParent: 1
+--- !u!64 &64870254178005280
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152472}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: bb6c9c16415550840a03250c1cbd5137, type: 3}

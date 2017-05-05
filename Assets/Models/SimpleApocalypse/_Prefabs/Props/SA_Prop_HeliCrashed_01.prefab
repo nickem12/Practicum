@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 465614}
   - component: {fileID: 3394702}
   - component: {fileID: 2334244}
+  - component: {fileID: 65520352460312042}
   m_Layer: 0
   m_Name: SA_Prop_HeliCrashed_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 192750}
   m_IsPrefabParent: 1
+--- !u!65 &65520352460312042
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 192750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.904602, y: 5.276958, z: 11.561643}
+  m_Center: {x: 0.12944293, y: 2.613567, z: -2.5447211}

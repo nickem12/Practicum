@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 440056}
   - component: {fileID: 3385186}
   - component: {fileID: 2330440}
+  - component: {fileID: 65196231029724954}
   m_Layer: 0
   m_Name: SA_Item_BearTrap
   m_TagString: Untagged
@@ -220,3 +221,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 141740}
   m_IsPrefabParent: 1
+--- !u!65 &65196231029724954
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141740}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.94591904, y: 0.086250365, z: 0.38517523}
+  m_Center: {x: 0, y: 0.039689697, z: -0.00000023841858}

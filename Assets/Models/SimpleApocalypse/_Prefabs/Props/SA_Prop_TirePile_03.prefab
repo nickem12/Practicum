@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 452182}
   - component: {fileID: 3359640}
   - component: {fileID: 2305956}
+  - component: {fileID: 65839981077544998}
   m_Layer: 0
   m_Name: SA_Prop_TirePile_03
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 171926}
   m_IsPrefabParent: 1
+--- !u!65 &65839981077544998
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171926}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8468704, y: 0.6649945, z: 1.8075867}
+  m_Center: {x: 0.0000038146973, y: 0.32690293, z: 0}

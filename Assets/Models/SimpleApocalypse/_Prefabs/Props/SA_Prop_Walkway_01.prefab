@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 480560}
   - component: {fileID: 3356354}
   - component: {fileID: 2312452}
+  - component: {fileID: 65552897224950974}
   m_Layer: 0
   m_Name: SA_Prop_Walkway_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 168944}
   m_IsPrefabParent: 1
+--- !u!65 &65552897224950974
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.0186157, y: 5.98554, z: 3.4137487}
+  m_Center: {x: 0, y: 2.99277, z: 0.00000047683716}

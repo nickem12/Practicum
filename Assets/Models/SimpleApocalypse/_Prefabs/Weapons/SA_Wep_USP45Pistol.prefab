@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 460844}
   - component: {fileID: 3380496}
   - component: {fileID: 2383872}
+  - component: {fileID: 64558634603092332}
   m_Layer: 0
   m_Name: SA_Wep_USP45Pistol
   m_TagString: Untagged
@@ -430,3 +431,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 103408}
   m_IsPrefabParent: 1
+--- !u!64 &64558634603092332
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103408}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: f1f008fc700d10643a745ebcf7cdc386, type: 3}

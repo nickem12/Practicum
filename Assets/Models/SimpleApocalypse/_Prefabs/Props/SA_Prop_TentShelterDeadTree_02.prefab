@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 441912}
   - component: {fileID: 3391990}
   - component: {fileID: 2398962}
+  - component: {fileID: 65190009440863330}
   m_Layer: 0
   m_Name: SA_Prop_TentShelterDeadTree_02
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100506}
   m_IsPrefabParent: 1
+--- !u!65 &65190009440863330
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.3996964, y: 7.8142757, z: 9.227776}
+  m_Center: {x: 0, y: 3.7698736, z: -0.00000023841858}

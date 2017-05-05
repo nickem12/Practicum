@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 411104}
   - component: {fileID: 3376612}
   - component: {fileID: 2335186}
+  - component: {fileID: 64602418701096298}
   m_Layer: 0
   m_Name: SA_Bld_LogCabin_01
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134842}
   m_IsPrefabParent: 1
+--- !u!64 &64602418701096298
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134842}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 9e5b468b420095c418b5f97452aaef1f, type: 3}

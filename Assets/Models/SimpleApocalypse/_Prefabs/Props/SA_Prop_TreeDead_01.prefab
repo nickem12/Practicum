@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 402642}
   - component: {fileID: 3344476}
   - component: {fileID: 2392900}
+  - component: {fileID: 65633268826310514}
   m_Layer: 0
   m_Name: SA_Prop_TreeDead_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 171772}
   m_IsPrefabParent: 1
+--- !u!65 &65633268826310514
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171772}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3200226, y: 2.1660407, z: 1.3957214}
+  m_Center: {x: 0.0033950806, y: 0.94262946, z: 0.014831543}

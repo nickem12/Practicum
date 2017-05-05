@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 419380}
   - component: {fileID: 3348000}
   - component: {fileID: 2310636}
+  - component: {fileID: 64509685968645860}
   m_Layer: 0
   m_Name: SA_Env_GrassSection_01
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 153384}
   m_IsPrefabParent: 1
+--- !u!64 &64509685968645860
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153384}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 821857815d22e36499446870dc7f52c1, type: 3}

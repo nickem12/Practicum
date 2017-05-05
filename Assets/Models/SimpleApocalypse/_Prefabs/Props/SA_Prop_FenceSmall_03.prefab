@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 498154}
   - component: {fileID: 3334342}
   - component: {fileID: 2387062}
+  - component: {fileID: 65113700373027116}
   m_Layer: 0
   m_Name: SA_Prop_FenceSmall_03
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 159198}
   m_IsPrefabParent: 1
+--- !u!65 &65113700373027116
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159198}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.5045624, y: 3.1856737, z: 2.1942596}
+  m_Center: {x: 0, y: 0.7106848, z: 0}

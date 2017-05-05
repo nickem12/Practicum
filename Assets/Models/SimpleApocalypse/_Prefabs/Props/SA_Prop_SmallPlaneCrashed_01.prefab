@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 497644}
   - component: {fileID: 3394830}
   - component: {fileID: 2335198}
+  - component: {fileID: 65884060519613284}
   m_Layer: 0
   m_Name: SA_Prop_SmallPlaneCrashed_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 170542}
   m_IsPrefabParent: 1
+--- !u!65 &65884060519613284
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17.371326, y: 9.541267, z: 10.491653}
+  m_Center: {x: 0, y: 4.217163, z: 0.0000076293945}

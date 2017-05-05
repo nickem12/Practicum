@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 475244}
   - component: {fileID: 3358834}
   - component: {fileID: 2354032}
+  - component: {fileID: 65236924060897912}
   m_Layer: 0
   m_Name: SA_Prop_FenceWoodL_Concrete_01
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 196848}
   m_IsPrefabParent: 1
+--- !u!65 &65236924060897912
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.525734, y: 6.326086, z: 5.4636993}
+  m_Center: {x: 0.6378441, y: 3.163043, z: 2.7318497}

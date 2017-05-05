@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 417398}
   - component: {fileID: 3361060}
   - component: {fileID: 2330628}
+  - component: {fileID: 64317478089770786}
   m_Layer: 0
   m_Name: SA_Bld_OfficeBlue_01
   m_TagString: Untagged
@@ -150,3 +151,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 168974}
   m_IsPrefabParent: 1
+--- !u!64 &64317478089770786
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168974}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 6d5cf4cbc20e4d941ac3b789a9010f49, type: 3}
