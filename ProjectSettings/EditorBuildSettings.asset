@@ -15,25 +15,25 @@ EditorBuildSettings:
     path: Assets/Scenes/Apartments/Apartment_2.unity
     guid: 6ac745d0c71033b488f1eadd94711dcf
   - enabled: 1
-    path: Assets/Scenes/Motel_Template/Motel_1.unity
+    path: Assets/Scenes/Motel/Motel_1.unity
     guid: d8991e2f33b232b44a482753c70337b3
   - enabled: 1
-    path: Assets/Scenes/Motel_Template/Motel_2.unity
+    path: Assets/Scenes/Motel/Motel_2.unity
     guid: acf3d39f0d8d1924eb51b65ce8c7a79f
   - enabled: 1
-    path: Assets/Scenes/Motel_Template/Motel_3.unity
+    path: Assets/Scenes/Motel/Motel_3.unity
     guid: 987553ae38666b2439882557dab16c6c
   - enabled: 1
-    path: Assets/Scenes/Motel_Template/Motel_4.unity
+    path: Assets/Scenes/Motel/Motel_4.unity
     guid: b46c3dce1c7db9a49aa9e7e173bb4cac
   - enabled: 1
-    path: Assets/Scenes/Motel_Template/Motel_5.unity
+    path: Assets/Scenes/Motel/Motel_5.unity
     guid: 4bfd29212feede244a1010f00f18e742
   - enabled: 1
-    path: Assets/Scenes/Motel_Template/Motel_6.unity
+    path: Assets/Scenes/Motel/Motel_6.unity
     guid: 7eb658f07f9d5534c8c033080659a3d9
   - enabled: 1
-    path: Assets/Scenes/Motel_Template/Motel_7.unity
+    path: Assets/Scenes/Motel/Motel_7.unity
     guid: 3cca4257e7a15184fa7546c0e5069980
   - enabled: 1
     path: Assets/Scenes/Shops/Book_Store.unity
@@ -41,78 +41,78 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shops/Gun_Shop.unity
     guid: 2f2fedb494a6cf443976cac18835be64
-  - enabled: 1
-    path: Assets/Scenes/Small_House_Template/Small_Houses/Small_House_Tall_3.unity
+  - enabled: 0
+    path: 
     guid: b89c880747c0aa34fa1cb16ac91948a4
   - enabled: 1
     path: Assets/Scenes/Shops/Restuarent.unity
     guid: 511de8e050215ba428058fd36eed9873
-  - enabled: 1
-    path: Assets/Scenes/Small_House_Template/Small_Houses/Small_House_4.unity
+  - enabled: 0
+    path: 
     guid: 5e4baa25edab57e4f953cfb143364eed
   - enabled: 1
-    path: Assets/Scenes/Small_House_Template/Small_House_Template_1.unity
+    path: Assets/Scenes/Templates/Small_House_Template_1.unity
     guid: c66cbbb2500114f4cba568fdbc3f09a7
   - enabled: 1
-    path: Assets/Scenes/Small_House_Template/Small_House_Template_2.unity
+    path: Assets/Scenes/Templates/Small_House_Template_2.unity
     guid: 7a0d9a11aa2c9da438e2350d273d1ffe
-  - enabled: 1
-    path: Assets/Scenes/Small_House_Template/Small_Houses/Small_House_Tall_1.unity
+  - enabled: 0
+    path: 
     guid: 39e85e4f94ffe9d40a3ec5110826ab05
-  - enabled: 1
-    path: Assets/Scenes/Small_House_Template/Small_Houses/Small_House_Tall_2.unity
+  - enabled: 0
+    path: 
     guid: 865b4327a3078504fa1bb32908934e59
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Trailers/Trailer_1.unity
+    path: Assets/Scenes/Trailers/Trailer_1.unity
     guid: e7097ec3b43eca541acfc0b5ea11f8d2
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Trailers/Trailer_2.unity
+    path: Assets/Scenes/Trailers/Trailer_2.unity
     guid: ee209cdd60da3ea40a7a13758be6b376
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Trailers/Trailer_3.unity
+    path: Assets/Scenes/Trailers/Trailer_3.unity
     guid: c443e0d60ea56e94fa360cf665f6fb01
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Trailers/Trailer_4.unity
+    path: Assets/Scenes/Trailers/Trailer_4.unity
     guid: bd773ec4daac6674bac4c54ea1c79b04
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Trailers/Trailer_5.unity
+    path: Assets/Scenes/Trailers/Trailer_5.unity
     guid: 8f49ed9d3953b9548872620e8ce06982
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Trailers/Trailer_6.unity
+    path: Assets/Scenes/Trailers/Trailer_6.unity
     guid: 43d39131e541f8d4abf8e5df9373de0a
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Trailers/Trailer_7.unity
+    path: Assets/Scenes/Trailers/Trailer_7.unity
     guid: baf3cfb8617a68e4e8b9d5a66c83da68
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Trailers/Trailer_8.unity
+    path: Assets/Scenes/Trailers/Trailer_8.unity
     guid: 2385b276661afbd46970656f527bd9ac
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Trailers/Trailer_9.unity
+    path: Assets/Scenes/Trailers/Trailer_9.unity
     guid: 7e066c3f0b6f54e46996029725cbfd4d
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Trailers/Trailer_10.unity
+    path: Assets/Scenes/Trailers/Trailer_10.unity
     guid: d02c816a76a809f44b8a8714c1dc6186
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Trailers/Trailer_11.unity
+    path: Assets/Scenes/Trailers/Trailer_11.unity
     guid: 945a64d372e38b24c889be7a0e05e7f7
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Large_Houses/Large_House_1.unity
+    path: Assets/Scenes/Houses/Large/Large_House_1.unity
     guid: c00af99ff34d11942bcd58d53ccdefeb
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Large_Houses/Large_House_Template.unity
+    path: Assets/Scenes/Houses/Large/Large_House_Template.unity
     guid: 925fb96b6f644ef49ac98949a6b91b0d
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Medium_Houses/Medium_House_1.unity
+    path: Assets/Scenes/Houses/Medium/Medium_House_1.unity
     guid: 83db3f1a828220940a686d117e7d4a1b
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Medium_Houses/Medium_House_2.unity
+    path: Assets/Scenes/Houses/Medium/Medium_House_2.unity
     guid: adcfca6c6c46bf8409492838e2ed322d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Work In Progress/Small Houses/Small_House_Template_2.unity
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Large_Houses/Large_House_2.unity
+    path: Assets/Scenes/Houses/Large/Large_House_2.unity
     guid: 8de3ca8863e048d4db83e4e7254ab5ba
   - enabled: 1
-    path: Assets/Scenes/Work In Progress/Trailers/Trailer_12.unity
+    path: Assets/Scenes/Trailers/Trailer_12.unity
     guid: 113431485dbed24468b1f90a6355bc12
