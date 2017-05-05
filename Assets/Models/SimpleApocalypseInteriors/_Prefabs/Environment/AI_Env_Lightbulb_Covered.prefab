@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 445696}
   - component: {fileID: 3385422}
   - component: {fileID: 2368786}
+  - component: {fileID: 64451671594424260}
   m_Layer: 0
   m_Name: AI_Env_Lightbulb_Covered
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 110440}
   m_IsPrefabParent: 1
+--- !u!64 &64451671594424260
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110440}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 157d1511fa1ed294e8001f801347b094, type: 3}

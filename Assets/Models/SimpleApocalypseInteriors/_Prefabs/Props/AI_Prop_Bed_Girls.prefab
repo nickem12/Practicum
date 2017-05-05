@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 485612}
   - component: {fileID: 3362154}
   - component: {fileID: 2315490}
+  - component: {fileID: 65532565933252256}
   m_Layer: 0
   m_Name: AI_Prop_Bed_Girls
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -28.5, y: 0, z: 5.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 129814}
   m_IsPrefabParent: 1
+--- !u!65 &65532565933252256
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.2112124, y: 1.7334592, z: 4.149767}
+  m_Center: {x: 0, y: 0.8667296, z: 0}

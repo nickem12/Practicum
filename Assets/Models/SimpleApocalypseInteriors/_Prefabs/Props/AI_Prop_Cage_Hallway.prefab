@@ -10,6 +10,8 @@ GameObject:
   - component: {fileID: 419858}
   - component: {fileID: 3393460}
   - component: {fileID: 2300324}
+  - component: {fileID: 65972860057006046}
+  - component: {fileID: 65677448791655986}
   m_Layer: 0
   m_Name: AI_Prop_Cage_Hallway
   m_TagString: Untagged
@@ -24,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 20.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,3 +83,27 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 102880}
   m_IsPrefabParent: 1
+--- !u!65 &65677448791655986
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102880}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.17982888, y: 4.0786476, z: 8.873793}
+  m_Center: {x: -1.1872405, y: 2.0393238, z: 4.5502024}
+--- !u!65 &65972860057006046
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102880}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.29996812, y: 4.0786476, z: 8.873793}
+  m_Center: {x: 1.1271727, y: 2.0393238, z: 4.5502024}

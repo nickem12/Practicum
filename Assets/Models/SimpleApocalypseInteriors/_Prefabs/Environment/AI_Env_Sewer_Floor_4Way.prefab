@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 437298}
   - component: {fileID: 3320560}
   - component: {fileID: 2306770}
+  - component: {fileID: 64955269246914592}
   m_Layer: 0
   m_Name: AI_Env_Sewer_Floor_4Way
   m_TagString: Untagged
@@ -81,3 +82,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 111722}
   m_IsPrefabParent: 1
+--- !u!64 &64955269246914592
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: ea6ed7cb77f67de4ea5dcd9dc9750e85, type: 3}

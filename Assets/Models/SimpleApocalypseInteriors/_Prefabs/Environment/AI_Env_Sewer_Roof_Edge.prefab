@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 467684}
   - component: {fileID: 3305872}
   - component: {fileID: 2397788}
+  - component: {fileID: 64975685725592824}
   m_Layer: 0
   m_Name: AI_Env_Sewer_Roof_Edge
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 149840}
   m_IsPrefabParent: 1
+--- !u!64 &64975685725592824
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149840}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 54f063ed558c337488382f082154c7f1, type: 3}

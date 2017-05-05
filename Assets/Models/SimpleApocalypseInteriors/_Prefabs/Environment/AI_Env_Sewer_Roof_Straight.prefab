@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 450216}
   - component: {fileID: 3398894}
   - component: {fileID: 2396332}
+  - component: {fileID: 64681735958741354}
   m_Layer: 0
   m_Name: AI_Env_Sewer_Roof_Straight
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 196604}
   m_IsPrefabParent: 1
+--- !u!64 &64681735958741354
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196604}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 0fe4421345f58774aa114f3011dcc5ea, type: 3}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 480972}
   - component: {fileID: 3339100}
   - component: {fileID: 2374788}
+  - component: {fileID: 64906182303124602}
   m_Layer: 0
   m_Name: AI_Env_Sewer_Roof_Corner
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 120584}
   m_IsPrefabParent: 1
+--- !u!64 &64906182303124602
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 120584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 3cab3b3caf6e52c45b1537ba32cf24c1, type: 3}

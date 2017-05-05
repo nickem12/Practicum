@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 497912}
   - component: {fileID: 3324894}
   - component: {fileID: 2318302}
+  - component: {fileID: 64245089276264898}
   m_Layer: 0
   m_Name: AI_Env_Floor_07_Stained
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 116130}
   m_IsPrefabParent: 1
+--- !u!64 &64245089276264898
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116130}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 8a22c010f154fa949b885d64b78d4874, type: 3}

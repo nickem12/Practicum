@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 477206}
   - component: {fileID: 3309694}
   - component: {fileID: 2374538}
+  - component: {fileID: 64525100834678384}
   m_Layer: 0
   m_Name: AI_Env_Wall_Grey_Hole_Large
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 180904}
   m_IsPrefabParent: 1
+--- !u!64 &64525100834678384
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180904}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 1da11eb3f3806004c9cd31fae32a2fc6, type: 3}

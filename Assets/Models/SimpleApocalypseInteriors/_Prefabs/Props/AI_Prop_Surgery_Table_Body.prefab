@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 414654}
   - component: {fileID: 3332292}
   - component: {fileID: 2395168}
+  - component: {fileID: 65668294873043708}
   m_Layer: 0
   m_Name: AI_Prop_Surgery_Table_Body
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 191756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.7, y: 0, z: 131.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,3 +82,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 191756}
   m_IsPrefabParent: 1
+--- !u!65 &65668294873043708
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191756}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.0222583, y: 2.2239296, z: 1.6584265}
+  m_Center: {x: 0, y: 1.1119648, z: 0.03379345}

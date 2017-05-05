@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 479910}
   - component: {fileID: 3374564}
   - component: {fileID: 2356192}
+  - component: {fileID: 64972598397315588}
   m_Layer: 0
   m_Name: AI_Env_Wall_Factory_Electronics_Start
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 102436}
   m_IsPrefabParent: 1
+--- !u!64 &64972598397315588
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102436}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 5142b5c752b4612448072c575817fa83, type: 3}

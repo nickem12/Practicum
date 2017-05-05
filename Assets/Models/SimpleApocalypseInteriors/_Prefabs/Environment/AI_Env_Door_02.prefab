@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 455942}
   - component: {fileID: 3308550}
   - component: {fileID: 2375288}
+  - component: {fileID: 64392305565682394}
   m_Layer: 0
   m_Name: AI_Env_Door_02
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 144140}
   m_IsPrefabParent: 1
+--- !u!64 &64392305565682394
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: a8a860d0032737a44af7f4c7787f8d36, type: 3}

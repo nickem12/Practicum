@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 411150}
   - component: {fileID: 3314492}
   - component: {fileID: 2349582}
+  - component: {fileID: 64976625192715396}
   m_Layer: 0
   m_Name: AI_Env_Sewer_Pipeline_Straight
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 143944}
   m_IsPrefabParent: 1
+--- !u!64 &64976625192715396
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143944}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: fcb57fda509937745a07595336407805, type: 3}

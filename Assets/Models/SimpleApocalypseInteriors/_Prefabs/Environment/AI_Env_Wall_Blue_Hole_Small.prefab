@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 466560}
   - component: {fileID: 3330372}
   - component: {fileID: 2304720}
+  - component: {fileID: 64490858937156512}
   m_Layer: 0
   m_Name: AI_Env_Wall_Blue_Hole_Small
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193898}
   m_IsPrefabParent: 1
+--- !u!64 &64490858937156512
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: f8e3b16c73b029d48bfdccbfa0fd866e, type: 3}

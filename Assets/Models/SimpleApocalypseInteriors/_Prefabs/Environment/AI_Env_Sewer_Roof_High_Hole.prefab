@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 466488}
   - component: {fileID: 3319918}
   - component: {fileID: 2354134}
+  - component: {fileID: 64865932587580448}
   m_Layer: 0
   m_Name: AI_Env_Sewer_Roof_High_Hole
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 150722}
   m_IsPrefabParent: 1
+--- !u!64 &64865932587580448
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150722}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: b57492467a5c63544bd2bc2c51b74329, type: 3}

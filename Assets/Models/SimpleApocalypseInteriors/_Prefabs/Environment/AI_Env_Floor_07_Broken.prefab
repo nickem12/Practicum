@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 473152}
   - component: {fileID: 3341902}
   - component: {fileID: 2365706}
+  - component: {fileID: 64594664228419962}
   m_Layer: 0
   m_Name: AI_Env_Floor_07_Broken
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 174610}
   m_IsPrefabParent: 1
+--- !u!64 &64594664228419962
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 174610}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: bca548563166b5a489245c75ae2ccac6, type: 3}

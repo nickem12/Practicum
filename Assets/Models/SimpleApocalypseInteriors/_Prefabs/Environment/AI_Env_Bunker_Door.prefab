@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 415150}
   - component: {fileID: 3308602}
   - component: {fileID: 2391858}
+  - component: {fileID: 64784363548657448}
   m_Layer: 0
   m_Name: AI_Env_Bunker_Door
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 168654}
   m_IsPrefabParent: 1
+--- !u!64 &64784363548657448
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168654}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 7c4e3f887a461c149bd1dd11ad3d50fc, type: 3}

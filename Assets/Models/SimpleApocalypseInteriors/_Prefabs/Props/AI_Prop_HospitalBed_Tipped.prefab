@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 453814}
   - component: {fileID: 3326506}
   - component: {fileID: 2326890}
+  - component: {fileID: 65783271110223822}
   m_Layer: 0
   m_Name: AI_Prop_HospitalBed_Tipped
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 191240}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -6.2532835, y: 0, z: 60}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 191240}
   m_IsPrefabParent: 1
+--- !u!65 &65783271110223822
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191240}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.4821596, y: 2.3596478, z: 5.6343365}
+  m_Center: {x: -0.00000047683716, y: 1.1798239, z: 0.0000009536743}

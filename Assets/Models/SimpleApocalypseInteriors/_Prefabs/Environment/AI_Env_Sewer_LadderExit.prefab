@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 431322}
   - component: {fileID: 3388288}
   - component: {fileID: 2336116}
+  - component: {fileID: 64241996208078536}
   m_Layer: 0
   m_Name: AI_Env_Sewer_LadderExit
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 146448}
   m_IsPrefabParent: 1
+--- !u!64 &64241996208078536
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 99370dfb6b556e9408ace83b8b4c01e3, type: 3}

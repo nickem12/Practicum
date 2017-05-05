@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 483394}
   - component: {fileID: 3307668}
   - component: {fileID: 2393376}
+  - component: {fileID: 65364246045783334}
   m_Layer: 0
   m_Name: AI_Item_Flashlight
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -20, y: 0, z: 160}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 111414}
   m_IsPrefabParent: 1
+--- !u!65 &65364246045783334
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111414}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.21812677, y: 0.2285125, z: 0.4788494}
+  m_Center: {x: 0, y: 0.11425625, z: 0.00000047683716}

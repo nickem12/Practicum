@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 424874}
   - component: {fileID: 3309736}
   - component: {fileID: 2362648}
+  - component: {fileID: 65157934772635964}
   m_Layer: 0
   m_Name: AI_Prop_Radiator
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -15.3, y: 0, z: 109.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 184790}
   m_IsPrefabParent: 1
+--- !u!65 &65157934772635964
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184790}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.570606, y: 1.0755478, z: 0.37148166}
+  m_Center: {x: 0.00000011920929, y: 0.5377739, z: 0}

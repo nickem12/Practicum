@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 450980}
   - component: {fileID: 3368580}
   - component: {fileID: 2325684}
+  - component: {fileID: 64228448731228792}
   m_Layer: 0
   m_Name: AI_Env_StoreFront_Window_01
   m_TagString: Untagged
@@ -81,3 +82,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 116848}
   m_IsPrefabParent: 1
+--- !u!64 &64228448731228792
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 324f4562b34bff14c83238531248e6d7, type: 3}

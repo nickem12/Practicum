@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 401108}
   - component: {fileID: 3384274}
   - component: {fileID: 2301106}
+  - component: {fileID: 64104641765851446}
   m_Layer: 0
   m_Name: AI_Env_Wall_Blue_Blank
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 164546}
   m_IsPrefabParent: 1
+--- !u!64 &64104641765851446
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164546}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 7deef43613a0ea34aae6dce303a772ee, type: 3}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 447546}
   - component: {fileID: 3341036}
   - component: {fileID: 2317894}
+  - component: {fileID: 64333251845374032}
   m_Layer: 0
   m_Name: AI_Env_Floor_05_Blank
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 104734}
   m_IsPrefabParent: 1
+--- !u!64 &64333251845374032
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: a1b783d51c71a7b41bfd4fd2acee2edb, type: 3}

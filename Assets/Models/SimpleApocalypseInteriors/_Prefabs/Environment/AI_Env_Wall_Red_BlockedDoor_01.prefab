@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 496724}
   - component: {fileID: 3376020}
   - component: {fileID: 2396142}
+  - component: {fileID: 64222570244028758}
   m_Layer: 0
   m_Name: AI_Env_Wall_Red_BlockedDoor_01
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 155980}
   m_IsPrefabParent: 1
+--- !u!64 &64222570244028758
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155980}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: beac3d1f445ce664b966657708dc2a8d, type: 3}

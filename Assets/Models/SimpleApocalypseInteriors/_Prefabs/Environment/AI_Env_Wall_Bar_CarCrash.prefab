@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 478370}
   - component: {fileID: 3380640}
   - component: {fileID: 2368142}
+  - component: {fileID: 64557257465991148}
   m_Layer: 0
   m_Name: AI_Env_Wall_Bar_CarCrash
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 195640}
   m_IsPrefabParent: 1
+--- !u!64 &64557257465991148
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195640}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: ecf89a1f3bc058e458a9bfe3e9b5914e, type: 3}

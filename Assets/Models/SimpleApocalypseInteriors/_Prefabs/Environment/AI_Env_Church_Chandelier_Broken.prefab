@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 432128}
   - component: {fileID: 3344984}
   - component: {fileID: 2355002}
+  - component: {fileID: 64881644734135066}
   m_Layer: 0
   m_Name: AI_Env_Church_Chandelier_Broken
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 157164}
   m_IsPrefabParent: 1
+--- !u!64 &64881644734135066
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157164}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: b9d897bde8fd08c4bb1b838e93fa22ef, type: 3}

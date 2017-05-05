@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 436102}
   - component: {fileID: 3305184}
   - component: {fileID: 2388060}
+  - component: {fileID: 64611293136798900}
   m_Layer: 0
   m_Name: AI_Env_Floor_02_Hole_Small
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 111024}
   m_IsPrefabParent: 1
+--- !u!64 &64611293136798900
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111024}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 03c6b52719df8bb47bbbc08ea1c02afd, type: 3}

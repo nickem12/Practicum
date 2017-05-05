@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 424732}
   - component: {fileID: 3302656}
   - component: {fileID: 2359336}
+  - component: {fileID: 64032368751591416}
   m_Layer: 0
   m_Name: AI_Env_Sewer_Floor_Corner
   m_TagString: Untagged
@@ -81,3 +82,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 181048}
   m_IsPrefabParent: 1
+--- !u!64 &64032368751591416
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181048}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 68322076fbb2ded478d25a3e27c75758, type: 3}

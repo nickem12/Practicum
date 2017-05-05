@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 488642}
   - component: {fileID: 3312318}
   - component: {fileID: 2305906}
+  - component: {fileID: 65696912340595220}
   m_Layer: 0
   m_Name: AI_Prop_ComputerChair
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 169840}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.1, y: 0, z: 31.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 169840}
   m_IsPrefabParent: 1
+--- !u!65 &65696912340595220
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169840}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3397183, y: 2.118385, z: 1.238831}
+  m_Center: {x: -0.0000011920929, y: 1.0591925, z: 0.00000023841858}

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 492860}
   - component: {fileID: 3306712}
   - component: {fileID: 2391504}
+  - component: {fileID: 65838304575495008}
   m_Layer: 0
   m_Name: AI_Prop_Body_Bed
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113614}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.6104193, y: 0, z: -29.126293}
+  m_LocalPosition: {x: -16.3, y: 0, z: 11.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,3 +82,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 113614}
   m_IsPrefabParent: 1
+--- !u!65 &65838304575495008
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113614}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2981205, y: 2.2167475, z: 4.187624}
+  m_Center: {x: 0, y: 1.1083738, z: 0}

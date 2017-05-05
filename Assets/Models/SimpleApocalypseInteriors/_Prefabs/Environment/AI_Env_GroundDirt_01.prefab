@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 442848}
   - component: {fileID: 3310536}
   - component: {fileID: 2335268}
+  - component: {fileID: 64740328169113894}
   m_Layer: 0
   m_Name: AI_Env_GroundDirt_01
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 157862}
   m_IsPrefabParent: 1
+--- !u!64 &64740328169113894
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: acfb4e502d9bcc24da94d43a78b5231c, type: 3}

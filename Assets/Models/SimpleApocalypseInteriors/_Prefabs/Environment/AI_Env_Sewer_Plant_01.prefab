@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 402890}
   - component: {fileID: 3353510}
   - component: {fileID: 2327088}
+  - component: {fileID: 64831665108117958}
   m_Layer: 0
   m_Name: AI_Env_Sewer_Plant_01
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 162326}
   m_IsPrefabParent: 1
+--- !u!64 &64831665108117958
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162326}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: d5cb41dd3fbc46b4cb045ca218d46711, type: 3}

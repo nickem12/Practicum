@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 410372}
   - component: {fileID: 3379564}
   - component: {fileID: 2373834}
+  - component: {fileID: 65054606987777688}
   m_Layer: 0
   m_Name: AI_Prop_Shelf_01_Broken
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.7, y: 0, z: 116.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 167496}
   m_IsPrefabParent: 1
+--- !u!65 &65054606987777688
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167496}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.5235958, y: 3.2521923, z: 4.2229424}
+  m_Center: {x: 0.0000009536743, y: 1.4812928, z: 0}

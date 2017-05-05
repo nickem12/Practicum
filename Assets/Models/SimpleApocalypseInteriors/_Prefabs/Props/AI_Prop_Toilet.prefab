@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 482194}
   - component: {fileID: 3345690}
   - component: {fileID: 2301998}
+  - component: {fileID: 65963576985100984}
   m_Layer: 0
   m_Name: AI_Prop_Toilet
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -31.8, y: 0, z: 132.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145334}
   m_IsPrefabParent: 1
+--- !u!65 &65963576985100984
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145334}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.82725525, y: 1.7808566, z: 1.3181424}
+  m_Center: {x: 0, y: 0.8904283, z: -0.29278725}

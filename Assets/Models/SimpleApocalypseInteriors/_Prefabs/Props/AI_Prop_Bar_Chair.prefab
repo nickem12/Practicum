@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 457916}
   - component: {fileID: 3351830}
   - component: {fileID: 2326062}
+  - component: {fileID: 65185989938559646}
   m_Layer: 0
   m_Name: AI_Prop_Bar_Chair
   m_TagString: Untagged
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 138928}
   m_IsPrefabParent: 1
+--- !u!65 &65185989938559646
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138928}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.2846582, y: 1.7337842, z: 1.2849207}
+  m_Center: {x: 0, y: 0.8668921, z: 0}

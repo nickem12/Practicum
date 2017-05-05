@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 445580}
   - component: {fileID: 3389032}
   - component: {fileID: 2330910}
+  - component: {fileID: 64596836051505250}
   m_Layer: 0
   m_Name: AI_Env_Wall_Factory_Doorway
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 151664}
   m_IsPrefabParent: 1
+--- !u!64 &64596836051505250
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: a12aceb52aa7a7e4ca86d18ee13085c9, type: 3}

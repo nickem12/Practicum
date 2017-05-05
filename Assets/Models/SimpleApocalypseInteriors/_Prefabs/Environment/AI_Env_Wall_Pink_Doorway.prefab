@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 416836}
   - component: {fileID: 3360294}
   - component: {fileID: 2303580}
+  - component: {fileID: 64093567211635722}
   m_Layer: 0
   m_Name: AI_Env_Wall_Pink_Doorway
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 169024}
   m_IsPrefabParent: 1
+--- !u!64 &64093567211635722
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169024}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 64d0d4785f5062f4092bb8910d1a2f10, type: 3}

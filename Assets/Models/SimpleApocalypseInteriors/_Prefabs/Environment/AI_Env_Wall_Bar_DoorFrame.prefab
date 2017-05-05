@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 414434}
   - component: {fileID: 3342410}
   - component: {fileID: 2332154}
+  - component: {fileID: 64743687292961394}
   m_Layer: 0
   m_Name: AI_Env_Wall_Bar_DoorFrame
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 189676}
   m_IsPrefabParent: 1
+--- !u!64 &64743687292961394
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: f36bc800a05e1cc40bc292d8c30d0a1f, type: 3}

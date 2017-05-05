@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 436716}
   - component: {fileID: 3333908}
   - component: {fileID: 2314908}
+  - component: {fileID: 64345739933987260}
   m_Layer: 0
   m_Name: AI_Env_Wall_Blue_Doorway
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 154858}
   m_IsPrefabParent: 1
+--- !u!64 &64345739933987260
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154858}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: bf9ce8321b708444883ac218492890d6, type: 3}

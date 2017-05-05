@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 494992}
   - component: {fileID: 3388968}
   - component: {fileID: 2324460}
+  - component: {fileID: 64074342644524784}
   m_Layer: 0
   m_Name: AI_Env_Sewer_Wall_End
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 143644}
   m_IsPrefabParent: 1
+--- !u!64 &64074342644524784
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143644}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 2a091ce30205f8248800aa772d32bf47, type: 3}

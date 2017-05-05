@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 441204}
   - component: {fileID: 3375252}
   - component: {fileID: 2365520}
+  - component: {fileID: 65465658352236738}
   m_Layer: 0
   m_Name: AI_Prop_Chair_Damaged_03
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -16.1, y: 0, z: 22.150902}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 114786}
   m_IsPrefabParent: 1
+--- !u!65 &65465658352236738
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114786}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.207653, y: 2.2664752, z: 2.0880053}
+  m_Center: {x: 0.00000023841858, y: 1.1332376, z: 0.0000019073486}

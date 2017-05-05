@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 430410}
   - component: {fileID: 3354274}
   - component: {fileID: 2311638}
+  - component: {fileID: 64243109999794762}
   m_Layer: 0
   m_Name: AI_Env_Stairs_Grey
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 122086}
   m_IsPrefabParent: 1
+--- !u!64 &64243109999794762
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: bdf9977a22f181140aceefa4dc1fe103, type: 3}

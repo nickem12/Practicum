@@ -10,6 +10,8 @@ GameObject:
   - component: {fileID: 425182}
   - component: {fileID: 3307008}
   - component: {fileID: 2352018}
+  - component: {fileID: 65479267015165440}
+  - component: {fileID: 65678533560377532}
   m_Layer: 0
   m_Name: AI_Prop_Desk_Reception
   m_TagString: Untagged
@@ -24,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185836}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -22.6, y: 0, z: 38.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +82,27 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 185836}
   m_IsPrefabParent: 1
+--- !u!65 &65479267015165440
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185836}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.002509, y: 1.8098611, z: 2.0028958}
+  m_Center: {x: -0.8913207, y: 0.90493053, z: -1.1612837}
+--- !u!65 &65678533560377532
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185836}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9982262, y: 1.8098611, z: 3.201487}
+  m_Center: {x: 1.1108208, y: 0.90493053, z: -0.5619881}

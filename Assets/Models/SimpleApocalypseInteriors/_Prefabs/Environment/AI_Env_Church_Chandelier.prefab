@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 440842}
   - component: {fileID: 3374198}
   - component: {fileID: 2370848}
+  - component: {fileID: 64630235531704654}
   m_Layer: 0
   m_Name: AI_Env_Church_Chandelier
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 116038}
   m_IsPrefabParent: 1
+--- !u!64 &64630235531704654
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: efcef895c97b43e46988ff6e71d41fe3, type: 3}

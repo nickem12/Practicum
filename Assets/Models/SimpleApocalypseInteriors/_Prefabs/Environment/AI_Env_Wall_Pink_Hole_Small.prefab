@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 466466}
   - component: {fileID: 3300470}
   - component: {fileID: 2315130}
+  - component: {fileID: 64601188992895440}
   m_Layer: 0
   m_Name: AI_Env_Wall_Pink_Hole_Small
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 146822}
   m_IsPrefabParent: 1
+--- !u!64 &64601188992895440
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146822}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 131b987da36fbe04cab0b3ebc092b17c, type: 3}

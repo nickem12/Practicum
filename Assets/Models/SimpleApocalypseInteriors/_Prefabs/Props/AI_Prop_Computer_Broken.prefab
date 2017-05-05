@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 471428}
   - component: {fileID: 3334226}
   - component: {fileID: 2399242}
+  - component: {fileID: 65629132807544784}
   m_Layer: 0
   m_Name: AI_Prop_Computer_Broken
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -29.4, y: 0, z: 27.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 108866}
   m_IsPrefabParent: 1
+--- !u!65 &65629132807544784
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108866}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1942463, y: 1.1299419, z: 1.3956795}
+  m_Center: {x: 0.0000009536743, y: 0.56497097, z: 0}

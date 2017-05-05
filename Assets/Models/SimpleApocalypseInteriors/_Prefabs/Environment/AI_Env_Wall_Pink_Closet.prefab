@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 400326}
   - component: {fileID: 3397002}
   - component: {fileID: 2364588}
+  - component: {fileID: 64182727113626644}
   m_Layer: 0
   m_Name: AI_Env_Wall_Pink_Closet
   m_TagString: Untagged
@@ -80,3 +81,17 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 196770}
   m_IsPrefabParent: 1
+--- !u!64 &64182727113626644
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: e439774177543ed42af6ac7cb13b04dd, type: 3}

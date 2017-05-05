@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4675203470784846}
   - component: {fileID: 33636094159083644}
   - component: {fileID: 23829585592117314}
+  - component: {fileID: 65519384575433168}
   m_Layer: 0
   m_Name: AI_Item_Flashlight_With_Light
   m_TagString: Untagged
@@ -51,7 +52,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1190697461333348}
   m_LocalRotation: {x: -0.0559087, y: -0, z: -0, w: 0.9984359}
-  m_LocalPosition: {x: 16.79069, y: 44.766663, z: 21.94287}
+  m_LocalPosition: {x: 2.7, y: 0, z: 148.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4781261905534074}
@@ -110,6 +111,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1190697461333348}
   m_Mesh: {fileID: 4300000, guid: b493e1f1ccdae2249b1ddd600bf99868, type: 3}
+--- !u!65 &65519384575433168
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1190697461333348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.21812677, y: 0.2285125, z: 0.4788494}
+  m_Center: {x: 0, y: 0.11425625, z: 0.00000047683716}
 --- !u!108 &108722143710415012
 Light:
   m_ObjectHideFlags: 1
