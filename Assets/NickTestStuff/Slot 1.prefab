@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 114849896175960392}
   - component: {fileID: 114535665849044996}
   - component: {fileID: 114335286448472186}
-  - component: {fileID: 114375304685411920}
   m_Layer: 5
   m_Name: Slot 1
   m_TagString: Untagged
@@ -95,19 +94,6 @@ MonoBehaviour:
   stackText: {fileID: 114206345961843824}
   slotEmpty: {fileID: 21300000, guid: fef71181252051148b091c7fd550fc3b, type: 3}
   slotHighlighted: {fileID: 21300000, guid: 36ad2db5f5b94bf4b98795e4d196600d, type: 3}
---- !u!114 &114375304685411920
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1770679418660878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 651ffdd5a29b1634892ad75ef6e49298, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel: {fileID: 1169046294093390, guid: 9348fa211058fa74e8f18834b3189ea9, type: 2}
-  eventSystem: {fileID: 0}
 --- !u!114 &114535665849044996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -148,7 +134,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114375304685411920}
+      - m_Target: {fileID: 114160155835949546, guid: eaeac7aefe8943d4c9206c3c751741aa,
+          type: 2}
         m_MethodName: OpenDropDownMenu
         m_Mode: 1
         m_Arguments:
