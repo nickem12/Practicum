@@ -10,16 +10,14 @@ public class OpenMenu : MonoBehaviour {
     private EventSystem eventSystem;
     private GameObject slotPrefab;
     private GameObject inventory;
+    private GameObject dataStorage;
 
-    private void Start()
-    {
-        //can = GameObject.FindGameObjectWithTag("DropDown").GetComponent<Canvas>();
-        eventSystem = EventSystem.current;
-    }
-    public void OpenDropDownMenu()
+    public void OpenDropDownMenu(GameObject slot)
     {
         can = GameObject.FindGameObjectWithTag("DropDown").GetComponent<Canvas>();
         eventSystem = EventSystem.current;
+        dataStorage = GameObject.FindGameObjectWithTag("ExtraDataStorage");
+        dataStorage.GetComponent<DataStorage>().SetSlotIndex(slot.GetComponent<Slot>().index);
         can.GetComponent<Canvas>().enabled = true;
         eventSystem.SetSelectedGameObject(can.transform.GetChild(0).GetChild(0).gameObject);
     }

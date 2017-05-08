@@ -7,6 +7,7 @@ TagManager:
   - Item
   - DropDown
   - Inventory
+  - ExtraDataStorage
   layers:
   - Default
   - TransparentFX

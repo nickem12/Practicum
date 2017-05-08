@@ -13,6 +13,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
 
     public Sprite slotEmpty;
     public Sprite slotHighlighted;
+    public int index;
 
     public bool IsAvailable
     {
@@ -85,7 +86,7 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
         ChangeSprite(CurrentItem.spriteNeutral, CurrentItem.spriteHighlighted);
     }
 
-    private void UseItem()
+    public void UseItem()
     {
         if(!IsEmpty)
         {

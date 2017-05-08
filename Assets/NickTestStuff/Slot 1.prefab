@@ -94,6 +94,7 @@ MonoBehaviour:
   stackText: {fileID: 114206345961843824}
   slotEmpty: {fileID: 21300000, guid: fef71181252051148b091c7fd550fc3b, type: 3}
   slotHighlighted: {fileID: 21300000, guid: 36ad2db5f5b94bf4b98795e4d196600d, type: 3}
+  index: 0
 --- !u!114 &114535665849044996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -137,7 +138,7 @@ MonoBehaviour:
       - m_Target: {fileID: 114160155835949546, guid: eaeac7aefe8943d4c9206c3c751741aa,
           type: 2}
         m_MethodName: OpenDropDownMenu
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

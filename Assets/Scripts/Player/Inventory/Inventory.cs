@@ -58,9 +58,9 @@ public class Inventory : MonoBehaviour {
 
         int columns = slots / rows;
 
-        for(int y = 0; y<rows;y++)
+        for(int y = 0; y < rows;y++)
         {
-            for(int x = 0; x<columns; x++)
+            for(int x = 0; x < columns; x++)
             {
                 GameObject newSlot = (GameObject)Instantiate(slotPrefab);
 
@@ -69,7 +69,7 @@ public class Inventory : MonoBehaviour {
                 newSlot.name = "Slot";
 
                 newSlot.transform.SetParent(this.transform.parent);
-
+                newSlot.GetComponent<Slot>().index = x + (y*columns);
                 slotrect.localPosition = inventoryRect.localPosition + new Vector3(paddingLeft * (x + 1) + (slotSize * x), -paddingTop * (y + 1) - (slotSize * y), 0);
 
                 slotrect.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, slotSize);
