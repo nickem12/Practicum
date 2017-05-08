@@ -8,6 +8,7 @@ TagManager:
   - DropDown
   - Inventory
   - ExtraDataStorage
+  - Zombie_Attraction
   layers:
   - Default
   - TransparentFX
