@@ -27,9 +27,9 @@ public class MusicController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (musicCanPlay)
+		if(musicCanPlay)
         {
-            if (!musicTracks[currentTrack].isPlaying)
+            if(!musicTracks[currentTrack].isPlaying)
             {
                 musicTracks[currentTrack].Play();
             }
@@ -38,7 +38,7 @@ public class MusicController : MonoBehaviour {
         {
             musicTracks[currentTrack].Stop();
         }
-    }
+	}
 
     public void SwitchTrack(int newTrack)
     {
