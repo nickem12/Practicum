@@ -33,6 +33,8 @@ public class PlayerStat : MonoBehaviour {
     public Inventory inventory;
     public Canvas pickUp;
     private PlayerStatsSound statsSound;
+    private UISoundManager uiSoundManager;
+    private bool playerIsDead;
 
     // Use this for initialization
     void Start () {
@@ -52,10 +54,16 @@ public class PlayerStat : MonoBehaviour {
 
         healthRegen = false;
         statsSound = GameObject.FindGameObjectWithTag("PlayerSoundManager").GetComponent<PlayerStatsSound>();
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+        uiSoundManager = GameObject.FindGameObjectWithTag("PlayerSoundManager").GetComponent<UISoundManager>();
+        playerIsDead = false;
+    }
+
+    private void Update()
+    {
+        PlayerInput();
+    }
+    // Update is called once per frame
+    void FixedUpdate () {
 
         HydrationUpdate();
         HungerUpdate();
@@ -102,6 +110,22 @@ public class PlayerStat : MonoBehaviour {
             
             if (currentHydration < 0) currentHydration = 0;                           //Check so that hydration doesn't go under 0
         }
+        if(currentHydration < 75 && currentHydration >= 40)
+        {
+            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.clip4)
+            {
+                statsSound.audioSource.Stop();
+                statsSound.PlayAudioClip(3);
+            }
+        }
+        else if(currentHydration < 40)
+        {
+            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.clip5)
+            {
+                statsSound.audioSource.Stop();
+                statsSound.PlayAudioClip(4);
+            }
+        }
     }
     void HealthUpdate()
     {
@@ -123,8 +147,13 @@ public class PlayerStat : MonoBehaviour {
             {
                 currentHealth -= 1;                                                   //Decrement health after a certain amount of time
                 regenTimer = 15f;                                                     //Reset the timer
-                
-                if (currentHealth < 0) currentHealth = 0;                             //Check so that health doesn't go under 0
+
+                if (currentHealth < 0)
+                {
+                    currentHealth = 0;                             //Check so that health doesn't go under 0
+                    statsSound.DeathSound();
+                    playerIsDead = true;
+                }
             }
         }
         else
@@ -177,6 +206,13 @@ public class PlayerStat : MonoBehaviour {
                 pickUp.gameObject.SetActive(false);
                 //Debug.Log("Added the item.");
             }
+        }
+    }
+    private void PlayerInput()
+    {
+        if(Input.GetButtonDown("Inventory"))
+        {
+            uiSoundManager.PlayAudioClip(2);
         }
     }
 }

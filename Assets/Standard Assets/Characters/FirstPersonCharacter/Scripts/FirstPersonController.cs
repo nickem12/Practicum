@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
@@ -47,6 +49,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public Canvas inventoryCanvas;
         public EventSystem eventSystem;
         private bool inventoryOn;
+        public GameObject uiSoundManager;
         // Use this for initialization
         private void Start()
         {
@@ -61,8 +64,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
             inventoryOn = false;
-
-
         }
 
 
@@ -72,6 +73,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             RotateView();
             if(Input.GetButtonDown("Inventory"))
             {
+                //uiSoundManager.GetComponent<UISoundManager>().PlayAudioClip(2);
                 inventoryOn = !inventoryOn;
                 if(inventoryOn)
                 {

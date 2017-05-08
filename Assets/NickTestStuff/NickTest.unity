@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 468b5019f461dae43b63132d9e302777, type: 2}
+  profile: {fileID: 0}
 --- !u!1 &164076391
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,11 +205,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  spriteNeutral: {fileID: 21300000, guid: fe87e9a569a55c54bb275552813f6371, type: 3}
-  spriteHighlighted: {fileID: 21300000, guid: 28f80f319a06a474eaa5ab12a6602206, type: 3}
-  maxSize: 5
-  pickUp: {fileID: 241546435}
-  text: {fileID: 760255820}
+  spriteNeutral: {fileID: 0}
+  spriteHighlighted: {fileID: 0}
+  maxSize: 0
+  pickUp: {fileID: 0}
+  text: {fileID: 0}
 --- !u!136 &172166642
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -550,11 +550,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  spriteNeutral: {fileID: 21300000, guid: fe87e9a569a55c54bb275552813f6371, type: 3}
-  spriteHighlighted: {fileID: 21300000, guid: 28f80f319a06a474eaa5ab12a6602206, type: 3}
-  maxSize: 5
-  pickUp: {fileID: 241546435}
-  text: {fileID: 760255820}
+  spriteNeutral: {fileID: 0}
+  spriteHighlighted: {fileID: 0}
+  maxSize: 0
+  pickUp: {fileID: 0}
+  text: {fileID: 0}
 --- !u!136 &399296986
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -621,7 +621,7 @@ Prefab:
       objectReference: {fileID: 1194036653}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_UseHeadBob
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: eventSystem
@@ -631,6 +631,14 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_UseFovKick
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: uiSoundManager
+      value: 
+      objectReference: {fileID: 1375935822}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
@@ -983,11 +991,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  spriteNeutral: {fileID: 21300000, guid: fe87e9a569a55c54bb275552813f6371, type: 3}
-  spriteHighlighted: {fileID: 21300000, guid: 28f80f319a06a474eaa5ab12a6602206, type: 3}
-  maxSize: 5
-  pickUp: {fileID: 241546435}
-  text: {fileID: 760255820}
+  spriteNeutral: {fileID: 0}
+  spriteHighlighted: {fileID: 0}
+  maxSize: 0
+  pickUp: {fileID: 0}
+  text: {fileID: 0}
 --- !u!136 &1042039002
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1055,6 +1063,11 @@ Prefab:
       propertyPath: clip3
       value: 
       objectReference: {fileID: 8300000, guid: e2960dd8cc2ff3041a4788b30eb902c0, type: 3}
+    - target: {fileID: 114468203513247292, guid: 7e34e78d24a93f24e91c0629a08b3db2,
+        type: 2}
+      propertyPath: clip4
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a6a9fb7fe7bc4048bd7e145f40c100b, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e34e78d24a93f24e91c0629a08b3db2, type: 2}
   m_IsPrefabParent: 0
@@ -1298,9 +1311,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  clip1: {fileID: 8300000, guid: 5356bf6a38ffd104ab97d025d9a04b56, type: 3}
-  clip2: {fileID: 8300000, guid: a797fdd0216eff64e9e574121752bb35, type: 3}
-  clip3: {fileID: 8300000, guid: b3b1a6d52829e564dafd2430843d3948, type: 3}
+  clip1: {fileID: 0}
+  clip2: {fileID: 0}
+  clip3: {fileID: 0}
+  clip4: {fileID: 0}
+  clip5: {fileID: 0}
 --- !u!114 &1375935824 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114468203513247292, guid: 7e34e78d24a93f24e91c0629a08b3db2,
@@ -1538,11 +1553,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  spriteNeutral: {fileID: 21300000, guid: fe87e9a569a55c54bb275552813f6371, type: 3}
-  spriteHighlighted: {fileID: 21300000, guid: 28f80f319a06a474eaa5ab12a6602206, type: 3}
-  maxSize: 5
-  pickUp: {fileID: 241546435}
-  text: {fileID: 760255820}
+  spriteNeutral: {fileID: 0}
+  spriteHighlighted: {fileID: 0}
+  maxSize: 0
+  pickUp: {fileID: 0}
+  text: {fileID: 0}
 --- !u!136 &1565326710
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2067,12 +2082,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a73fa05eaff07914caabfa7ac832a126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 1
-  spriteNeutral: {fileID: 21300000, guid: 36a22ba05961f584a8e7ddadce94ddb0, type: 3}
-  spriteHighlighted: {fileID: 21300000, guid: 3b05f8291d687ec4c9d002d353abfa7e, type: 3}
-  maxSize: 2
-  pickUp: {fileID: 241546435}
-  text: {fileID: 760255820}
+  type: 0
+  spriteNeutral: {fileID: 0}
+  spriteHighlighted: {fileID: 0}
+  maxSize: 0
+  pickUp: {fileID: 0}
+  text: {fileID: 0}
 --- !u!65 &2102985277
 BoxCollider:
   m_ObjectHideFlags: 0
