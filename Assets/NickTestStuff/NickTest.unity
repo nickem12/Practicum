@@ -1048,8 +1048,13 @@ Prefab:
     - target: {fileID: 82322541693619534, guid: 7e34e78d24a93f24e91c0629a08b3db2,
         type: 2}
       propertyPath: m_Volume
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114468203513247292, guid: 7e34e78d24a93f24e91c0629a08b3db2,
+        type: 2}
+      propertyPath: clip3
+      value: 
+      objectReference: {fileID: 8300000, guid: e2960dd8cc2ff3041a4788b30eb902c0, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e34e78d24a93f24e91c0629a08b3db2, type: 2}
   m_IsPrefabParent: 0
@@ -1292,8 +1297,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc4e147ce0f54e479f4cb2ffa6eccb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clip1: {fileID: 0}
-  clip2: {fileID: 0}
+  audioSource: {fileID: 0}
+  clip1: {fileID: 8300000, guid: 5356bf6a38ffd104ab97d025d9a04b56, type: 3}
+  clip2: {fileID: 8300000, guid: a797fdd0216eff64e9e574121752bb35, type: 3}
+  clip3: {fileID: 8300000, guid: b3b1a6d52829e564dafd2430843d3948, type: 3}
 --- !u!114 &1375935824 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114468203513247292, guid: 7e34e78d24a93f24e91c0629a08b3db2,
