@@ -149,12 +149,12 @@ public class PlayerStat : MonoBehaviour {
     {
         //Debug.Log("I'm hitting you.");
 
-        if(other.tag == "Item")
+        if(other.tag == "Item")                                         //Colision with an item
         {
             //Debug.Log("You are in me.");
-            if(Input.GetButtonDown("Submit"))
+            if(Input.GetButtonDown("Submit"))                           //hits the pick up button
             {
-                inventory.AddItem(other.GetComponent<Item>());
+                inventory.AddItem(other.GetComponent<Item>());          //adds the item and destroys the game object
                 Destroy(other.gameObject);
                 pickUp.gameObject.SetActive(false);
                 //Debug.Log("Added the item.");

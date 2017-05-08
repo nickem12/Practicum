@@ -36,10 +36,10 @@ public class Item : MonoBehaviour {
         switch(type)
         {
             case ItemType.SWORD:
-                Debug.Log("I Used something.");
+                Debug.Log("I Used sword.");
                 break;
             case ItemType.HAND:
-                Debug.Log("I Used something.");
+                Debug.Log("I Used hand.");
                 break;
             default:
                 break;
