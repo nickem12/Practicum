@@ -20,7 +20,7 @@ public class Inventory : MonoBehaviour {
 
     public GameObject slotPrefab;
 
-    private List<GameObject> allSlots;
+    public List<GameObject> allSlots;
 
     private static int emptySlots;
 
@@ -134,6 +134,7 @@ public class Inventory : MonoBehaviour {
             {
                 from = clicked.GetComponent<Slot>();
                 from.GetComponent<Image>().color = Color.gray;
+                
             }
         }
         else if(to == null)
@@ -156,10 +157,5 @@ public class Inventory : MonoBehaviour {
             to = null;
             from = null;
         }
-    }
-
-    public void UseItem(GameObject clicked)
-    {
-        
     }
 }

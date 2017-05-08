@@ -73,7 +73,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if(Input.GetButtonDown("Inventory"))
             {
                 inventoryOn = !inventoryOn;
-                eventSystem.SetSelectedGameObject(inventoryCanvas.gameObject.transform.GetChild(1).gameObject);
+                if(inventoryOn)
+                {
+                    eventSystem.SetSelectedGameObject(inventoryCanvas.gameObject.transform.GetChild(1).gameObject);
+                }
+                else
+                {
+                    eventSystem.SetSelectedGameObject(null);
+                }
             }
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)

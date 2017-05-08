@@ -8,6 +8,8 @@ TagManager:
   - DropDown
   - Inventory
   - ExtraDataStorage
+  - InventoryCanvas
+  - PlayerSoundManager
   layers:
   - Default
   - TransparentFX
