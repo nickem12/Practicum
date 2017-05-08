@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 400568}
   - component: {fileID: 3312508}
   - component: {fileID: 2337312}
-  - component: {fileID: 65890757126446524}
+  - component: {fileID: 64371343860792530}
   m_Layer: 0
   m_Name: AI_Prop_Body_OnFloor_03
   m_TagString: Untagged
@@ -24,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 107580}
-  m_LocalRotation: {x: -0.044528913, y: -0.031088194, z: 0.023832671, w: 0.9982398}
-  m_LocalPosition: {x: 4.342, y: 0.561, z: -44.84}
+  m_LocalRotation: {x: 0.1506929, y: 0.8010458, z: 0.064214475, w: -0.57575494}
+  m_LocalPosition: {x: 10.996, y: -0.975, z: -55.067}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4830457736965292}
@@ -46,7 +46,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 921d7c5fdab812042adcf79df4300db1, type: 2}
+  - {fileID: 2100000, guid: d6418b3a7b0ab4d41be23ebdbc37edd4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -142,8 +142,8 @@ Transform:
   m_Father: {fileID: 400568}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &65890757126446524
-BoxCollider:
+--- !u!64 &64371343860792530
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -152,8 +152,10 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5959702, y: 1.530529, z: 2.9497833}
-  m_Center: {x: -0.06831741, y: 0.66988564, z: 0.78798676}
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: e509c467bf98017448f233d5e2455194, type: 3}
 --- !u!82 &82468232692371276
 AudioSource:
   m_ObjectHideFlags: 1
