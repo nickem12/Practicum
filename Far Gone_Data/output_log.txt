@@ -19,9 +19,15 @@ Platform assembly: D:\Work\Business\Practicum\Far Gone\Practicum\Far Gone_Data\M
 Loading D:\Work\Business\Practicum\Far Gone\Practicum\Far Gone_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: D:\Work\Business\Practicum\Far Gone\Practicum\Far Gone_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading D:\Work\Business\Practicum\Far Gone\Practicum\Far Gone_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.124 seconds
+- Completed reload, in  0.186 seconds
 Platform assembly: D:\Work\Business\Practicum\Far Gone\Practicum\Far Gone_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Work\Business\Practicum\Far Gone\Practicum\Far Gone_Data\Managed\System.dll (this message is harmless)
+OnLevelWasLoaded was found on Zombie_Attraction_List_Init
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+ 
+(Filename:  Line: 376)
+
 desktop: 1920x1080 60Hz; virtual: 4800x1350 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.

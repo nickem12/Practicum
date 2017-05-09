@@ -105,9 +105,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Houses/Large/Large_House_1.unity
     guid: c00af99ff34d11942bcd58d53ccdefeb
   - enabled: 1
-    path: Assets/Scenes/Houses/Large/Large_House_Template.unity
-    guid: 925fb96b6f644ef49ac98949a6b91b0d
-  - enabled: 1
     path: Assets/Scenes/Houses/Medium/Medium_House_1.unity
     guid: 83db3f1a828220940a686d117e7d4a1b
   - enabled: 1
@@ -151,7 +148,7 @@ EditorBuildSettings:
     guid: 3218b042149bd5a4c803ac24a5dc87a8
   - enabled: 1
     path: Assets/Scenes/Pre-Apocalpyse/Pre_Apo_Town.unity
-    guid: 00000000000000000000000000000000
+    guid: 44bcd39e606335c4884bb892cbc0b5c7
   - enabled: 1
     path: Assets/Scenes/World/Outside.unity
     guid: f2711432b88aaf84891e7c273ee89c39
