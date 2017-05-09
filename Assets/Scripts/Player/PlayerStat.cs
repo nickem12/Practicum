@@ -32,6 +32,8 @@ public class PlayerStat : MonoBehaviour {
 
     public Inventory inventory;
     public Canvas pickUp;
+    private PlayerStatsSound statsSound;
+
     // Use this for initialization
     void Start () {
         currentHealth = 100;
@@ -49,6 +51,7 @@ public class PlayerStat : MonoBehaviour {
         motivationTimer = 2f;
 
         healthRegen = false;
+        statsSound = GameObject.FindGameObjectWithTag("PlayerSoundManager").GetComponent<PlayerStatsSound>();
 	}
 	
 	// Update is called once per frame
@@ -131,17 +134,32 @@ public class PlayerStat : MonoBehaviour {
     }
     void OnGUI()
     {
-        if (currentHealth<75)
+        if (currentHealth<75 && currentHealth >= 50)
         {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), text1);
+            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.clip1)
+            {
+                statsSound.audioSource.Stop();
+                statsSound.PlayAudioClip(0);
+            }
         }
-        if (currentHealth < 50)
+        if (currentHealth < 50 && currentHealth >= 25)
         {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), text2);
+            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.clip2)
+            {
+                statsSound.audioSource.Stop();
+                statsSound.PlayAudioClip(1);
+            }
         }
         if (currentHealth < 25)
         {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), text3);
+            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.clip3)
+            {
+                statsSound.audioSource.Stop();
+                statsSound.PlayAudioClip(2);
+            }
         }
 
     }

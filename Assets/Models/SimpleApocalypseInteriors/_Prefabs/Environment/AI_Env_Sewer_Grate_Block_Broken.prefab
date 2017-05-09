@@ -10,7 +10,9 @@ GameObject:
   - component: {fileID: 459410}
   - component: {fileID: 3391456}
   - component: {fileID: 2326928}
-  - component: {fileID: 64082612814867090}
+  - component: {fileID: 65350127933285420}
+  - component: {fileID: 65208719282316392}
+  - component: {fileID: 65354365923815924}
   m_Layer: 0
   m_Name: AI_Env_Sewer_Grate_Block_Broken
   m_TagString: Untagged
@@ -24,8 +26,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151016}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 21.5, y: 0, z: -73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,8 +83,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 151016}
   m_IsPrefabParent: 1
---- !u!64 &64082612814867090
-MeshCollider:
+--- !u!65 &65208719282316392
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -91,7 +93,29 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 5144254de4f142343ba7cfab8234a78e, type: 3}
+  m_Size: {x: 1.5724645, y: 4.7405624, z: 0.13923037}
+  m_Center: {x: -0.96913886, y: 2.0441828, z: -0.13657638}
+--- !u!65 &65350127933285420
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151016}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.6376653, y: 1.3424418, z: 0.13923037}
+  m_Center: {x: -2.5017393, y: 3.7432432, z: -0.13657638}
+--- !u!65 &65354365923815924
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151016}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5724645, y: 4.7405624, z: 0.13923037}
+  m_Center: {x: -4.41, y: 2.0441828, z: -0.13657638}
