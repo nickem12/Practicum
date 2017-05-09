@@ -115,6 +115,7 @@ public class Base_ZombieAI : MonoBehaviour {
         {
             zombieSoundManager.GetComponent<ZombieSoundManager>().PlayGrowl();
             growlTimer = Random.Range(2, 10);
+            Debug.Log("Growl");
         }
 	}
 }

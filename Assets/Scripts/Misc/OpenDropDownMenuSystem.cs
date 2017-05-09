@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class OpenMenu : MonoBehaviour {
+public class OpenDropDownMenuSystem : MonoBehaviour {
 
     private GameObject can;
     private EventSystem eventSystem;
