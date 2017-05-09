@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 482536}
   - component: {fileID: 3314794}
   - component: {fileID: 2344410}
+  - component: {fileID: 64018138148776976}
   m_Layer: 0
   m_Name: SA_Bld_Motel_Damaged_Growth_01
   m_TagString: Untagged
@@ -59,7 +60,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175700}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 588.5, y: 0, z: -107.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 431448}
@@ -221,6 +222,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 175700}
   m_IsPrefabParent: 1
+--- !u!64 &64018138148776976
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137182}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: d79cb0350f78f2c4ca9d2bd41118bf2a, type: 3}
 --- !u!64 &64349754962771982
 MeshCollider:
   m_ObjectHideFlags: 1

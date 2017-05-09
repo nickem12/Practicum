@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3354760}
   - component: {fileID: 2374928}
   - component: {fileID: 65220668859888860}
+  - component: {fileID: 65825034306161048}
   m_Layer: 0
   m_Name: SA_Prop_Fence_Corrugated_Damaged_01
   m_TagString: Untagged
@@ -24,8 +25,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 115238}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.71059966, z: 0, w: -0.7035966}
+  m_LocalPosition: {x: 119.64452, y: -2.283268, z: 154.06271}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,5 +92,17 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.826416, y: 3.2641559, z: 5.0487537}
-  m_Center: {x: -0.009628296, y: 1.6320779, z: 2.520751}
+  m_Size: {x: 0.4744807, y: 3.2641559, z: 0.3787634}
+  m_Center: {x: 0.21439148, y: 1.6320779, z: 0.18574451}
+--- !u!65 &65825034306161048
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4744807, y: 3.2641559, z: 0.3787634}
+  m_Center: {x: 0.21439148, y: 1.6320779, z: 4.83}

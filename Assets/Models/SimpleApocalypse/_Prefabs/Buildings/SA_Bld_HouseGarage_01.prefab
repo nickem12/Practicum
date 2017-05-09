@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 491170}
   - component: {fileID: 3352300}
   - component: {fileID: 2339018}
+  - component: {fileID: 64188840426079020}
   m_Layer: 0
   m_Name: SA_Bld_HouseGarage_Growth_Damaged_01
   m_TagString: Untagged
@@ -42,7 +43,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 172558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 603.3, y: 0, z: -25.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 491170}
@@ -151,6 +152,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 172558}
   m_IsPrefabParent: 1
+--- !u!64 &64188840426079020
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185842}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: f0113214f07d1c948a2c448576ba0c85, type: 3}
 --- !u!64 &64324071980192066
 MeshCollider:
   m_ObjectHideFlags: 1

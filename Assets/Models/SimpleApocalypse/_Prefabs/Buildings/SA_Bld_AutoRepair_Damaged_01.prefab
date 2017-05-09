@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 437224}
   - component: {fileID: 3397138}
   - component: {fileID: 2362366}
+  - component: {fileID: 64023145973215980}
   m_Layer: 0
   m_Name: SA_Bld_AutoRepair_Growth_01
   m_TagString: Untagged
@@ -72,7 +73,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168194}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 582.4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 409566}
@@ -221,6 +222,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 168194}
   m_IsPrefabParent: 1
+--- !u!64 &64023145973215980
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152112}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: f8536a15368edda448408652a1608558, type: 3}
 --- !u!64 &64394725256557482
 MeshCollider:
   m_ObjectHideFlags: 1

@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 465786}
   - component: {fileID: 3317504}
   - component: {fileID: 2368154}
+  - component: {fileID: 65151019230526232}
   m_Layer: 0
   m_Name: SA_Veh_MuscleCar
   m_TagString: Untagged
@@ -147,8 +148,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111300}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.99949855, z: 0, w: 0.031665564}
+  m_LocalPosition: {x: 41.17289, y: -2.4829102, z: 14.19986}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 462478}
@@ -430,3 +431,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 111300}
   m_IsPrefabParent: 1
+--- !u!65 &65151019230526232
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111300}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.326119, y: 2.0653, z: 7.6746135}
+  m_Center: {x: 0.0000038146977, y: 1.7065907, z: -0.35563543}

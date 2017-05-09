@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 487690}
   - component: {fileID: 3361938}
   - component: {fileID: 2303776}
+  - component: {fileID: 64211084226023552}
   m_Layer: 0
   m_Name: SA_Bld_HouseTall_Extras_01
   m_TagString: Untagged
@@ -27,6 +28,7 @@ GameObject:
   - component: {fileID: 408294}
   - component: {fileID: 3333676}
   - component: {fileID: 2329464}
+  - component: {fileID: 64559836040104816}
   m_Layer: 0
   m_Name: SA_Bld_HouseTall_Growth_01
   m_TagString: Untagged
@@ -71,8 +73,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159084}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: 69.86189, y: -14.21966, z: 187.01508}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 487690}
@@ -221,6 +223,34 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 159084}
   m_IsPrefabParent: 1
+--- !u!64 &64211084226023552
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102428}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 75abd7c7b52495f40a4de872d31c4118, type: 3}
+--- !u!64 &64559836040104816
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: 75abd7c7b52495f40a4de872d31c4118, type: 3}
 --- !u!64 &64851770730552014
 MeshCollider:
   m_ObjectHideFlags: 1

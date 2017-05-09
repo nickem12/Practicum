@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 433670}
   - component: {fileID: 3328046}
   - component: {fileID: 2301010}
+  - component: {fileID: 64139387307152390}
   m_Layer: 0
   m_Name: SA_Bld_Apartment_Growth_01
   m_TagString: Untagged
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 114040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.1368684e-13, y: 0, z: 0}
+  m_LocalPosition: {x: 557, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 433670}
@@ -151,6 +152,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 114040}
   m_IsPrefabParent: 1
+--- !u!64 &64139387307152390
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161438}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 633ca997228e0c14aaea4e1d41b6c808, type: 3}
 --- !u!64 &64866097316141554
 MeshCollider:
   m_ObjectHideFlags: 1

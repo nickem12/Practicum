@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 478912}
   - component: {fileID: 3311674}
   - component: {fileID: 2314300}
+  - component: {fileID: 64854112314029920}
   m_Layer: 0
   m_Name: SA_Bld_Motel_SideBuilding_Growth_01
   m_TagString: Untagged
@@ -59,7 +60,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 530.3, y: 0, z: -131}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 432482}
@@ -235,3 +236,17 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 833a86cb485eddc408c979d6e2f581c3, type: 3}
+--- !u!64 &64854112314029920
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121656}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 833a86cb485eddc408c979d6e2f581c3, type: 3}

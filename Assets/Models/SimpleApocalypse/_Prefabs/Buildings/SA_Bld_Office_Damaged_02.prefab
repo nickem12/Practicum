@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 479576}
   - component: {fileID: 3344400}
   - component: {fileID: 2318786}
+  - component: {fileID: 64718543028792650}
   m_Layer: 0
   m_Name: SA_Building_Office_Damaged_Glass_01
   m_TagString: Untagged
@@ -42,7 +43,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 622.5, y: 0, z: -109.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 479576}
@@ -151,6 +152,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 139508}
   m_IsPrefabParent: 1
+--- !u!64 &64718543028792650
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 02cad27fbe0839d46b3b964c35f3df7f, type: 3}
 --- !u!64 &64974488357972740
 MeshCollider:
   m_ObjectHideFlags: 1

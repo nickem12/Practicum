@@ -10,7 +10,7 @@ GameObject:
   - component: {fileID: 479886}
   - component: {fileID: 3370954}
   - component: {fileID: 2350156}
-  - component: {fileID: 65101525805276092}
+  - component: {fileID: 64998465327668896}
   m_Layer: 0
   m_Name: SA_Prop_JunkPile_03
   m_TagString: Untagged
@@ -24,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 132234}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0.9918536, z: 0, w: 0.12738313}
+  m_LocalPosition: {x: 12.682892, y: -2.4929123, z: 61.149864}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,8 +81,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 132234}
   m_IsPrefabParent: 1
---- !u!65 &65101525805276092
-BoxCollider:
+--- !u!64 &64998465327668896
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -91,5 +91,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.3900146, y: 1.80546, z: 3.4016113}
-  m_Center: {x: 0, y: 0.6603193, z: 0}
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 864d0673765ef644891c2026d19a2af3, type: 3}

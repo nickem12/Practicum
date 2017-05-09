@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 410644}
   - component: {fileID: 3398928}
   - component: {fileID: 2392502}
+  - component: {fileID: 64831576429983782}
   m_Layer: 0
   m_Name: SA_Bld_OfficeGrey_Growth_04
   m_TagString: Untagged
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 605.9, y: 0, z: -129.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 410644}
@@ -165,3 +166,17 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: b343ab44dadde784ea46cf045aa20e4a, type: 3}
+--- !u!64 &64831576429983782
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157388}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: b343ab44dadde784ea46cf045aa20e4a, type: 3}

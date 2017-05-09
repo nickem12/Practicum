@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 433678}
   - component: {fileID: 3366834}
   - component: {fileID: 2316142}
+  - component: {fileID: 64435993864076136}
   m_Layer: 0
   m_Name: SA_Bld_OfficeWhite_Growth_04
   m_TagString: Untagged
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 399.9, y: 0, z: 36.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 433678}
@@ -151,6 +152,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 197118}
   m_IsPrefabParent: 1
+--- !u!64 &64435993864076136
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196316}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 11940cb7534c7dc4b93ddbe817af2c38, type: 3}
 --- !u!64 &64960110370664444
 MeshCollider:
   m_ObjectHideFlags: 1

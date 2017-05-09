@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 429482}
   - component: {fileID: 3318764}
   - component: {fileID: 2342234}
+  - component: {fileID: 64535236412010210}
   m_Layer: 0
   m_Name: SA_Bld_HospitalOffice_Growth_01
   m_TagString: Untagged
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 115382}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 629.7, y: 0, z: 64.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 429482}
@@ -151,6 +152,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 115382}
   m_IsPrefabParent: 1
+--- !u!64 &64535236412010210
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 5379f222c61ebb948b1008e735af5134, type: 3}
 --- !u!64 &64591827287927566
 MeshCollider:
   m_ObjectHideFlags: 1

@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 477818}
   - component: {fileID: 3377526}
   - component: {fileID: 2376648}
+  - component: {fileID: 64820100357324470}
   m_Layer: 0
   m_Name: SA_Bld_ShopOld_Growth_01
   m_TagString: Untagged
@@ -59,7 +60,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 405.8, y: 0, z: -129.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 499886}
@@ -221,6 +222,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 153212}
   m_IsPrefabParent: 1
+--- !u!64 &64820100357324470
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 186874}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300004, guid: 82ef6a514637d064990b77c58a0444a7, type: 3}
 --- !u!64 &64911615069879946
 MeshCollider:
   m_ObjectHideFlags: 1

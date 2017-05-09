@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 455770}
   - component: {fileID: 3360214}
   - component: {fileID: 2303630}
+  - component: {fileID: 65249519283477332}
   m_Layer: 0
   m_Name: SA_Veh_Firetruck
   m_TagString: Untagged
@@ -147,8 +148,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151946}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.9979415, z: 0, w: 0.0641318}
+  m_LocalPosition: {x: -125.0271, y: -2.5929108, z: 76.37986}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 437572}
@@ -430,3 +431,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 151946}
   m_IsPrefabParent: 1
+--- !u!65 &65249519283477332
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.741877, y: 4.7280293, z: 9.378295}
+  m_Center: {x: 0, y: 2.8624468, z: -1.0745656}

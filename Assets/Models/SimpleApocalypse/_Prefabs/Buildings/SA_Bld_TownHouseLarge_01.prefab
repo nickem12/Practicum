@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 483732}
   - component: {fileID: 3387892}
   - component: {fileID: 2393088}
+  - component: {fileID: 64464670052442224}
   m_Layer: 0
   m_Name: SA_Bld_TownHouseLarge_Growth_01
   m_TagString: Untagged
@@ -59,7 +60,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175874}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1368684e-13, y: 0, z: 1.1368684e-13}
+  m_LocalPosition: {x: 400.9, y: 0, z: 106}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 493614}
@@ -221,6 +222,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 175874}
   m_IsPrefabParent: 1
+--- !u!64 &64464670052442224
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300002, guid: 04aa6e58563c66849a09813d4ad0700a, type: 3}
 --- !u!64 &64673229519259264
 MeshCollider:
   m_ObjectHideFlags: 1
