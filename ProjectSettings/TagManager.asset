@@ -9,6 +9,8 @@ TagManager:
   - Inventory
   - ExtraDataStorage
   - Zombie_Attraction
+  - PlayerSoundManager
+  - AI_Finder
   layers:
   - Default
   - TransparentFX
