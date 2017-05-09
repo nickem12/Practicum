@@ -861,6 +861,48 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!1001 &746400303
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4439600679443210, guid: ab3161691ea8a0843b3b1b5df6b774e6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.20230043
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439600679443210, guid: ab3161691ea8a0843b3b1b5df6b774e6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.0551753
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439600679443210, guid: ab3161691ea8a0843b3b1b5df6b774e6, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 3.0133252
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439600679443210, guid: ab3161691ea8a0843b3b1b5df6b774e6, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439600679443210, guid: ab3161691ea8a0843b3b1b5df6b774e6, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439600679443210, guid: ab3161691ea8a0843b3b1b5df6b774e6, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439600679443210, guid: ab3161691ea8a0843b3b1b5df6b774e6, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4439600679443210, guid: ab3161691ea8a0843b3b1b5df6b774e6, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ab3161691ea8a0843b3b1b5df6b774e6, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &760255818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,6 +1154,46 @@ Prefab:
       propertyPath: clip8
       value: 
       objectReference: {fileID: 8300000, guid: cc1ce41a36f89fa43a77c0e03b0356e1, type: 3}
+    - target: {fileID: 114928202406555648, guid: 7e34e78d24a93f24e91c0629a08b3db2,
+        type: 2}
+      propertyPath: heartBeat1
+      value: 
+      objectReference: {fileID: 8300000, guid: 03f81e2774d711a43b020a5be183da08, type: 3}
+    - target: {fileID: 114928202406555648, guid: 7e34e78d24a93f24e91c0629a08b3db2,
+        type: 2}
+      propertyPath: heartBeat2
+      value: 
+      objectReference: {fileID: 8300000, guid: 608e49ca4b536564ab820e061b3e351f, type: 3}
+    - target: {fileID: 114928202406555648, guid: 7e34e78d24a93f24e91c0629a08b3db2,
+        type: 2}
+      propertyPath: heartBeat3
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c932435d634cd0419e8839303e9eaf1, type: 3}
+    - target: {fileID: 114928202406555648, guid: 7e34e78d24a93f24e91c0629a08b3db2,
+        type: 2}
+      propertyPath: breathing1
+      value: 
+      objectReference: {fileID: 8300000, guid: 4f4190008d74a404f851523d5737a59e, type: 3}
+    - target: {fileID: 114928202406555648, guid: 7e34e78d24a93f24e91c0629a08b3db2,
+        type: 2}
+      propertyPath: breathing2
+      value: 
+      objectReference: {fileID: 8300000, guid: 56cd46bd52b577c439f534d8025d6d88, type: 3}
+    - target: {fileID: 114928202406555648, guid: 7e34e78d24a93f24e91c0629a08b3db2,
+        type: 2}
+      propertyPath: stomachGrowling1
+      value: 
+      objectReference: {fileID: 8300000, guid: 1361f1e162243274c8f7292fb7196efb, type: 3}
+    - target: {fileID: 114928202406555648, guid: 7e34e78d24a93f24e91c0629a08b3db2,
+        type: 2}
+      propertyPath: stomachGrowling2
+      value: 
+      objectReference: {fileID: 8300000, guid: a6810891674a7f64c938a1b45314574a, type: 3}
+    - target: {fileID: 114928202406555648, guid: 7e34e78d24a93f24e91c0629a08b3db2,
+        type: 2}
+      propertyPath: death
+      value: 
+      objectReference: {fileID: 8300000, guid: 5f209906ba79f3140b2da9603e789fc8, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e34e78d24a93f24e91c0629a08b3db2, type: 2}
   m_IsPrefabParent: 0
@@ -1378,11 +1460,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 445794, guid: 3c30f5af21f2ba74eafc170b2b3df88d, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 445794, guid: 3c30f5af21f2ba74eafc170b2b3df88d, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.999997
       objectReference: {fileID: 0}
     - target: {fileID: 445794, guid: 3c30f5af21f2ba74eafc170b2b3df88d, type: 2}
       propertyPath: m_LocalRotation.z
@@ -1390,7 +1472,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 445794, guid: 3c30f5af21f2ba74eafc170b2b3df88d, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.002443469
       objectReference: {fileID: 0}
     - target: {fileID: 445794, guid: 3c30f5af21f2ba74eafc170b2b3df88d, type: 2}
       propertyPath: m_RootOrder
@@ -1401,6 +1483,10 @@ Prefab:
       propertyPath: zombieSoundManager
       value: 
       objectReference: {fileID: 2031484561}
+    - target: {fileID: 445794, guid: 3c30f5af21f2ba74eafc170b2b3df88d, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180.28
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c30f5af21f2ba74eafc170b2b3df88d, type: 2}
   m_IsPrefabParent: 0
@@ -1665,6 +1751,19 @@ CapsuleCollider:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_PrefabInternal: {fileID: 422345596}
+--- !u!114 &1614997662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1614997661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8718e02858eb4134f902dc352d477c1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attraction: 0
+  canEat: 0
 --- !u!114 &1614997667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2112,7 +2211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  growling: {fileID: 8300000, guid: 5a20988cea0d6bc44a2fc5e8a0a19d0c, type: 3}
+  growling: {fileID: 8300000, guid: 7118229119482c84492f8f9e49487f0e, type: 3}
   death: {fileID: 8300000, guid: b4435dc46c077044082383c9da670eea, type: 3}
   hurt: {fileID: 8300000, guid: 202fdcef15a912342bfa18d5ca91bb11, type: 3}
 --- !u!4 &2031484563
@@ -2138,9 +2237,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.92
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -2177,13 +2276,13 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -2207,7 +2306,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!1 &2094798337
 GameObject:
   m_ObjectHideFlags: 0

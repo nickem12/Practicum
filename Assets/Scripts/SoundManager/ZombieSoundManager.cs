@@ -19,9 +19,9 @@ public class ZombieSoundManager : MonoBehaviour {
     public void PlayGrowl()
     {
         audioSource.clip = growling;
-        audioSource.volume = 0.3f;
+        audioSource.volume = 1.0f;
         audioSource.loop = false;
-        audioSource.pitch = Random.Range(0.0f, 1.0f);
+        audioSource.pitch = Random.Range(0.8f, 1.2f);
         audioSource.Play();
     }
     public void DeathSound()

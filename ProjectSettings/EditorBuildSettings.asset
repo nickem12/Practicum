@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Models/SimpleApocalypse/_Demo/SA_Demo.unity
-    guid: 04369fb899db60f48a62f06cb460ce80
+    path: Assets/NickTestStuff/MenuSceneSelect.unity
+    guid: 448d66856c379e4458311dce4ec7ccdc
   - enabled: 1
     path: Assets/Scenes/Apartments/Apartment1.unity
     guid: dfe7d1d09e2119048a6a6bf22cd0aeac
@@ -149,6 +149,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pre-Apocalpyse/Pre_Apo_Town.unity
     guid: 44bcd39e606335c4884bb892cbc0b5c7
+  - enabled: 1
+    path: Assets/Scenes/Houses/Large/Large_House_3.unity
+    guid: 355c251711c849c4696ca5306256c473
+  - enabled: 1
+    path: Assets/Scenes/Houses/Large/Large_House_Template.unity
+    guid: d5c80e711c5e07e4792edc901886feec
   - enabled: 1
     path: Assets/Scenes/World/Outside.unity
     guid: f2711432b88aaf84891e7c273ee89c39
