@@ -8,11 +8,14 @@ public class Base_Zombie_AI_SCAN : MonoBehaviour {
 	float VisualRadius;																					//The visual radius for the scanning of the zombie
 	float AudioRadius;																					//The audio radius for the scanning of the zombie
 
+	float MinDistance;
+
 	GameObject myFinder;																				//The finder object that will find our interests
 
-	public Base_Zombie_AI_SCAN(float Visual, float Audio){
+	public Base_Zombie_AI_SCAN(float Visual, float Audio, float Min){
 		VisualRadius = Visual;
 		AudioRadius = Audio;
+		MinDistance = Min;
 	}
 
 	void Start(){
@@ -42,7 +45,8 @@ public class Base_Zombie_AI_SCAN : MonoBehaviour {
 
 		for(int CurrentInterest = 0; CurrentInterest < Interests.Length; CurrentInterest++){			//Find the closest attraction within the radius
 			CurrentDistance = Vector3.Distance(pos, Interests[CurrentInterest].transform.position);
-			if(CurrentDistance <= VisualRadius && CurrentDistance < ClosestDistance){
+			if(CurrentDistance <= VisualRadius && CurrentDistance < ClosestDistance && CurrentDistance > MinDistance){
+				Debug.Log(Interests[CurrentInterest].transform.position.x);
 				ClosestIndex = CurrentInterest;
 				ClosestDistance = CurrentDistance;
 			}

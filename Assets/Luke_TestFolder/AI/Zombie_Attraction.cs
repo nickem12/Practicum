@@ -6,6 +6,6 @@ public class Zombie_Attraction : MonoBehaviour {
 
 
 	public int Attraction = 0;
-
+	public bool canEat;
 
 }

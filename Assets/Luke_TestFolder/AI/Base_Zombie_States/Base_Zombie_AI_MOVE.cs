@@ -10,7 +10,22 @@ public class Base_Zombie_AI_MOVE : MonoBehaviour {
 	public NavMeshAgent Agent;
 
 
-	public bool MoveZombie(){
+	public bool MoveZombie(ref NavMeshAgent Agent, GameObject attraction, Vector3 pos){
+		if(attraction == null) {
+			Debug.Log("attraction is null");
+			return false;
+		}
+	
+		Agent.destination = attraction.transform.position;
+		Debug.Log("Distanec : " + Vector3.Distance(pos, attraction.transform.position));
+		Debug.Log("Agent Remaining : " + Agent.remainingDistance);
+
+		if(Vector3.Distance(pos, attraction.transform.position) <= Agent.stoppingDistance){
+		 	return true;															
+		}
+
+		//if(Agent.remainingDistance <= Agent.stoppingDistance) return true;
+
 		return false;
 	}
 
@@ -24,9 +39,4 @@ public class Base_Zombie_AI_MOVE : MonoBehaviour {
 		AudioRadius = Audio;
 	}
 
-	void Update (ref NavMeshAgent Agent, ref GameObject attraction) {
-		
-
-
-	}
 }

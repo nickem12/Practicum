@@ -15,6 +15,8 @@ public class Base_ZombieAI : MonoBehaviour {
 	private float VisualRadius = 10.0f;													//The radius of the zombies
 	private float AudioRadius = 20.0f;
 
+
+
 	enum AIStates {AI_IDLE, AI_SCAN, AI_MOVE, AI_EAT};									//Different types of states available
 	int CurrentAIState = (int)AIStates.AI_IDLE;											//Set the initial state
 
@@ -25,9 +27,8 @@ public class Base_ZombieAI : MonoBehaviour {
 	private GameObject CurrentInterest;													//The current interest of the zombie
 	private GameObject Interest;														//The current object we are interested in
 
-
 	Base_Zombie_AI_IDLE IDLE_OBJ = new Base_Zombie_AI_IDLE();							//The idle object
-	Base_Zombie_AI_SCAN SCAN_OBJ = new Base_Zombie_AI_SCAN(10.0f, 20.0f);	//The scan object
+	Base_Zombie_AI_SCAN SCAN_OBJ = new Base_Zombie_AI_SCAN(10.0f, 20.0f, 2.0f);	//The scan object
 	Base_Zombie_AI_MOVE MOVE_OBJ = new Base_Zombie_AI_MOVE(10.0f, 20.0f);				//The move object
 
 	void  AI_IDLE_Update(){
@@ -37,6 +38,8 @@ public class Base_ZombieAI : MonoBehaviour {
 			IDLE_OBJ.CountTime = false;													//Set the count time to false
 			CurrentAIState = (int)AIStates.AI_SCAN;										//Set state to scanning
 		}
+		isMoving = false;
+		isEating = false;
 		Debug.Log("I am in IDLE state");
 	}
 
@@ -49,17 +52,34 @@ public class Base_ZombieAI : MonoBehaviour {
 		else{
 			CurrentAIState = (int)AIStates.AI_MOVE;
 		}
+
+		isMoving = false;
+		isEating = false;
 		Debug.Log("I am in SCAN state");
 	}
 
 	void AI_MOVE_Update(){
-		if(!MOVE_OBJ.MoveZombie()){
-			CurrentAIState = (int)AIStates.AI_IDLE;
+
+		if(MOVE_OBJ.MoveZombie(ref ZombieAgent, Interest,  transform.position)){
+
+			Debug.Log("I get here");
+			if(Interest.GetComponent<Zombie_Attraction>().canEat){
+				CurrentAIState = (int)AIStates.AI_EAT;
+			}
+			else{
+				CurrentAIState = (int)AIStates.AI_IDLE;
+			}
 		}
+
+		isMoving = true;
+		isEating = false;
+
 		Debug.Log("I am in MOVE state");
 	}
 
 	void AI_EAT_Update(){
+		isMoving = false;
+		isEating = true;
 		Debug.Log("I am in EAT state");
 	}
 
@@ -74,6 +94,8 @@ public class Base_ZombieAI : MonoBehaviour {
 	}
 
 	void AnimUpdate(){
+		
+
 		anim.SetBool("isMoving", isMoving);
 		anim.SetBool("isEating", isEating);
 	}
