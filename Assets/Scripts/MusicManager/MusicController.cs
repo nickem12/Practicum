@@ -4,46 +4,80 @@ using UnityEngine;
 
 public class MusicController : MonoBehaviour {
 
-    public static bool musicControllerExists;
+    public AudioSource audioSource;
 
-    public AudioSource[] musicTracks;
+    public AudioClip clip1;
+    public AudioClip clip2;                                                //Get our clips
+    public AudioClip clip3;
+    public AudioClip clip4;
 
-    public int currentTrack;
+    private int oldSong = 29;
 
-    public bool musicCanPlay;
-
-	// Use this for initialization
-	void Start () {
-        if (!musicControllerExists)
-        {
-            musicControllerExists = true;
-            DontDestroyOnLoad(transform.gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+    // Use this for initialization
+    void Start () {
+        audioSource = this.GetComponent<AudioSource>();                     //get our audio source
     }
-	
-	// Update is called once per frame
-	void Update () {
-		if(musicCanPlay)
+
+    public void PlayAudioClip(int index)
+    {
+        audioSource = this.GetComponent<AudioSource>();
+        switch (index)                                                      //switch on which clip we want to play
         {
-            if(!musicTracks[currentTrack].isPlaying)
+            case 0:
+                audioSource.clip = clip1;
+                audioSource.volume = 0.2f;
+                break;
+            case 1:
+                audioSource.clip = clip2;
+                audioSource.volume = 0.2f;
+                break;
+            case 2:
+                audioSource.clip = clip3;
+                audioSource.volume = 0.2f;
+                break;
+            case 3:
+                audioSource.clip = clip4;
+                audioSource.volume = 0.2f;
+                break;
+        }
+        
+        audioSource.Play();                                                 //Play audio.
+    }
+
+    int RandomSong()
+    {
+        int randomNumber = Random.Range(0, 4);
+        if (randomNumber == oldSong)
+        {
+            int headsOrTales = Random.Range(0, 2);
+            switch(headsOrTales)
             {
-                musicTracks[currentTrack].Play();
+                case 0:
+                    randomNumber++;
+                    if(randomNumber > 3)
+                    {
+                        randomNumber = 0;
+                    }
+                    break;
+                case 1:
+                    randomNumber--;
+                    if(randomNumber < 0)
+                    {
+                        randomNumber = 3;
+                    }
+                    break;
             }
         }
-        else
+        oldSong = randomNumber;
+        return randomNumber;
+    }
+
+    // Update is called once per frame
+    void Update () {
+		if(!audioSource.isPlaying)
         {
-            musicTracks[currentTrack].Stop();
+            PlayAudioClip(RandomSong());
         }
 	}
 
-    public void SwitchTrack(int newTrack)
-    {
-        musicTracks[currentTrack].Stop();
-        currentTrack = newTrack;
-        musicTracks[currentTrack].Play();
-    }
 }
