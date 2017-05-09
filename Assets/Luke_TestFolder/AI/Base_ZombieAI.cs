@@ -15,7 +15,9 @@ public class Base_ZombieAI : MonoBehaviour {
 	private float VisualRadius = 10.0f;													//The radius of the zombies
 	private float AudioRadius = 20.0f;
 
+    private float growlTimer;
 
+    public GameObject zombieSoundManager;
 
 	enum AIStates {AI_IDLE, AI_SCAN, AI_MOVE, AI_EAT};									//Different types of states available
 	int CurrentAIState = (int)AIStates.AI_IDLE;											//Set the initial state
@@ -91,6 +93,8 @@ public class Base_ZombieAI : MonoBehaviour {
 		AI_DICT.Add((int)AIStates.AI_SCAN, new AI_Update(AI_SCAN_Update));
 		AI_DICT.Add((int)AIStates.AI_MOVE, new AI_Update(AI_MOVE_Update));
 		AI_DICT.Add((int)AIStates.AI_EAT, new AI_Update(AI_EAT_Update));
+
+        growlTimer = 5.0f;
 	}
 
 	void AnimUpdate(){
@@ -105,5 +109,12 @@ public class Base_ZombieAI : MonoBehaviour {
 
 		AI_DICT[CurrentAIState]();														//Call the appropriate callback function
 		AnimUpdate();
+
+        growlTimer -= Time.deltaTime;
+        if (growlTimer <= 0)
+        {
+            zombieSoundManager.GetComponent<ZombieSoundManager>().PlayGrowl();
+            growlTimer = Random.Range(2, 10);
+        }
 	}
 }

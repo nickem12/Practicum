@@ -98,6 +98,22 @@ public class PlayerStat : MonoBehaviour {
          
             if (currentHunger < 0) currentHunger = 0;                                //Check so that hunger doesn't go under 0
         }
+        if (currentHunger < 75 && currentHunger >= 40)
+        {
+            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.stomachGrowling1)
+            {
+                statsSound.audioSource.Stop();
+                statsSound.PlayAudioClip(5);
+            }
+        }
+        else if (currentHunger < 40)
+        {
+            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.stomachGrowling2)
+            {
+                statsSound.audioSource.Stop();
+                statsSound.PlayAudioClip(6);
+            }
+        }
     }
     void HydrationUpdate()
     {
@@ -112,7 +128,7 @@ public class PlayerStat : MonoBehaviour {
         }
         if(currentHydration < 75 && currentHydration >= 40)
         {
-            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.clip4)
+            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.breathing1)
             {
                 statsSound.audioSource.Stop();
                 statsSound.PlayAudioClip(3);
@@ -120,7 +136,7 @@ public class PlayerStat : MonoBehaviour {
         }
         else if(currentHydration < 40)
         {
-            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.clip5)
+            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.breathing2)
             {
                 statsSound.audioSource.Stop();
                 statsSound.PlayAudioClip(4);
@@ -166,7 +182,7 @@ public class PlayerStat : MonoBehaviour {
         if (currentHealth<75 && currentHealth >= 50)
         {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), text1);
-            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.clip1)
+            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.heartBeat1)
             {
                 statsSound.audioSource.Stop();
                 statsSound.PlayAudioClip(0);
@@ -175,7 +191,7 @@ public class PlayerStat : MonoBehaviour {
         if (currentHealth < 50 && currentHealth >= 25)
         {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), text2);
-            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.clip2)
+            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.heartBeat2)
             {
                 statsSound.audioSource.Stop();
                 statsSound.PlayAudioClip(1);
@@ -184,7 +200,7 @@ public class PlayerStat : MonoBehaviour {
         if (currentHealth < 25)
         {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), text3);
-            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.clip3)
+            if (!statsSound.audioSource.isPlaying || statsSound.audioSource.clip != statsSound.heartBeat3)
             {
                 statsSound.audioSource.Stop();
                 statsSound.PlayAudioClip(2);
