@@ -150,7 +150,7 @@ public class PlayerStat : MonoBehaviour {
 
                 if (currentHealth < 0)
                 {
-                    currentHealth = 0;                             //Check so that health doesn't go under 0
+                    currentHealth = 0;                                                //Check so that health doesn't go under 0
                     statsSound.DeathSound();
                     playerIsDead = true;
                 }

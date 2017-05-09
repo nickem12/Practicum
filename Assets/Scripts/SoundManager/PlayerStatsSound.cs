@@ -51,7 +51,7 @@ public class PlayerStatsSound : MonoBehaviour {
     public void DeathSound()
     {
         audioSource.Stop();
-        audioSource.clip = clip5;
+        audioSource.clip = clip6;
         audioSource.loop = false;
         audioSource.volume = 1.0f;
         audioSource.pitch = 1.0f;
