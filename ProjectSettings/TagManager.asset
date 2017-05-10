@@ -11,6 +11,8 @@ TagManager:
   - Zombie_Attraction
   - PlayerSoundManager
   - AI_Finder
+  - InventoryCanvas
+  - Weapon_Slot
   layers:
   - Default
   - TransparentFX

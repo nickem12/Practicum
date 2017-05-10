@@ -25,19 +25,19 @@ public class MusicController : MonoBehaviour {
         {
             case 0:
                 audioSource.clip = clip1;
-                audioSource.volume = 0.2f;
+                audioSource.volume = 1.0f;
                 break;
             case 1:
                 audioSource.clip = clip2;
-                audioSource.volume = 0.2f;
+                audioSource.volume = 1.0f;
                 break;
             case 2:
                 audioSource.clip = clip3;
-                audioSource.volume = 0.2f;
+                audioSource.volume = 1.0f;
                 break;
             case 3:
                 audioSource.clip = clip4;
-                audioSource.volume = 0.2f;
+                audioSource.volume = 1.0f;
                 break;
         }
         

@@ -50,6 +50,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public EventSystem eventSystem;
         private bool inventoryOn;
         public GameObject uiSoundManager;
+
         // Use this for initialization
         private void Start()
         {
@@ -64,6 +65,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
             inventoryOn = false;
+            DontDestroyOnLoad(this);
         }
 
 
@@ -119,6 +121,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             float speed;
             GetInput(out speed);
+
             // always move along the camera forward as it is the direction that it being aimed at
             Vector3 desiredMove = transform.forward*m_Input.y + transform.right*m_Input.x;
 
@@ -235,6 +238,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
 #if !MOBILE_INPUT
             // On standalone builds, walk/run speed is modified by a key press.
             // keep track of whether or not the character is walking or running
+
+          
+            
             m_IsWalking = !Input.GetKey(KeyCode.LeftShift);
 #endif
             // set the desired speed to be walking or running

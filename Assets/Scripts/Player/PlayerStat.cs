@@ -221,6 +221,8 @@ public class PlayerStat : MonoBehaviour {
                 Destroy(other.gameObject);
                 pickUp.gameObject.SetActive(false);
                 //Debug.Log("Added the item.");
+                GameObject.FindGameObjectWithTag("Weapon_Slot").GetComponent<Equip>().EquipWeapon(other.GetComponent<Item>().weaponGameObject);
+
             }
         }
     }

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3301642}
   - component: {fileID: 2308418}
   - component: {fileID: 65619286491948332}
+  - component: {fileID: 65758336142726016}
+  - component: {fileID: 65114590314828712}
   m_Layer: 0
   m_Name: SA_Prop_BioBioTentSign_01
   m_TagString: Untagged
@@ -24,8 +26,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 104902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: -0.00000016292068}
+  m_LocalPosition: {x: -106.21548, y: -2.283268, z: -11.587296}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,6 +83,18 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 104902}
   m_IsPrefabParent: 1
+--- !u!65 &65114590314828712
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104902}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18668008, y: 4.775441, z: 0.17032778}
+  m_Center: {x: 2.0560503, y: 2.3121152, z: -4.665322e-16}
 --- !u!65 &65619286491948332
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -91,5 +105,17 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.2987804, y: 4.775441, z: 0.17032778}
-  m_Center: {x: 0, y: 2.3121152, z: 0}
+  m_Size: {x: 4.2987804, y: 1.0888872, z: 0.17032778}
+  m_Center: {x: -0, y: 4.155392, z: 0}
+--- !u!65 &65758336142726016
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 104902}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13703322, y: 4.775441, z: 0.17032778}
+  m_Center: {x: -2.0808735, y: 2.3121152, z: 1.704149e-15}

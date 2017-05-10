@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 419814}
   - component: {fileID: 3357782}
   - component: {fileID: 2374460}
+  - component: {fileID: 65700551580184762}
   m_Layer: 0
   m_Name: SA_Veh_RV
   m_TagString: Untagged
@@ -108,8 +109,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117122}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.9962569, z: 0, w: 0.086441904}
+  m_LocalPosition: {x: -74.165474, y: -2.283268, z: 131.4527}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 462512}
@@ -430,3 +431,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 117122}
   m_IsPrefabParent: 1
+--- !u!65 &65700551580184762
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117122}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.4673753, y: 3.4937, z: 9.171023}
+  m_Center: {x: -0.07642996, y: 2.4353952, z: 0.040268898}
