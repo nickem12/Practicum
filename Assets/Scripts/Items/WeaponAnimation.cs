@@ -24,7 +24,7 @@ public class WeaponAnimation : MonoBehaviour {
         }
         if(Input.GetMouseButtonDown(0))
         {
-            anim.SetTrigger("Attack");
+            anim.SetTrigger("Attacking");
         }
     }
 }
