@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum ItemType { SWORD,HAND}
+public enum ItemType { WEAPON,CONSUMABLE}
 
 public class Item : MonoBehaviour {
 
     public ItemType type;
+    public Weapon weapon;
+    public WeaponType weaponType;
+    public GameObject weaponGameObject;
 
     public Sprite spriteNeutral;
     public Sprite spriteHighlighted;
@@ -18,15 +21,18 @@ public class Item : MonoBehaviour {
     public Canvas pickUp;
     public Text text;
 
+    public ItemData itemData;
+
     private void Start()
     {
         switch(type)
         {
-            case ItemType.SWORD:
-                name = "Sword";
+            case ItemType.WEAPON:
+                name = "Weapon";
+                itemData = new ItemData(weaponType, weapon, weaponGameObject);
                 break;
-            case ItemType.HAND:
-                name = "Hand";
+            case ItemType.CONSUMABLE:
+                name = "Consumable";
                 break;
         }
     }
@@ -35,11 +41,8 @@ public class Item : MonoBehaviour {
     {
         switch(type)
         {
-            case ItemType.SWORD:
+            case ItemType.CONSUMABLE:
                 Debug.Log("I Used sword.");
-                break;
-            case ItemType.HAND:
-                Debug.Log("I Used hand.");
                 break;
             default:
                 break;
