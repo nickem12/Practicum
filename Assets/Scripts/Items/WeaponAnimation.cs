@@ -22,9 +22,5 @@ public class WeaponAnimation : MonoBehaviour {
         {
             anim.SetTrigger("EndRun");
         }
-        if(Input.GetMouseButtonDown(0))
-        {
-            anim.SetTrigger("Attacking");
-        }
     }
 }

@@ -29,7 +29,7 @@ public class Item : MonoBehaviour {
         {
             case ItemType.WEAPON:
                 name = "Weapon";
-                itemData = new ItemData(weaponType, weapon, weaponGameObject);
+                itemData = new ItemData(weaponType, weapon, weaponGameObject, 5);
                 break;
             case ItemType.CONSUMABLE:
                 name = "Consumable";

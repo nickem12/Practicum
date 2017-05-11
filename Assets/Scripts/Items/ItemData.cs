@@ -18,6 +18,7 @@ public class ItemData{
 
     private int maxAmmo;
     public GameObject weaponGameObject;
+    public int allAmmo;
 
     public ItemData(WeaponType inWeaponType, Weapon inWeapon, GameObject inWeaponGameObject)
     {
