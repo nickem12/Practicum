@@ -28,7 +28,7 @@ public class Shooting : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0))
         {
-            if (Weapon.currentAmmo > 0)
+            if (Weapon.currentAmmo > 0)s
             {
                 GameObject t_bullet;
                 t_bullet = Instantiate(Bullet, Bullet_Emitter.transform.position, Bullet_Emitter.transform.rotation) as GameObject;
