@@ -15,6 +15,9 @@ public class EndBehavior : MonoBehaviour {
 	private float PlayerDistance;
 
 
+	public AudioSource CryingSource;
+	private float CryingVolume;
+
 	void Start () {
 
 		colA = EndObjects[2].GetComponent<SkinnedMeshRenderer>().material.color;
@@ -23,6 +26,8 @@ public class EndBehavior : MonoBehaviour {
 		StartAlpha = colA.a * 255;
 
 		TotalDistance = Vector3.Distance(this.transform.position, EndObjects[3].transform.position);
+
+		CryingVolume = CryingSource.volume;
 	}
 	
 
@@ -36,7 +41,7 @@ public class EndBehavior : MonoBehaviour {
 			if(PlayerDistance < TotalDistance){
 
 				float Tran = (PlayerDistance / TotalDistance) * StartAlpha / 255;
-				Debug.Log(Tran);
+				CryingSource.volume = CryingVolume * (PlayerDistance / TotalDistance);
 
 				colA.a = Tran;
 				colB.a = Tran;
@@ -50,6 +55,8 @@ public class EndBehavior : MonoBehaviour {
 
 				EndObjects[2].GetComponent<SkinnedMeshRenderer>().material.color = colA;
 				EndObjects[3].GetComponent<SkinnedMeshRenderer>().material.color = colB;
+
+				CryingSource.volume = CryingVolume;
 			}
 		}
 
