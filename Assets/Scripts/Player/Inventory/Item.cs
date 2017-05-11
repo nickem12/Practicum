@@ -23,18 +23,21 @@ public class Item : MonoBehaviour {
 
     public ItemData itemData;
 
+    public int numberOfBullets;
+
     private void Start()
     {
         switch(type)
         {
             case ItemType.WEAPON:
                 name = "Weapon";
-                itemData = new ItemData(weaponType, weapon, weaponGameObject, 5);
+                itemData = new ItemData(weaponType, weapon, weaponGameObject, numberOfBullets);
                 break;
             case ItemType.CONSUMABLE:
                 name = "Consumable";
                 break;
         }
+        //weaponGameObject.GetComponent<WeaponStats>().data = itemData;
     }
 
     public void Use()

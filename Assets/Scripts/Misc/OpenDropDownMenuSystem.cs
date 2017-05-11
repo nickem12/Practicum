@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class OpenDropDownMenuSystem : MonoBehaviour {
 
     private GameObject can;
+    private Equip equip;
     private EventSystem eventSystem;
     private GameObject slotPrefab;
     private GameObject inventory;
@@ -44,6 +45,21 @@ public class OpenDropDownMenuSystem : MonoBehaviour {
         inventoryCanvas = GameObject.FindGameObjectWithTag("InventoryCanvas");
 
         inventory.GetComponent<Inventory>().allSlots[dataStorage.GetComponent<DataStorage>().GetSlotIndex()].GetComponent<Slot>().UseItem();
+        can.gameObject.SetActive(false);
+        eventSystem.SetSelectedGameObject(inventoryCanvas.transform.GetChild(1).gameObject);
+    }
+    public void EquipAWeapon()
+    {
+        eventSystem = EventSystem.current;
+        dataStorage = GameObject.FindGameObjectWithTag("ExtraDataStorage");
+        can = dataStorage.GetComponent<DataStorage>().dropDownCanvas;
+        inventory = GameObject.FindGameObjectWithTag("Inventory");
+        inventoryCanvas = GameObject.FindGameObjectWithTag("InventoryCanvas");
+
+        equip = GameObject.FindWithTag("Weapon_Slot").GetComponent<Equip>();
+        dataStorage.GetComponent<DataStorage>().data = inventory.GetComponent<Inventory>().allSlots[dataStorage.GetComponent<DataStorage>().GetSlotIndex()].GetComponent<Slot>().GetItem().itemData;
+        equip.EquipWeapon(inventory.GetComponent<Inventory>().allSlots[dataStorage.GetComponent<DataStorage>().GetSlotIndex()].GetComponent<Slot>().GetItem().weaponGameObject);
+
         can.gameObject.SetActive(false);
         eventSystem.SetSelectedGameObject(inventoryCanvas.transform.GetChild(1).gameObject);
     }

@@ -9,19 +9,23 @@ public class Shooting : MonoBehaviour
     public GameObject Bullet;
     public float Bullet_Forward_Force;
     public ItemData Weapon;
-
+    private bool getData = false;
     // Use this for initialization
     void Start()
     {
 
-        Weapon = GetComponent<Item>().itemData;
+        Weapon = GetComponent<WeaponStats>().data;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if(!getData)
+        {
+            Weapon = GetComponent<WeaponStats>().data;
+            getData = true;
+        }
         if (Input.GetMouseButtonDown(0))
         {
             if (Weapon.currentAmmo > 0)

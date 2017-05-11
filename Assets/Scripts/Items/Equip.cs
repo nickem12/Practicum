@@ -7,12 +7,14 @@ public class Equip : MonoBehaviour {
     private GameObject Slot;
     private GameObject t_Object;
     public GameObject t_Weapon;
+    private GameObject player;
 
 	// Use this for initialization
 	void Start () {
 
+        player = GameObject.FindGameObjectWithTag("Player");
         Slot = GameObject.FindGameObjectWithTag("Weapon_Slot");
-        EquipWeapon(t_Weapon);
+       // EquipWeapon(t_Weapon);
 
 	}
 	
@@ -37,6 +39,5 @@ public class Equip : MonoBehaviour {
         t_Object.transform.parent = Slot.transform;
 
         t_Object.transform.localPosition = new Vector3(.44f, -.38f, .76f);
-
     }
 }

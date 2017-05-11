@@ -36,6 +36,12 @@ public class PlayerStat : MonoBehaviour {
     private UISoundManager uiSoundManager;
     private bool playerIsDead;
 
+    public int shotgunAmmo;
+    public int rifleAmmo;
+    public int sniperAmmo;
+    public int smgAmmo;
+    public int rocketAmmo;
+
     // Use this for initialization
     void Start () {
         currentHealth = 100;
@@ -221,7 +227,7 @@ public class PlayerStat : MonoBehaviour {
                 Destroy(other.gameObject);
                 pickUp.gameObject.SetActive(false);
                 //Debug.Log("Added the item.");
-                GameObject.FindGameObjectWithTag("Weapon_Slot").GetComponent<Equip>().EquipWeapon(other.GetComponent<Item>().weaponGameObject);
+                //GameObject.FindGameObjectWithTag("Weapon_Slot").GetComponent<Equip>().EquipWeapon(other.GetComponent<Item>().weaponGameObject);
 
             }
         }
@@ -233,4 +239,6 @@ public class PlayerStat : MonoBehaviour {
             uiSoundManager.PlayAudioClip(2);
         }
     }
+
+    
 }

@@ -6,6 +6,7 @@ public class DataStorage : MonoBehaviour {
 
     private int slotIndex;
     public GameObject dropDownCanvas;
+    public ItemData data;
 
     public void SetSlotIndex(int value)
     {

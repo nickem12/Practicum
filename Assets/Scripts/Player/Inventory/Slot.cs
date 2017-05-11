@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class Slot : MonoBehaviour, IPointerClickHandler {
 
-    private Stack<Item> items;
+    public Stack<Item> items;
 
     public Text stackText;
 
@@ -115,5 +115,13 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
         items.Clear();
         ChangeSprite(slotEmpty, slotHighlighted);
         stackText.text = string.Empty;
+    }
+    public Item GetItem()
+    {
+        Item t_Item;
+
+        t_Item = items.Peek();
+
+        return t_Item;
     }
 }

@@ -40,9 +40,9 @@ GameObject:
   - component: {fileID: 23363181262285720}
   - component: {fileID: 64061791161321934}
   - component: {fileID: 95982194052331872}
-  - component: {fileID: 114550604073695146}
   - component: {fileID: 114897787042338168}
   - component: {fileID: 114352394273019782}
+  - component: {fileID: 114108088475601666}
   m_Layer: 0
   m_Name: SA_Wep_AssaultRifle01
   m_TagString: Item
@@ -661,6 +661,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114108088475601666
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1142613463324316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c22256bbc5adfd3408688c6c2b06bd17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114352394273019782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -675,26 +686,6 @@ MonoBehaviour:
   Bullet_Emitter: {fileID: 1363209716015876}
   Bullet: {fileID: 1666648298017018, guid: 308728546cf15a94ca2800f6f79a4adc, type: 2}
   Bullet_Forward_Force: 3000
---- !u!114 &114550604073695146
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1142613463324316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a73fa05eaff07914caabfa7ac832a126, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  weapon: 1
-  weaponType: 1
-  weaponGameObject: {fileID: 1142613463324316}
-  spriteNeutral: {fileID: 0}
-  spriteHighlighted: {fileID: 0}
-  maxSize: 1
-  pickUp: {fileID: 0}
-  text: {fileID: 0}
 --- !u!114 &114897787042338168
 MonoBehaviour:
   m_ObjectHideFlags: 1
