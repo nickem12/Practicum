@@ -50,7 +50,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public EventSystem eventSystem;
         private bool inventoryOn;
         public GameObject uiSoundManager;
-        
+
+        private static bool playerExists;
 
         // Use this for initialization
         private void Start()
@@ -67,7 +68,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_MouseLook.Init(transform , m_Camera.transform);
             inventoryOn = false;
             
-            DontDestroyOnLoad(this);
+            if(!playerExists)
+            {
+                playerExists = true;
+                DontDestroyOnLoad(this);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
 
 

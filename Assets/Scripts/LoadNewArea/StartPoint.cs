@@ -12,31 +12,37 @@ public class StartPoint : MonoBehaviour {
 
     private Camera theCamera;
 
-    private Vector3 VectorToRotate;
+    
 
     // Use this for initialization
     void Start () {
-
-
-       
 
         thePlayer = GameObject.FindGameObjectWithTag("Player");
 
         if (thePlayer.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().startPoint == pointName)
         {
+            thePlayer.transform.position = new Vector3(0, 0, 0);
+
+            Debug.Log(thePlayer.transform.rotation.eulerAngles.y);
+
+            thePlayer.transform.Rotate(new Vector3(0, -thePlayer.transform.rotation.eulerAngles.y, 0));
+
+            Debug.Log(thePlayer.transform.rotation.eulerAngles.y);
+
+            thePlayer.transform.Rotate(startDirection);
 
             thePlayer.transform.position = transform.position;
-            thePlayer.transform.rotation = Quaternion.AngleAxis(90, Vector3.up);    //Rotate the vector by some angle
 
+            Debug.Log(thePlayer.transform.rotation.eulerAngles.y);
 
             theCamera = FindObjectOfType<Camera>();
-            theCamera.transform.position = new Vector3(transform.position.x, transform.position.y, theCamera.transform.position.z);
+            theCamera.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
           
         }
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+       
+    }
 }

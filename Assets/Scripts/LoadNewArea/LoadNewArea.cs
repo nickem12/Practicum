@@ -23,7 +23,7 @@ public class LoadNewArea : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "FPSController")
+        if(other.tag == "Player")
         {
             DontDestroyOnLoad(thePlayer);
 
