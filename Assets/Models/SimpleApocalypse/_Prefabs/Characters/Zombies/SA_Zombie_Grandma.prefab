@@ -686,9 +686,12 @@ GameObject:
   m_Component:
   - component: {fileID: 458868}
   - component: {fileID: 9567556}
+  - component: {fileID: 65068301359246330}
+  - component: {fileID: 114916099844513424}
+  - component: {fileID: 114050641909656912}
   m_Layer: 0
   m_Name: SA_Zombie_Grandma
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1740,7 +1743,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 155090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 18.55642, y: 0, z: 35.611053}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 462844}
@@ -5495,3 +5498,39 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 155090}
   m_IsPrefabParent: 1
+--- !u!65 &65068301359246330
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3390198, y: 2.3724694, z: 1.197792}
+  m_Center: {x: -0.08660126, y: 1.8557427, z: 0.043014526}
+--- !u!114 &114050641909656912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dea04c86a47aa84dba7872dbb11d6d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombieSoundManager: {fileID: 0}
+--- !u!114 &114916099844513424
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87c7f45f3f8d0e6439aa7e0e385fbcc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 0

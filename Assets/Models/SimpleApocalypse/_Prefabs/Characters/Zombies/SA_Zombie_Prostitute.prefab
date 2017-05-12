@@ -948,9 +948,12 @@ GameObject:
   m_Component:
   - component: {fileID: 419848}
   - component: {fileID: 9581464}
+  - component: {fileID: 65889455140512864}
+  - component: {fileID: 114551672822869184}
+  - component: {fileID: 114033243791852202}
   m_Layer: 0
   m_Name: SA_Zombie_Prostitute
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1261,7 +1264,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 177384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 18.20179, y: 0, z: 52.053303}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 450914}
@@ -5495,3 +5498,39 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 177384}
   m_IsPrefabParent: 1
+--- !u!65 &65889455140512864
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177384}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9241562, y: 3.4620998, z: 1.3205414}
+  m_Center: {x: -0.17944145, y: 1.2310499, z: -0.017971039}
+--- !u!114 &114033243791852202
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dea04c86a47aa84dba7872dbb11d6d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombieSoundManager: {fileID: 0}
+--- !u!114 &114551672822869184
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87c7f45f3f8d0e6439aa7e0e385fbcc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 0

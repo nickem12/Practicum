@@ -13,6 +13,7 @@ TagManager:
   - AI_Finder
   - InventoryCanvas
   - Weapon_Slot
+  - Zombie
   layers:
   - Default
   - TransparentFX

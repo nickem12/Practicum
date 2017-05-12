@@ -367,9 +367,12 @@ GameObject:
   m_Component:
   - component: {fileID: 436120}
   - component: {fileID: 9530762}
+  - component: {fileID: 114404924370039190}
+  - component: {fileID: 65993701130290026}
+  - component: {fileID: 114277020423494590}
   m_Layer: 0
   m_Name: SA_Zombie_Prisoner
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1566,7 +1569,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 126250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 18.040302, y: 0, z: 50.07639}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 430310}
@@ -5495,3 +5498,39 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 126250}
   m_IsPrefabParent: 1
+--- !u!65 &65993701130290026
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126250}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8351955, y: 3.3835773, z: 1.4720802}
+  m_Center: {x: -0.055996895, y: 1.1917887, z: -0.011938095}
+--- !u!114 &114277020423494590
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dea04c86a47aa84dba7872dbb11d6d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombieSoundManager: {fileID: 0}
+--- !u!114 &114404924370039190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87c7f45f3f8d0e6439aa7e0e385fbcc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 0

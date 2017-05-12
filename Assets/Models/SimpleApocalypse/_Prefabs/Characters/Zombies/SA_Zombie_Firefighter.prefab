@@ -231,9 +231,12 @@ GameObject:
   m_Component:
   - component: {fileID: 463928}
   - component: {fileID: 9570088}
+  - component: {fileID: 65913995966234472}
+  - component: {fileID: 114644125153662036}
+  - component: {fileID: 114587675200279354}
   m_Layer: 0
   m_Name: SA_Zombie_Firefighter
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1738,7 +1741,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 119274}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 18.69465, y: 1.4210855e-14, z: 31.44288}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 447866}
@@ -5495,3 +5498,39 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 119274}
   m_IsPrefabParent: 1
+--- !u!65 &65913995966234472
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119274}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5020313, y: 3.4285836, z: 1.4542408}
+  m_Center: {x: -0.11745167, y: 1.2142918, z: 0.032826424}
+--- !u!114 &114587675200279354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dea04c86a47aa84dba7872dbb11d6d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombieSoundManager: {fileID: 0}
+--- !u!114 &114644125153662036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87c7f45f3f8d0e6439aa7e0e385fbcc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 0

@@ -8,7 +8,7 @@ public enum Weapon { SHOTGUN, ASSAULTRIFLE, RIFLE, HANDGUN, ROCKETLAUNCHER, LMG,
 
 public class ItemData{
 
-    private Weapon weapon;
+    public Weapon weapon;
     private WeaponType weaponType;
 
     public int currentAmmo;
@@ -16,7 +16,7 @@ public class ItemData{
     public float fallOffRange;
     public int durability;
 
-    private int maxAmmo;
+    public int maxAmmo;
     public GameObject weaponGameObject;
     public int allAmmo;
 
