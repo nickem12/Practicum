@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StartPoint : MonoBehaviour {
 
-    private UnityStandardAssets.Characters.FirstPerson.FirstPersonController thePlayer;
+    private GameObject thePlayer;
 
     public Vector3 startDirection;
 
@@ -12,21 +12,26 @@ public class StartPoint : MonoBehaviour {
 
     private Camera theCamera;
 
+    private Vector3 VectorToRotate;
+
     // Use this for initialization
     void Start () {
-        thePlayer = FindObjectOfType<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>();
 
 
+       
 
-        if (thePlayer.startPoint == pointName)
+        thePlayer = GameObject.FindGameObjectWithTag("Player");
+
+        if (thePlayer.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().startPoint == pointName)
         {
 
             thePlayer.transform.position = transform.position;
+            thePlayer.transform.rotation = Quaternion.AngleAxis(90, Vector3.up);    //Rotate the vector by some angle
 
-            thePlayer.transform.rotation = Quaternion.Euler(startDirection);
 
             theCamera = FindObjectOfType<Camera>();
             theCamera.transform.position = new Vector3(transform.position.x, transform.position.y, theCamera.transform.position.z);
+          
         }
     }
 	
