@@ -41,6 +41,7 @@ public class PlayerStat : MonoBehaviour {
     public int sniperAmmo;
     public int smgAmmo;
     public int rocketAmmo;
+    public int handgunAmmo;
 
     // Use this for initialization
     void Start () {
@@ -229,6 +230,21 @@ public class PlayerStat : MonoBehaviour {
                 //Debug.Log("Added the item.");
                 //GameObject.FindGameObjectWithTag("Weapon_Slot").GetComponent<Equip>().EquipWeapon(other.GetComponent<Item>().weaponGameObject);
 
+            }
+        }
+        if(other.tag == "Ammo")
+        {
+            if(Input.GetButtonDown("Submit"))
+            {
+                BulletPickUp temp = other.GetComponent<BulletPickUp>();
+                shotgunAmmo += temp.shotgunAmmo;
+                rifleAmmo += temp.rifleAmmo;
+                sniperAmmo += temp.sniperAmmo;
+                rocketAmmo += temp.rocketAmmo;
+                smgAmmo += temp.smgAmmo;
+                handgunAmmo += temp.handgunAmmo;
+                Destroy(other.gameObject);
+                pickUp.gameObject.SetActive(false);
             }
         }
     }
