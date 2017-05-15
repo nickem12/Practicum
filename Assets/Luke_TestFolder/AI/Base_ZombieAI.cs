@@ -141,6 +141,16 @@ public class Base_ZombieAI : MonoBehaviour {
         }
 	}
 
+	void OnDrawGizmosSelected(){
+		if(DEBUG && HIGH_DEBUG){
+			Gizmos.color = Color.blue;
+			Gizmos.DrawWireSphere(transform.position, VisualRadius);
+
+			Gizmos.color = Color.red;
+			Gizmos.DrawWireSphere(transform.position, AudioRadius);
+		}
+	}
+
 	void DebugRadius(){
 		if(DEBUG){
 			//Audio

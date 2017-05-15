@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 114976744575543646}
   m_Layer: 0
   m_Name: SA_Zombie_AirportWorker
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2335,6 +2335,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   zombieSoundManager: {fileID: 1749622501038476}
+  DEBUG: 0
+  HIGH_DEBUG: 0
 --- !u!137 &137018051613584660
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

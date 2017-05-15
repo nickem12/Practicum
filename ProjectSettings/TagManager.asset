@@ -16,6 +16,8 @@ TagManager:
   - Zombie
   - Ammo
   - WeaponSoundManager
+  - Master_Spawner
+  - Spawner
   layers:
   - Default
   - TransparentFX
