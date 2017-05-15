@@ -59,8 +59,8 @@ GameObject:
   - component: {fileID: 64915678987592736}
   - component: {fileID: 95295037575738478}
   - component: {fileID: 114565836590392348}
-  - component: {fileID: 114745059378882412}
-  - component: {fileID: 114194558645195698}
+  - component: {fileID: 114717547439463352}
+  - component: {fileID: 114817961552607948}
   m_Layer: 0
   m_Name: AssaultRifle
   m_TagString: Item
@@ -772,17 +772,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114194558645195698
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1267915202601674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b0e05c831e72f247bf26d980a5d90b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114212525475915544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -820,7 +809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c101f01bd15571a4e8c3738600c958ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114745059378882412
+--- !u!114 &114717547439463352
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -828,9 +817,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1267915202601674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b754958dd728c04ebc26a90cc8af551, type: 3}
+  m_Script: {fileID: 11500000, guid: 4096cc72871092441b0b0930f3ba8a92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bullet_Emitter: {fileID: 1912403224653378}
-  Bullet: {fileID: 1666648298017018, guid: 82d476e8b652dc14e909c45cd5385138, type: 2}
-  Bullet_Forward_Force: 3000
+  Bullet_Emitter: {fileID: 0}
+  Bullet: {fileID: 0}
+  Bullet_Forward_Force: 0
+  muzzleFlash: {fileID: 0}
+--- !u!114 &114817961552607948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1267915202601674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c22256bbc5adfd3408688c6c2b06bd17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

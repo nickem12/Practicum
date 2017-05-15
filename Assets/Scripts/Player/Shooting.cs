@@ -10,8 +10,10 @@ public class Shooting : MonoBehaviour
     public float Bullet_Forward_Force;
     public ItemData Weapon;
     private bool getData = false;
-
+    private bool muzzleFlashTrigger;
+    private float flashTimer = .2f;
     private WeaponSoundManager weaponSoundManager;
+    public GameObject muzzleFlash;
 
     // Use this for initialization
     void Start()
@@ -19,6 +21,7 @@ public class Shooting : MonoBehaviour
 
         Weapon = GetComponent<WeaponStats>().data;
         weaponSoundManager = this.GetComponentInChildren<WeaponSoundManager>();
+        
 
     }
 
@@ -34,6 +37,8 @@ public class Shooting : MonoBehaviour
         {
             if (Weapon.currentAmmo > 0)
             {
+                muzzleFlashTrigger = true;
+
                 GameObject t_bullet;
                 t_bullet = Instantiate(Bullet, Bullet_Emitter.transform.position, Bullet_Emitter.transform.rotation) as GameObject;
 
@@ -43,12 +48,28 @@ public class Shooting : MonoBehaviour
 
                 t_bullet.GetComponent<Bullet>().damage = Weapon.damage;
 
+
                 Destroy(t_bullet, 10f);
 
                 Weapon.currentAmmo--;
                 weaponSoundManager.PlayFiringSoundEffect((int)Weapon.weapon);
             }
         }
+
+
+        if (muzzleFlashTrigger)
+        {
+            muzzleFlash.SetActive(true);
+
+            flashTimer -= Time.deltaTime;
+            if (flashTimer <= 0)
+            {
+                muzzleFlashTrigger = false;
+                muzzleFlash.SetActive(false);
+                flashTimer = 0.2f;
+            }
+        }
+
     }
     public void Reload()
     {

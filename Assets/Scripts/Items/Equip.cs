@@ -14,7 +14,7 @@ public class Equip : MonoBehaviour {
 
         player = GameObject.FindGameObjectWithTag("Player");
         Slot = GameObject.FindGameObjectWithTag("Weapon_Slot");
-       // EquipWeapon(t_Weapon);
+        //EquipWeapon(t_Weapon);
 
 	}
 	
@@ -38,6 +38,10 @@ public class Equip : MonoBehaviour {
 
         t_Object.transform.parent = Slot.transform;
 
-        t_Object.transform.localPosition = new Vector3(.44f, -.38f, .76f);
+        Debug.Log(t_Object.transform.position);
+
+        t_Object.transform.position = new Vector3(.44f, -.38f, .76f);
+
+        Debug.Log(t_Object.transform.position);
     }
 }
