@@ -10,11 +10,15 @@ public class Shooting : MonoBehaviour
     public float Bullet_Forward_Force;
     public ItemData Weapon;
     private bool getData = false;
+
+    private WeaponSoundManager weaponSoundManager;
+
     // Use this for initialization
     void Start()
     {
 
         Weapon = GetComponent<WeaponStats>().data;
+        weaponSoundManager = this.GetComponentInChildren<WeaponSoundManager>();
 
     }
 
@@ -42,6 +46,7 @@ public class Shooting : MonoBehaviour
                 Destroy(t_bullet, 10f);
 
                 Weapon.currentAmmo--;
+                weaponSoundManager.PlayFiringSoundEffect((int)Weapon.weapon);
             }
         }
     }
@@ -63,6 +68,7 @@ public class Shooting : MonoBehaviour
                     Weapon.currentAmmo += pStat.rifleAmmo;
                     pStat.rifleAmmo = 0;
                 }
+                weaponSoundManager.PlayReloadingSoundEffect((int)Weapon.weapon);
                 break;
             case global::Weapon.HANDGUN:
                 if (pStat.rifleAmmo >= ammoNeeded)
@@ -75,6 +81,7 @@ public class Shooting : MonoBehaviour
                     Weapon.currentAmmo += pStat.rifleAmmo;
                     pStat.rifleAmmo = 0;
                 }
+                weaponSoundManager.PlayReloadingSoundEffect((int)Weapon.weapon);
                 break;
             case global::Weapon.LMG:
                 if (pStat.smgAmmo >= ammoNeeded)
@@ -87,6 +94,7 @@ public class Shooting : MonoBehaviour
                     Weapon.currentAmmo += pStat.smgAmmo;
                     pStat.smgAmmo = 0;
                 }
+                weaponSoundManager.PlayReloadingSoundEffect((int)Weapon.weapon);
                 break;
             case global::Weapon.RIFLE:
                 if (pStat.sniperAmmo >= ammoNeeded)
@@ -99,6 +107,7 @@ public class Shooting : MonoBehaviour
                     Weapon.currentAmmo += pStat.sniperAmmo;
                     pStat.sniperAmmo = 0;
                 }
+                weaponSoundManager.PlayReloadingSoundEffect((int)Weapon.weapon);
                 break;
             case global::Weapon.ROCKETLAUNCHER:
                 if (pStat.rocketAmmo >= ammoNeeded)
@@ -111,6 +120,7 @@ public class Shooting : MonoBehaviour
                     Weapon.currentAmmo += pStat.rifleAmmo;
                     pStat.rocketAmmo = 0;
                 }
+                weaponSoundManager.PlayReloadingSoundEffect((int)Weapon.weapon);
                 break;
             case global::Weapon.SHOTGUN:
                 if (pStat.shotgunAmmo >= ammoNeeded)
@@ -123,6 +133,7 @@ public class Shooting : MonoBehaviour
                     Weapon.currentAmmo += pStat.shotgunAmmo;
                     pStat.shotgunAmmo = 0;
                 }
+                weaponSoundManager.PlayReloadingSoundEffect((int)Weapon.weapon);
                 break;
         }
     }

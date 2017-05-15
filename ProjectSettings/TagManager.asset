@@ -15,6 +15,7 @@ TagManager:
   - Weapon_Slot
   - Zombie
   - Ammo
+  - WeaponSoundManager
   layers:
   - Default
   - TransparentFX
