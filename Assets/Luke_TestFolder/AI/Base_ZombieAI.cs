@@ -22,6 +22,8 @@ public class Base_ZombieAI : MonoBehaviour {
 	enum AIStates {AI_IDLE, AI_SCAN, AI_MOVE, AI_EAT};									//Different types of states available
 	int CurrentAIState = (int)AIStates.AI_IDLE;											//Set the initial state
 
+	enum MOVE_Result {MOVE_MOVING, MOVING_FIN, MOVE_STUCK};								//The different returns that we will return back to the base AI	
+
 	public delegate void AI_Update();													//This is our delegate object for AI callback functions
 	private Dictionary <int, AI_Update> AI_DICT = new Dictionary<int, AI_Update>();		//Dictionary to hold callbacks
 
@@ -30,7 +32,7 @@ public class Base_ZombieAI : MonoBehaviour {
 	private GameObject Interest;														//The current object we are interested in
 
 	Base_Zombie_AI_IDLE IDLE_OBJ = new Base_Zombie_AI_IDLE();							//The idle object
-	Base_Zombie_AI_SCAN SCAN_OBJ = new Base_Zombie_AI_SCAN(10.0f, 20.0f, 2.0f);	//The scan object
+	Base_Zombie_AI_SCAN SCAN_OBJ = new Base_Zombie_AI_SCAN(10.0f, 20.0f, 2.0f);			//The scan object
 	Base_Zombie_AI_MOVE MOVE_OBJ = new Base_Zombie_AI_MOVE(10.0f, 20.0f);				//The move object
 
 	void  AI_IDLE_Update(){
@@ -60,30 +62,42 @@ public class Base_ZombieAI : MonoBehaviour {
 		Debug.Log("I am in SCAN state");
 	}
 
+
 	void AI_MOVE_Update(){
 
-		if(MOVE_OBJ.MoveZombie(ref ZombieAgent, Interest,  transform.position)){
+		int Result = (int)MOVE_OBJ.MoveZombie(ref ZombieAgent, Interest,  transform.position);	//Get the result of the move
+		switch(Result){																		//Switch on the result
+			case (int)MOVE_Result.MOVING_FIN:													//If we have finished then check if we can eat it or not
 
-			Debug.Log("I get here");
-			if(Interest.GetComponent<Zombie_Attraction>().canEat){
-				CurrentAIState = (int)AIStates.AI_EAT;
-			}
-			else{
+				if(Interest.GetComponent<Zombie_Attraction>().canEat){
+					CurrentAIState = (int)AIStates.AI_EAT;
+				}
+				else{
+					CurrentAIState = (int)AIStates.AI_IDLE;
+				}
+				break;
+
+			case (int)MOVE_Result.MOVE_MOVING:
+
+				isMoving = true;															//Set variables for animation purposes
+				isEating = false;
+				break;
+
+			case (int)MOVE_Result.MOVE_STUCK:													//If we're stuck then set back to idle. 
 				CurrentAIState = (int)AIStates.AI_IDLE;
-			}
+				break;
 		}
-
-		isMoving = true;
-		isEating = false;
 
 		Debug.Log("I am in MOVE state");
 	}
+
 
 	void AI_EAT_Update(){
 		isMoving = false;
 		isEating = true;
 		Debug.Log("I am in EAT state");
 	}
+
 
 	void Start () {
 		anim = GetComponent<Animator>();												//We get the animator component
@@ -97,12 +111,14 @@ public class Base_ZombieAI : MonoBehaviour {
         growlTimer = 5.0f;
 	}
 
+
 	void AnimUpdate(){
 		
 
 		anim.SetBool("isMoving", isMoving);
 		anim.SetBool("isEating", isEating);
 	}
+
 
 	void Update () {
 		IDLE_OBJ.Update();
