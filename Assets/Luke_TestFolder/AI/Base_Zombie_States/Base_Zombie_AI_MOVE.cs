@@ -27,7 +27,7 @@ public class Base_Zombie_AI_MOVE : MonoBehaviour {
 	
 		Agent.destination = attraction.transform.position;											//Set the destination
 
-		if(Vector3.Distance(pos, attraction.transform.position) <= Agent.stoppingDistance){			//If we have reached the appropriate distance
+		if(Vector3.Distance(pos, attraction.transform.position) <= Agent.stoppingDistance + 0.8f){			//If we have reached the appropriate distance
 		 	return (int)MOVE_Result.MOVING_FIN;															
 		} else {
 			if (CalculateWaitTime() == (int)MOVE_Result.MOVE_STUCK) return (int)MOVE_Result.MOVE_STUCK;
@@ -37,13 +37,13 @@ public class Base_Zombie_AI_MOVE : MonoBehaviour {
 	}
 
 	void Start(){
-		LastPosition = Agent.transform.position;
+		LastPosition = Agent.transform.position;													//Set the last and this position to the current position of the nav mesh agent
 		ThisPosition = Agent.transform.position;
 	}
 
 	public int CalculateWaitTime(){
 		if(!WaitTrigger){																			//If we are not waiting
-			if(LastPosition == Agent.transform.position){											//If the last position is the current position
+			if(LastPosition == ThisPosition){														//If the last position is the current position
 				 WaitTrigger = true;
 				 WaitTime = 0.0f;
 			}
@@ -57,7 +57,7 @@ public class Base_Zombie_AI_MOVE : MonoBehaviour {
 				return (int)MOVE_Result.MOVE_STUCK;
 			}
 
-			if(LastPosition != Agent.transform.position){											//If the positions have changed 
+			if(LastPosition != ThisPosition){														//If the positions have changed 
 				ResetWait();
 			}
 		}
@@ -66,7 +66,7 @@ public class Base_Zombie_AI_MOVE : MonoBehaviour {
 	}
 
 	private void ResetWait(){
-		WaitTime = 0.0f;
+		WaitTime = 0.0f;																			//Reset the timer and trigger bool
 		WaitTrigger = false;
 	}
 

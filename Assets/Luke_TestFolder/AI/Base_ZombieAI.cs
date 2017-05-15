@@ -15,7 +15,7 @@ public class Base_ZombieAI : MonoBehaviour {
 	private float VisualRadius = 10.0f;													//The radius of the zombies
 	private float AudioRadius = 20.0f;
 
-    private float growlTimer;
+    private float growlTimer = 5.0f;
 
     public GameObject zombieSoundManager;
 
@@ -30,6 +30,12 @@ public class Base_ZombieAI : MonoBehaviour {
 	private GameObject EatingObject;													//This is the object that we are eating
 	private GameObject CurrentInterest;													//The current interest of the zombie
 	private GameObject Interest;														//The current object we are interested in
+	private Vector3 InterestLastPosition;												//The position of the interest object last frame
+
+	public bool DEBUG;																	//Are we currently in debug mode?
+	public bool HIGH_DEBUG;																//Would we like even more information?
+	private GameObject Finder;															//The finder for the zombie AI
+	private bool FoundFinder = false;
 
 	Base_Zombie_AI_IDLE IDLE_OBJ = new Base_Zombie_AI_IDLE();							//The idle object
 	Base_Zombie_AI_SCAN SCAN_OBJ = new Base_Zombie_AI_SCAN(10.0f, 20.0f, 2.0f);			//The scan object
@@ -44,7 +50,7 @@ public class Base_ZombieAI : MonoBehaviour {
 		}
 		isMoving = false;
 		isEating = false;
-		Debug.Log("I am in IDLE state");
+		if(DEBUG) Debug.Log("I am in IDLE state");
 	}
 
 	void AI_SCAN_Update(){
@@ -59,14 +65,14 @@ public class Base_ZombieAI : MonoBehaviour {
 
 		isMoving = false;
 		isEating = false;
-		Debug.Log("I am in SCAN state");
+		if(DEBUG) Debug.Log("I am in SCAN state");
 	}
 
 
 	void AI_MOVE_Update(){
 
 		int Result = (int)MOVE_OBJ.MoveZombie(ref ZombieAgent, Interest,  transform.position);	//Get the result of the move
-		switch(Result){																		//Switch on the result
+		switch(Result){																			//Switch on the result
 			case (int)MOVE_Result.MOVING_FIN:													//If we have finished then check if we can eat it or not
 
 				if(Interest.GetComponent<Zombie_Attraction>().canEat){
@@ -78,7 +84,7 @@ public class Base_ZombieAI : MonoBehaviour {
 				break;
 
 			case (int)MOVE_Result.MOVE_MOVING:
-
+				InterestLastPosition = Interest.transform.position;							//Get the position of the interest object
 				isMoving = true;															//Set variables for animation purposes
 				isEating = false;
 				break;
@@ -88,14 +94,24 @@ public class Base_ZombieAI : MonoBehaviour {
 				break;
 		}
 
-		Debug.Log("I am in MOVE state");
+		if(DEBUG) Debug.Log("I am in MOVE state");
 	}
 
 
 	void AI_EAT_Update(){
-		isMoving = false;
+		isMoving = false;																//Set the anim variables
 		isEating = true;
-		Debug.Log("I am in EAT state");
+
+		if(Interest.transform.position != InterestLastPosition){
+			if(Vector3.Distance(this.transform.position, Interest.transform.position) < VisualRadius){
+				CurrentAIState = (int)AIStates.AI_MOVE;
+			}
+			else{
+				CurrentAIState = (int)AIStates.AI_IDLE;
+			}
+		}
+
+		if(DEBUG) Debug.Log("I am in EAT state");
 	}
 
 
@@ -106,32 +122,70 @@ public class Base_ZombieAI : MonoBehaviour {
 		AI_DICT.Add((int)AIStates.AI_IDLE, new AI_Update(AI_IDLE_Update));				//We add the callbacks to a dictionary
 		AI_DICT.Add((int)AIStates.AI_SCAN, new AI_Update(AI_SCAN_Update));
 		AI_DICT.Add((int)AIStates.AI_MOVE, new AI_Update(AI_MOVE_Update));
-		AI_DICT.Add((int)AIStates.AI_EAT, new AI_Update(AI_EAT_Update));
+		AI_DICT.Add((int)AIStates.AI_EAT, new AI_Update(AI_EAT_Update));			
 
-        growlTimer = 5.0f;
+		FindFinder();		
 	}
 
 
 	void AnimUpdate(){
-		
-
-		anim.SetBool("isMoving", isMoving);
-		anim.SetBool("isEating", isEating);
+		anim.SetBool("isMoving", isMoving);												//Set the isMoving variable
+		anim.SetBool("isEating", isEating);												//Set the isEating variable
 	}
 
+	void ZombieAudio(){
+		growlTimer -= Time.deltaTime;													//The timer for growling
+        if (growlTimer <= 0){															//If growl has ran out
+            zombieSoundManager.GetComponent<ZombieSoundManager>().PlayGrowl();			//Play the growl
+            growlTimer = Random.Range(2, 10);											//Set timer
+        }
+	}
+
+	void DebugRadius(){
+		if(DEBUG){
+			//Audio
+			Debug.DrawLine(this.transform.position, (this.transform.position + new Vector3(0,0,AudioRadius)), Color.red);
+			Debug.DrawLine(this.transform.position, (this.transform.position + new Vector3(0,0,-AudioRadius)), Color.red);
+			Debug.DrawLine(this.transform.position, (this.transform.position + new Vector3(AudioRadius,0,0)), Color.red);
+			Debug.DrawLine(this.transform.position, (this.transform.position + new Vector3(-AudioRadius,0,0)), Color.red);
+
+			//Visual
+			Debug.DrawLine(this.transform.position, (this.transform.position + new Vector3(0,0,VisualRadius)), Color.blue);
+			Debug.DrawLine(this.transform.position, (this.transform.position + new Vector3(0,0,-VisualRadius)), Color.blue);
+			Debug.DrawLine(this.transform.position, (this.transform.position + new Vector3(VisualRadius,0,0)), Color.blue);
+			Debug.DrawLine(this.transform.position, (this.transform.position + new Vector3(-VisualRadius,0,0)), Color.blue);
+
+			if(HIGH_DEBUG && FoundFinder){
+
+				//Interest lines
+				GameObject[] InterestList = Finder.GetComponent<Zombie_Attraction_List_Init>().GetList();
+				for(int curInterest = 0; curInterest < InterestList.Length; curInterest++){
+					if(InterestList[curInterest] != null)
+						Debug.DrawLine(this.transform.position, InterestList[curInterest].transform.position, Color.cyan);
+				}
+
+				if(CurrentAIState == (int)AIStates.AI_MOVE){
+					Debug.DrawLine(this.transform.position, Interest.transform.position, Color.green);
+				}
+
+			}
+		}
+	}
+
+	void FindFinder(){
+		Finder = GameObject.FindGameObjectWithTag("AI_Finder");
+		if(Finder != null) FoundFinder = true;		
+	}
 
 	void Update () {
-		IDLE_OBJ.Update();
+		if(!FoundFinder)FindFinder();													//If we have not found the finder then try again
+
+		IDLE_OBJ.Update();																//Update the Idle object
 
 		AI_DICT[CurrentAIState]();														//Call the appropriate callback function
-		AnimUpdate();
+		AnimUpdate();																	//Update the anim component
+		ZombieAudio();																	//Update the zombie audio
 
-        growlTimer -= Time.deltaTime;
-        if (growlTimer <= 0)
-        {
-            zombieSoundManager.GetComponent<ZombieSoundManager>().PlayGrowl();
-            growlTimer = Random.Range(2, 10);
-            Debug.Log("Growl");
-        }
+		DebugRadius();
 	}
 }

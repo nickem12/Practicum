@@ -46,7 +46,6 @@ public class Base_Zombie_AI_SCAN : MonoBehaviour {
 		for(int CurrentInterest = 0; CurrentInterest < Interests.Length; CurrentInterest++){			//Find the closest attraction within the radius
 			CurrentDistance = Vector3.Distance(pos, Interests[CurrentInterest].transform.position);
 			if(CurrentDistance <= VisualRadius && CurrentDistance < ClosestDistance && CurrentDistance > MinDistance){
-				Debug.Log(Interests[CurrentInterest].transform.position.x);
 				ClosestIndex = CurrentInterest;
 				ClosestDistance = CurrentDistance;
 			}

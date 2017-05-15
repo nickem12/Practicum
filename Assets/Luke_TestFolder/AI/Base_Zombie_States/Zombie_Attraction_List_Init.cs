@@ -32,7 +32,21 @@ public class Zombie_Attraction_List_Init : MonoBehaviour {
 	}
 
 	void FindAttractions(){
-		AttractionList = GameObject.FindGameObjectsWithTag(TagID);
-		Debug.Log(AttractionList.Length);
+		GameObject[] NonPlayerAttractions = GameObject.FindGameObjectsWithTag(TagID);
+		GameObject[] PlayerAttractions = GameObject.FindGameObjectsWithTag("Player");
+
+		AttractionList = new GameObject[NonPlayerAttractions.Length + PlayerAttractions.Length];
+		for(int CurNonPlayer = 0; CurNonPlayer < NonPlayerAttractions.Length; CurNonPlayer++){
+			AttractionList[CurNonPlayer] = NonPlayerAttractions[CurNonPlayer];
+		}
+
+		for(int CurPlayer = 0; CurPlayer < PlayerAttractions.Length; CurPlayer++){
+			AttractionList[NonPlayerAttractions.Length + CurPlayer] = PlayerAttractions[CurPlayer];
+		}
+
+	}
+
+	public GameObject[] GetList(){
+		return AttractionList;
 	}
 }
