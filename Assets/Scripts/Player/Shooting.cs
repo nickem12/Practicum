@@ -36,6 +36,9 @@ public class Shooting : MonoBehaviour
                 Rigidbody t_rigidbody;
                 t_rigidbody = t_bullet.GetComponent<Rigidbody>();
                 t_rigidbody.AddForce(transform.forward * Bullet_Forward_Force);
+
+                t_bullet.GetComponent<Bullet>().damage = Weapon.damage;
+
                 Destroy(t_bullet, 10f);
 
                 Weapon.currentAmmo--;

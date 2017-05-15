@@ -33,7 +33,11 @@ public class ZombieStats : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
-            Debug.Log("HurtPlayer");
+            other.GetComponent<PlayerStat>().currentHealth -= Damage;
+            if(other.GetComponent<PlayerStat>().currentHealth<=0)
+            {
+                other.GetComponent<PlayerStat>().playerIsDead = true;
+            }
         }
 
     }

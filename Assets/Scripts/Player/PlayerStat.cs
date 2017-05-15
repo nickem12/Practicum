@@ -34,7 +34,7 @@ public class PlayerStat : MonoBehaviour {
     public Canvas pickUp;
     private PlayerStatsSound statsSound;
     private UISoundManager uiSoundManager;
-    private bool playerIsDead;
+    public bool playerIsDead;
 
     public int shotgunAmmo;
     public int rifleAmmo;
