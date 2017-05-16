@@ -10,7 +10,8 @@ GameObject:
   - component: {fileID: 465804}
   - component: {fileID: 3312196}
   - component: {fileID: 2327170}
-  - component: {fileID: 64529619587345132}
+  - component: {fileID: 65551274319579064}
+  - component: {fileID: 65449703335900320}
   m_Layer: 0
   m_Name: AI_Env_Sewer_Pipes
   m_TagString: Untagged
@@ -24,9 +25,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161472}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 10.2287655, y: -0.54297423, z: -25.396664}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -81,8 +82,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 161472}
   m_IsPrefabParent: 1
---- !u!64 &64529619587345132
-MeshCollider:
+--- !u!65 &65449703335900320
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -91,7 +92,17 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 907237d39e2560142b24672942fe9dd6, type: 3}
+  m_Size: {x: 0.5191155, y: 4.398802, z: 0.5092689}
+  m_Center: {x: -4.470071, y: 2.199401, z: 0.25463894}
+--- !u!65 &65551274319579064
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161472}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2093564, y: 4.398802, z: 1.0449713}
+  m_Center: {x: -0.97682923, y: 2.199401, z: 0.5224898}

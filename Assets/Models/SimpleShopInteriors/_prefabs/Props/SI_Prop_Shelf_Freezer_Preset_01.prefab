@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 499104}
   - component: {fileID: 3320226}
   - component: {fileID: 2337854}
+  - component: {fileID: 65731464904642886}
   m_Layer: 0
   m_Name: SI_Prop_Shelf_Freezer_Preset_01
   m_TagString: Untagged
@@ -53,8 +54,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160652}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: 7.353409, y: -2.011073, z: 25.149237}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 420638}
@@ -150,3 +151,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 160652}
   m_IsPrefabParent: 1
+--- !u!65 &65731464904642886
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.879279, y: 4.5861464, z: 2.1104238}
+  m_Center: {x: -3.9091578, y: 2.2930732, z: -0.89137447}

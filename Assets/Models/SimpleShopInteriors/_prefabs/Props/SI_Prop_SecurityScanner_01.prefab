@@ -10,6 +10,8 @@ GameObject:
   - component: {fileID: 443684}
   - component: {fileID: 3300514}
   - component: {fileID: 2387168}
+  - component: {fileID: 65825524763619520}
+  - component: {fileID: 65160383522784266}
   m_Layer: 0
   m_Name: SI_Prop_SecurityScanner_01
   m_TagString: Untagged
@@ -23,9 +25,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103948}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -14.86, y: -2.01, z: 20.65}
+  m_LocalScale: {x: 1, y: 1.1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -80,3 +82,27 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 103948}
   m_IsPrefabParent: 1
+--- !u!65 &65160383522784266
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.38511342, y: 2.4074104, z: 1.0000018}
+  m_Center: {x: -2.150015, y: 1.2037052, z: -2.1318362e-15}
+--- !u!65 &65825524763619520
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.40918964, y: 2.4074104, z: 1.0000018}
+  m_Center: {x: 2.137972, y: 1.2037052, z: 1.960695e-15}

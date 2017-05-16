@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 473866}
   - component: {fileID: 3376352}
   - component: {fileID: 2372106}
+  - component: {fileID: 65434172850737160}
   m_Layer: 0
   m_Name: SI_Prop_ShoppingTrolley_04
   m_TagString: Untagged
@@ -23,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 109840}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0.7116137, z: 0, w: 0.702571}
+  m_LocalPosition: {x: -4.99, y: -2.01, z: 28.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 109840}
   m_IsPrefabParent: 1
+--- !u!65 &65434172850737160
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 109840}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3348066, y: 1.8457136, z: 2.2018778}
+  m_Center: {x: 0.00000047683716, y: 0.9228568, z: 0.0000019073486}

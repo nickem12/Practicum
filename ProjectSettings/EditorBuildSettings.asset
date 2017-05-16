@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/NickTestStuff/MenuSceneSelect.unity
     guid: 448d66856c379e4458311dce4ec7ccdc
   - enabled: 1
+    path: Assets/Scenes/Apartments/Apartment2.unity
+    guid: 6ac745d0c71033b488f1eadd94711dcf
+  - enabled: 1
     path: Assets/Scenes/Apartments/Apartment1.unity
     guid: dfe7d1d09e2119048a6a6bf22cd0aeac
-  - enabled: 1
-    path: Assets/Scenes/Apartments/Apartment_2.unity
-    guid: 6ac745d0c71033b488f1eadd94711dcf
   - enabled: 1
     path: Assets/Scenes/Motel/Motel_1.unity
     guid: d8991e2f33b232b44a482753c70337b3

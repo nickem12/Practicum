@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 496930}
   - component: {fileID: 3356844}
   - component: {fileID: 2355356}
+  - component: {fileID: 65948689869933598}
   m_Layer: 0
   m_Name: SI_Prop_Arcade_Motorbike_01
   m_TagString: Untagged
@@ -53,8 +54,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 149742}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -8.3665905, y: -2.011073, z: 50.14924}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 491712}
@@ -150,3 +151,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 149742}
   m_IsPrefabParent: 1
+--- !u!65 &65948689869933598
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149742}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0560203, y: 4.094222, z: 5.1311693}
+  m_Center: {x: 0.0000019073486, y: 2.047111, z: 0}

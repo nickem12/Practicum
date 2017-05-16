@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 416356}
   - component: {fileID: 3385638}
   - component: {fileID: 2376116}
+  - component: {fileID: 65357282628338318}
   m_Layer: 0
   m_Name: SI_Prop_Shelf_Isle_Preset_03
   m_TagString: Untagged
@@ -57,8 +58,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113656}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -0.5799999, y: -2.01, z: 10.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 418702}
@@ -220,3 +221,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 113656}
   m_IsPrefabParent: 1
+--- !u!65 &65357282628338318
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113656}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.880695, y: 4.2769723, z: 3.4403477}
+  m_Center: {x: -3.4403474, y: 2.1384861, z: -1.5825062}

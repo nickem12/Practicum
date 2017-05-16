@@ -10,6 +10,9 @@ GameObject:
   - component: {fileID: 463352}
   - component: {fileID: 3392226}
   - component: {fileID: 2354606}
+  - component: {fileID: 65641275042477184}
+  - component: {fileID: 65172909781718792}
+  - component: {fileID: 65401041892216298}
   m_Layer: 0
   m_Name: SI_Prop_Coffee_Kiosk
   m_TagString: Untagged
@@ -23,8 +26,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183986}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -34.13659, y: -2.011073, z: 19.369236}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +83,39 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 183986}
   m_IsPrefabParent: 1
+--- !u!65 &65172909781718792
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183986}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5162284, y: 4.0174665, z: 2.1734462}
+  m_Center: {x: -1.8971826, y: 2.0087333, z: -0.0000009536744}
+--- !u!65 &65401041892216298
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183986}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5760562, y: 4.0174665, z: 2.1734462}
+  m_Center: {x: 1.8672704, y: 2.0087333, z: -0.0000009536743}
+--- !u!65 &65641275042477184
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183986}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.3105836, y: 4.0174665, z: 0.9481372}
+  m_Center: {x: -1.6009101e-15, y: 2.0087333, z: 0.61265415}

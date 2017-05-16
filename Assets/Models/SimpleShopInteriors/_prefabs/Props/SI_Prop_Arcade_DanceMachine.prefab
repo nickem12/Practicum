@@ -10,6 +10,8 @@ GameObject:
   - component: {fileID: 434654}
   - component: {fileID: 3395862}
   - component: {fileID: 2391560}
+  - component: {fileID: 65306309685735536}
+  - component: {fileID: 65733249473266754}
   m_Layer: 0
   m_Name: SI_Prop_Arcade_DanceMachine
   m_TagString: Untagged
@@ -23,8 +25,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 138282}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
+  m_LocalPosition: {x: -15.646591, y: -2.011073, z: 56.14924}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +82,27 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 138282}
   m_IsPrefabParent: 1
+--- !u!65 &65306309685735536
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.975729, y: 3.2548132, z: 1.3535411}
+  m_Center: {x: 3.812448e-15, y: 1.6274066, z: -1.1572436}
+--- !u!65 &65733249473266754
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 138282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.975729, y: 3.2548132, z: 0.10549545}
+  m_Center: {x: -1.2607157e-14, y: 1.6274066, z: 1.7812705}

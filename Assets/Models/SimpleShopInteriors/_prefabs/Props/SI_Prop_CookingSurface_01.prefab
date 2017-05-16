@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 408906}
   - component: {fileID: 3343078}
   - component: {fileID: 2312310}
+  - component: {fileID: 65742149269142482}
   m_Layer: 0
   m_Name: SI_Prop_CookingSurface_01
   m_TagString: Untagged
@@ -40,9 +41,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168656}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -54.74, y: -2.01, z: 26.574}
+  m_LocalScale: {x: 1.2365029, y: 1.2365028, z: 1.2365028}
   m_Children:
   - {fileID: 473844}
   m_Father: {fileID: 0}
@@ -150,3 +151,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 168656}
   m_IsPrefabParent: 1
+--- !u!65 &65742149269142482
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168656}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2081332, y: 1.4421083, z: 1.460868}
+  m_Center: {x: -0.0000017881393, y: 0.721054, z: 0.000001847744}

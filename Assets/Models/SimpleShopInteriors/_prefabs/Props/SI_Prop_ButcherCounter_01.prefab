@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 459818}
   - component: {fileID: 3301668}
   - component: {fileID: 2331680}
+  - component: {fileID: 65494721330595072}
   m_Layer: 0
   m_Name: SI_Prop_ButcherCounter_01
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184980}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -6.646591, y: -2.011073, z: -2.8507652}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 184980}
   m_IsPrefabParent: 1
+--- !u!65 &65494721330595072
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184980}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.9382877, y: 2.6227145, z: 2.1904125}
+  m_Center: {x: 0.0000009536743, y: 1.3113573, z: 0}

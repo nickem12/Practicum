@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 462806}
   - component: {fileID: 3324110}
   - component: {fileID: 2306126}
+  - component: {fileID: 65431131311870016}
   m_Layer: 0
   m_Name: SI_Prop_Stereo
   m_TagString: Untagged
@@ -23,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 141048}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.18470928, z: 0, w: 0.9827932}
+  m_LocalPosition: {x: -42.06659, y: -0.5510731, z: 45.859238}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 141048}
   m_IsPrefabParent: 1
+--- !u!65 &65431131311870016
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141048}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5682812, y: 2.7377758, z: 0.5610728}
+  m_Center: {x: 3.3361897e-11, y: 1.3688879, z: 0.016577125}

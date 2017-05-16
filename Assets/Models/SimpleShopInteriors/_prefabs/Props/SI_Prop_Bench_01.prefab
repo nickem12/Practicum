@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 402360}
   - component: {fileID: 3390682}
   - component: {fileID: 2350500}
+  - component: {fileID: 65099846903269134}
   m_Layer: 0
   m_Name: SI_Prop_Bench_01
   m_TagString: Untagged
@@ -23,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197020}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0.7075467, z: 0, w: 0.70666665}
+  m_LocalPosition: {x: -32.82, y: -2.01, z: 30.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 197020}
   m_IsPrefabParent: 1
+--- !u!65 &65099846903269134
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197020}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.5983758, y: 1.761593, z: 1.3002018}
+  m_Center: {x: -0.00000047683716, y: 0.877593, z: 0.00000047683716}

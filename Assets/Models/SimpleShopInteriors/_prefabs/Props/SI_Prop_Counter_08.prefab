@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 491816}
   - component: {fileID: 3301608}
   - component: {fileID: 2387630}
+  - component: {fileID: 65501438749908938}
   m_Layer: 0
   m_Name: SI_Prop_Counter_08
   m_TagString: Untagged
@@ -23,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193710}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -47.48, y: -2.01, z: 23.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 193710}
   m_IsPrefabParent: 1
+--- !u!65 &65501438749908938
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193710}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.9999995, y: 1.4762356, z: 1.6602437}
+  m_Center: {x: -1.9999995, y: 0.7381178, z: 0.49999994}

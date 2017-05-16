@@ -10,7 +10,9 @@ GameObject:
   - component: {fileID: 456478}
   - component: {fileID: 3340858}
   - component: {fileID: 2393552}
-  - component: {fileID: 64849333476283136}
+  - component: {fileID: 65470017708762174}
+  - component: {fileID: 65411916414194816}
+  - component: {fileID: 65625791028434154}
   m_Layer: 0
   m_Name: AI_Env_Sewer_Wall_Doorway
   m_TagString: Untagged
@@ -25,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121452}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 11.5, y: 0, z: -63}
+  m_LocalPosition: {x: -0.8835392, y: 0.08752537, z: -1.8278503}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,8 +83,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 121452}
   m_IsPrefabParent: 1
---- !u!64 &64849333476283136
-MeshCollider:
+--- !u!65 &65411916414194816
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -91,7 +93,29 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 4cc89e2b03c1526438ef2211719c1502, type: 3}
+  m_Size: {x: 1.707001, y: 3.75, z: 0.11751078}
+  m_Center: {x: -4.1465206, y: 1.875, z: 0.058757033}
+--- !u!65 &65470017708762174
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7398947, y: 3.75, z: 0.11751078}
+  m_Center: {x: -0.86994934, y: 1.875, z: 0.05875689}
+--- !u!65 &65625791028434154
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.9999995, y: 0.816133, z: 0.11751078}
+  m_Center: {x: -2.4999957, y: 3.3419335, z: 0.058757577}

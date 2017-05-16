@@ -36,8 +36,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1499006641711104}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.640461, y: 0, z: 21.330578}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.315578, y: -7.43087, z: -11.797709}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a73fa05eaff07914caabfa7ac832a126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 1
   weapon: 0
   weaponType: 0
   weaponGameObject: {fileID: 0}
@@ -113,7 +113,5 @@ MonoBehaviour:
   spriteNeutral: {fileID: 0}
   spriteHighlighted: {fileID: 0}
   maxSize: 5
-  pickUp: {fileID: 0}
-  text: {fileID: 0}
   statIncrease: 20
   numberOfBullets: 0

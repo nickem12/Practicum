@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 485710}
   - component: {fileID: 3312092}
   - component: {fileID: 2318736}
+  - component: {fileID: 65622701742039794}
   m_Layer: 0
   m_Name: SI_Prop_Basket_Stack_01
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178258}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -14.646591, y: -2.011073, z: 17.149237}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 178258}
   m_IsPrefabParent: 1
+--- !u!65 &65622701742039794
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0420923, y: 1.5361762, z: 0.70576334}
+  m_Center: {x: 0, y: 0.7680881, z: 0}

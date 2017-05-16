@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 404650}
   - component: {fileID: 3352642}
   - component: {fileID: 2386782}
+  - component: {fileID: 65478974791512190}
   m_Layer: 0
   m_Name: SI_Prop_SlushieMachine_01
   m_TagString: Untagged
@@ -23,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 105894}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -49.94659, y: -0.5110731, z: 25.345236}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 105894}
   m_IsPrefabParent: 1
+--- !u!65 &65478974791512190
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 105894}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4885837, y: 1.7029607, z: 0.74776375}
+  m_Center: {x: 0.002895638, y: 0.85148036, z: 0.10418965}

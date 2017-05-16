@@ -10,6 +10,8 @@ GameObject:
   - component: {fileID: 479494}
   - component: {fileID: 3314008}
   - component: {fileID: 2383562}
+  - component: {fileID: 65488879402351774}
+  - component: {fileID: 65123887880878498}
   m_Layer: 0
   m_Name: SI_Prop_ConcreteBench_01
   m_TagString: Untagged
@@ -23,8 +25,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 146828}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0.0014276963, z: 0, w: 0.99999905}
+  m_LocalPosition: {x: -21.6, y: -2.01, z: 35.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +82,27 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 146828}
   m_IsPrefabParent: 1
+--- !u!65 &65123887880878498
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5463891, y: 4.5225697, z: 0.9283123}
+  m_Center: {x: -1.8710232, y: 2.2612848, z: -1.8617188}
+--- !u!65 &65488879402351774
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6895828, y: 1.3104017, z: 3.6895876}
+  m_Center: {x: -1.8447866, y: 0.65520084, z: -1.8448056}
