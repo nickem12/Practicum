@@ -5,73 +5,98 @@ using UnityEngine;
 public class FirstPersonControllerBehavior : MonoBehaviour {
 
 	
-	private Vector3 OldMouse;							//The mouse position last frame
-	private Vector3 CurMouse;							//The mouse position this frame
-	private Vector3 DiffMouse;							//The difference in movement for the mouse
+	private Vector3 OldMouse;																			//The mouse position last frame
+	private Vector3 CurMouse;																			//The mouse position this frame
+	private Vector3 DiffMouse;																			//The difference in the mouse
 
-	private Vector3 ForwardVector;						//The direction we would like to look in
+	private Vector3 ForwardVector;																		//The direction we would like to look in
+	private Vector3 HeadingVector;
 
+	public float Sensitivity;																			//The sensitivity for looking on the screen
+	public float SnapSensitivity;																		//The snapping sensitivity between the forward vector and the heading vector
+
+	public float HightRestraint;																		//What is the restraint to use for gimble lock?
 
 	void Start () {
-
-		OldMouse = Input.mousePosition;					//Use initial mouse position
-		ForwardVector = new Vector3(0,0,1);				//We start by looking forward in the z axis
-
+		OldMouse = Input.mousePosition;																	//Use initial mouse position
+		ForwardVector = new Vector3(0,0,1);																//We start by looking forward in the z axis
+		HeadingVector = ForwardVector;																	//The way in which are actually looking
 	}
-
 
 
 	void Update () {
 
-		DiffMouse = GetMouseInformation();				//Get the mouse information
-		Debug.Log("Actual: " + DiffMouse);
-		//Debug.Log(DiffMouse);
-		//RotateForwardVec();								//Rotate the forward vector
-		Debug.DrawLine(transform.position, transform.position + (ForwardVector * 5), Color.black);
-
-
+		DiffMouse = GetMouseInformation();																//Get the mouse information
+		RotateForwardVec();																				//Rotate the forward vector
+		RotateHeading();																				//Rotate the heading vector
+		RotateFPC();																					//Rotate the First Personal Controller
 	}
 
-
-
-
-
 	private Vector3 GetMouseInformation(){
+		float MouseX = Input.GetAxis("Mouse X");
+		float MouseY = Input.GetAxis("Mouse Y");
+		Vector3 Result = new Vector3(MouseX, MouseY, 0.0f);
+		return Result;
+	}
 
-		CurMouse = Input.mousePosition;					//Get the current mouse information
-
-		if(CurMouse.x < 0.0f) CurMouse.x = 0.0f;		//Clamp the cur mouse x and y to be greater than 0.
-		if(CurMouse.y < 0.0f) CurMouse.y = 0.0f;
-
-		Vector3 ResultVec = CurMouse - OldMouse;		//Get the result
-
-		//Debug.Log(ResultVec.x + " " + ResultVec.y);
-
-		//Debug.Log(ResultVec.x / (float)Screen.width);
-		//Debug.Log(ResultVec.y / (float)Screen.height);
-
-		ResultVec.x = ResultVec.x / (float)Screen.width;				//Divide by the width and height - will put values for x and y between 0 and 1
-		ResultVec.y = ResultVec.y / (float)Screen.height;					
-
-		//Debug.Log("Result : " + ResultVec.x + " " + ResultVec.y);
-		Debug.Log("Calculated : " + ResultVec.x);
-
-		return ResultVec;								//Return the difference, if any
+	private void PrintVec(Vector3 Vec){
+		Debug.Log("( " + Vec.x + " , " + Vec.y + " , " + Vec.z + " ) " );									//Print out the vector in full
 	}
 
 
 	private void RotateForwardVec(){
 
-		if(DiffMouse.x != 0 || DiffMouse.y != 0 || DiffMouse.z != 0){
+		if(DiffMouse.x != 0 || DiffMouse.y != 0 || DiffMouse.z != 0){																							//If the diff vec is not 0
 
-			ForwardVector = Quaternion.AngleAxis(DiffMouse.y, new Vector3(1.0f,0,0)) * ForwardVector;		//Rotate the vector on the x axis
-			ForwardVector = Quaternion.AngleAxis(DiffMouse.x, new Vector3(0,1.0f,0)) * ForwardVector;		//Rotate the vector on the y axis
-			ForwardVector = Quaternion.AngleAxis(DiffMouse.z, new Vector3(0,0,1.0f)) * ForwardVector;		//Rotate the vector on the z axis
+			float angle = Vector3.Angle(new Vector3(ForwardVector.x, 0, ForwardVector.z) , Vector3.forward);													//Angle of the forward vector and the forward of the world
+			float leftAngle = Vector3.Angle(new Vector3(ForwardVector.x, 0, ForwardVector.z), Vector3.left);													//Angle of the forward vector and the left of the world
 
-			ForwardVector.Normalize();
+			if(angle <= 45.0f){																																	//If were in the forward quadrant 
+				ForwardVector = Quaternion.Euler(-DiffMouse.y * Sensitivity, DiffMouse.x * Sensitivity, DiffMouse.z * Sensitivity) * ForwardVector;
+			}
+			else if (angle <= 90.0f){																															//If were in the left or right quadrant but in the front half 
+				if(leftAngle <= 45.0f){
+					ForwardVector = Quaternion.Euler(-DiffMouse.z * Sensitivity, DiffMouse.x * Sensitivity, -DiffMouse.y * Sensitivity) * ForwardVector;
+				}
+				else{
+					ForwardVector = Quaternion.Euler(-DiffMouse.z * Sensitivity, DiffMouse.x * Sensitivity, DiffMouse.y * Sensitivity) * ForwardVector;
+				}
+			}
+			else if (angle <= 135.0f){																															//If were in the left or right quadrant but in the back half
 
-			DiffMouse = new Vector3(0,0,0);
+				if(leftAngle <= 45.0f){
+					ForwardVector = Quaternion.Euler(DiffMouse.z * Sensitivity, DiffMouse.x * Sensitivity, -DiffMouse.y * Sensitivity) * ForwardVector;
+				}
+				else{
+					ForwardVector = Quaternion.Euler(DiffMouse.z * Sensitivity, DiffMouse.x * Sensitivity, DiffMouse.y * Sensitivity) * ForwardVector;
+				}
+			}
+			else{																																				//If were in the back quadrant
+				ForwardVector = Quaternion.Euler(DiffMouse.y * Sensitivity, DiffMouse.x * Sensitivity, DiffMouse.z * Sensitivity) * ForwardVector;
+			}
+
+			PreventGimbleLock();																																//Prevent gimble lock for the forward vector
+			ForwardVector.Normalize();																															//Normalize the forward vector
+			DiffMouse = new Vector3(0,0,0);																														//Reset the diff vec
 		}	
+	}
+
+	private void RotateFPC(){
+		transform.Rotate(-transform.rotation.eulerAngles);																										//Rotate the controller object to have 0 rotation on all axis
+		transform.LookAt(transform.position + HeadingVector);																									//Lookat the heading vector
+	}
+
+	private void RotateHeading(){
+		HeadingVector = Vector3.Lerp(HeadingVector, ForwardVector, SnapSensitivity);																			//Lerp the heading vector by some amount
+	}
+
+	private void PreventGimbleLock(){
+		if(ForwardVector.y > HightRestraint){
+			ForwardVector.y = HightRestraint;
+		}
+		else if(ForwardVector.y < -HightRestraint){
+			ForwardVector.y = -HightRestraint;
+		}
 	}
 
 }
