@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 82580032872517798}
   - component: {fileID: 114008866860785376}
   - component: {fileID: 114872503612956922}
+  - component: {fileID: 65325467597184100}
   m_Layer: 0
   m_Name: PlayObject
   m_TagString: Player
@@ -222,7 +223,7 @@ GameObject:
   - component: {fileID: 114854561054429910}
   m_Layer: 0
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: PickUpText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -240,11 +241,11 @@ GameObject:
   - component: {fileID: 114855291847560662}
   m_Layer: 0
   m_Name: PickUpDisplay
-  m_TagString: Untagged
+  m_TagString: PickUpCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1627877294990834
 GameObject:
   m_ObjectHideFlags: 1
@@ -380,8 +381,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1276816349535294}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.46, y: 2.37, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 8.72, y: 2.22, z: -0.05}
+  m_LocalScale: {x: 1, y: 0.9163437, z: 1}
   m_Children:
   - {fileID: 4873587690034682}
   - {fileID: 4722820530065388}
@@ -456,6 +457,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65325467597184100
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1276816349535294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7, y: 1.2122365, z: 0.78}
+  m_Center: {x: 0, y: 0.4488817, z: 0}
 --- !u!81 &81380947574679694
 AudioListener:
   m_ObjectHideFlags: 1
@@ -1180,7 +1193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3497a4f7785ac594f90d47bcfa283944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t_Weapon: {fileID: 1142613463324316, guid: 3c7ec5c9122272a4fa0d925e43030dba, type: 2}
+  t_Weapon: {fileID: 0}
 --- !u!114 &114817401996348514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1309,11 +1322,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8bc5ba1bb0a45544dbbaa0293ed788cf, type: 2}
   inventory: {fileID: 114566014546547570}
   pickUp: {fileID: 223117208849331124}
+  playerIsDead: 0
   shotgunAmmo: 0
   rifleAmmo: 0
   sniperAmmo: 0
   smgAmmo: 0
   rocketAmmo: 0
+  handgunAmmo: 0
 --- !u!114 &114877147304414292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1666,7 +1681,7 @@ Canvas:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1560871197909458}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -1751,8 +1766,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 45.6, y: 55.1}
-  m_SizeDelta: {x: 168, y: 31.341}
+  m_AnchoredPosition: {x: 341, y: 47}
+  m_SizeDelta: {x: 755, y: 37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224128844556611846
 RectTransform:
@@ -1893,8 +1908,8 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1560871197909458}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10.366114}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 224125430930247600}
@@ -1904,7 +1919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -7.068387, y: -1.71}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!224 &224772034097260418

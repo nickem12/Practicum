@@ -21,6 +21,7 @@ public class ZombieStats : MonoBehaviour {
 
     public void TakeDamage(int damageValue)
     {
+        Debug.Log(damageValue);
         Health -= damageValue;
         if(Health <= 0)
         {

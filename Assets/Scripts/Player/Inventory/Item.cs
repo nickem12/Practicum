@@ -66,7 +66,7 @@ public class Item : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
-            pickUp.gameObject.SetActive(true);
+            pickUp.enabled = true;
             text.text = "Pickup " + name;
             
         }
@@ -75,7 +75,7 @@ public class Item : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
-            pickUp.gameObject.SetActive(false);
+            pickUp.enabled = false;
         }
     }
 }

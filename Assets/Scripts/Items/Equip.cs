@@ -20,7 +20,7 @@ public class Equip : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
     public void EquipWeapon(GameObject Weapon)

@@ -15,10 +15,14 @@ public class BulletPickUp : MonoBehaviour {
     public Weapon weapon;
     public string name;
 
-    public Canvas pickupDisplay;
-    public Text pickupText;
+    private Canvas pickupDisplay;
+    private Text pickupText;
 	// Use this for initialization
 	void Start () {
+
+        pickupDisplay = GameObject.FindGameObjectWithTag("PickUpCanvas").GetComponent<Canvas>();
+        pickupText = GameObject.FindGameObjectWithTag("PickUpText").GetComponent<Text>();
+
         rifleAmmo = 0;
         handgunAmmo = 0;
         sniperAmmo = 0;
@@ -63,7 +67,7 @@ public class BulletPickUp : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
-            pickupDisplay.gameObject.SetActive(true);
+            pickupDisplay.enabled = true;
             pickupText.text = "Pickup " + name;
         }
     }
@@ -72,7 +76,7 @@ public class BulletPickUp : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
-            pickupDisplay.gameObject.SetActive(false);
+            pickupDisplay.enabled = false;
         }
     }
 }

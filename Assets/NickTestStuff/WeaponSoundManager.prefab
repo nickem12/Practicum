@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4116606565426482}
   - component: {fileID: 114560564647243258}
   - component: {fileID: 82725376775191786}
+  - component: {fileID: 114027626502126028}
   m_Layer: 0
   m_Name: WeaponSoundManager
   m_TagString: WeaponSoundManager
@@ -108,7 +109,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -121,6 +122,32 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114027626502126028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1103388662968232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe6dab25004392e4b9b7069bfd0c9e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponFiringAudioClips:
+  - {fileID: 8300000, guid: eb9dd0b75d3ad9e4fac444b7085f964b, type: 3}
+  - {fileID: 8300000, guid: 8fcca873216607a40932e42ddd7d8132, type: 3}
+  - {fileID: 8300000, guid: 029929f2badaba148b89face8a269c9f, type: 3}
+  - {fileID: 8300000, guid: 0c439abec87958b47bde08318787f956, type: 3}
+  - {fileID: 8300000, guid: a307b7d34295ebf40a1713165afbde65, type: 3}
+  - {fileID: 8300000, guid: 337ad114e633f3946a4dcf1182e6b913, type: 3}
+  - {fileID: 8300000, guid: 8451aa88b24b84849b2def9172de000e, type: 3}
+  weaponReloadingAudioClip:
+  - {fileID: 8300000, guid: 6f8877e11e96e5f48abd92bbcdb39d63, type: 3}
+  - {fileID: 8300000, guid: c16456490d57e394bb1bab8c28f020b8, type: 3}
+  - {fileID: 8300000, guid: 25020680ef9405b45adc4a8bbfa1f457, type: 3}
+  - {fileID: 8300000, guid: 4477d13f5d2592b4a916ac53e6b8b6f0, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 58ee922304f80cd4483cd4fa0744eeb2, type: 3}
 --- !u!114 &114560564647243258
 MonoBehaviour:
   m_ObjectHideFlags: 1

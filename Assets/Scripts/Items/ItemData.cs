@@ -43,12 +43,15 @@ public class ItemData{
         {
             case Weapon.ASSAULTRIFLE:
                 maxAmmo = 30;
+                damage = 10;
                 break;
             case Weapon.HANDGUN:
                 maxAmmo = 12;
+                damage = 3;
                 break;
             case Weapon.LMG:
                 maxAmmo = 25;
+                damage = 5;
                 break;
             case Weapon.MELEE:
                 maxAmmo = 0;

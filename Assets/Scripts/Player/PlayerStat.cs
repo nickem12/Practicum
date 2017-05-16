@@ -226,7 +226,7 @@ public class PlayerStat : MonoBehaviour {
             {
                 inventory.AddItem(other.GetComponent<Item>());          //adds the item and destroys the game object
                 Destroy(other.gameObject);
-                pickUp.gameObject.SetActive(false);
+                pickUp.GetComponent<Canvas>().enabled = false;
                 //Debug.Log("Added the item.");
                 //GameObject.FindGameObjectWithTag("Weapon_Slot").GetComponent<Equip>().EquipWeapon(other.GetComponent<Item>().weaponGameObject);
 
@@ -244,7 +244,7 @@ public class PlayerStat : MonoBehaviour {
                 smgAmmo += temp.smgAmmo;
                 handgunAmmo += temp.handgunAmmo;
                 Destroy(other.gameObject);
-                pickUp.gameObject.SetActive(false);
+                pickUp.GetComponent<Canvas>().enabled = false;
             }
         }
     }

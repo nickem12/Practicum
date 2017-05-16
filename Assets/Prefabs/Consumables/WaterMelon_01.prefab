@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 33096568587613656}
   - component: {fileID: 23163734818757538}
   - component: {fileID: 114792521213935504}
+  - component: {fileID: 65273563356299336}
   m_Layer: 0
   m_Name: WaterMelon_01
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1576264727610144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.483109, y: 0, z: 19.189}
+  m_LocalPosition: {x: 13.09829, y: 0, z: 17.842575}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -81,6 +82,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1576264727610144}
   m_Mesh: {fileID: 4300000, guid: 83497dbc028c28743ac3411d14b42ea3, type: 3}
+--- !u!65 &65273563356299336
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1576264727610144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.32, y: 1.14, z: 1.2}
+  m_Center: {x: 0.0000009536743, y: 0.21983957, z: -0.000000059604645}
 --- !u!114 &114792521213935504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -100,7 +113,5 @@ MonoBehaviour:
   spriteNeutral: {fileID: 0}
   spriteHighlighted: {fileID: 0}
   maxSize: 2
-  pickUp: {fileID: 0}
-  text: {fileID: 0}
   statIncrease: 10
   numberOfBullets: 0

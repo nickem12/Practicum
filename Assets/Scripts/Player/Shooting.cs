@@ -48,7 +48,7 @@ public class Shooting : MonoBehaviour
 
                 t_bullet.GetComponent<Bullet>().damage = Weapon.damage;
 
-
+                Debug.Log("bullet damage: " + t_bullet.GetComponent<Bullet>().damage);
                 Destroy(t_bullet, 10f);
 
                 Weapon.currentAmmo--;
@@ -68,6 +68,13 @@ public class Shooting : MonoBehaviour
                 muzzleFlash.SetActive(false);
                 flashTimer = 0.2f;
             }
+        }
+
+        if (Input.GetButtonDown("Reload"))
+        {
+            Debug.Log(Weapon.currentAmmo);
+            Reload();
+            Debug.Log(Weapon.currentAmmo);
         }
 
     }
@@ -92,15 +99,15 @@ public class Shooting : MonoBehaviour
                 weaponSoundManager.PlayReloadingSoundEffect((int)Weapon.weapon);
                 break;
             case global::Weapon.HANDGUN:
-                if (pStat.rifleAmmo >= ammoNeeded)
+                if (pStat.handgunAmmo >= ammoNeeded)
                 {
                     Weapon.currentAmmo = Weapon.maxAmmo;
-                    pStat.rifleAmmo -= ammoNeeded;
+                    pStat.handgunAmmo -= ammoNeeded;
                 }
-                else if (pStat.rifleAmmo > 0)
+                else if (pStat.handgunAmmo > 0)
                 {
-                    Weapon.currentAmmo += pStat.rifleAmmo;
-                    pStat.rifleAmmo = 0;
+                    Weapon.currentAmmo += pStat.handgunAmmo;
+                    pStat.handgunAmmo = 0;
                 }
                 weaponSoundManager.PlayReloadingSoundEffect((int)Weapon.weapon);
                 break;
