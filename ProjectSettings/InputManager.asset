@@ -332,7 +332,7 @@ InputManager:
     negativeButton: 
     positiveButton: e
     altNegativeButton: 
-    altPositiveButton: joystick button 3
+    altPositiveButton: joystick button 6
     gravity: 0
     dead: 0.1
     sensitivity: 1
@@ -381,6 +381,22 @@ InputManager:
     positiveButton: r
     altNegativeButton: 
     altPositiveButton: joystick button 3
+    gravity: 0
+    dead: 0.1
+    sensitivity: 1
+    snap: 1
+    invert: 0
+    type: 0
+    axis: 5
+    joyNum: 0
+  - serializedVersion: 3
+    m_Name: Sprint
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: left shift
+    altNegativeButton: 
+    altPositiveButton: joystick button 8
     gravity: 0
     dead: 0.1
     sensitivity: 1
