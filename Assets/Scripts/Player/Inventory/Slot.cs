@@ -90,15 +90,19 @@ public class Slot : MonoBehaviour, IPointerClickHandler {
     {
         if(!IsEmpty)
         {
-            Items.Pop().Use();
-
-            stackText.text = Items.Count > 1 ? Items.Count.ToString() : string.Empty;
-            if(IsEmpty)
+            if(items.Peek().consumableType != ConsumableType.NULL)
             {
-                ChangeSprite(slotEmpty, slotHighlighted);
+                Items.Pop().Use();
 
-                Inventory.EmptySlots++;
+                stackText.text = Items.Count > 1 ? Items.Count.ToString() : string.Empty;
+                if (IsEmpty)
+                {
+                    ChangeSprite(slotEmpty, slotHighlighted);
+
+                    Inventory.EmptySlots++;
+                }
             }
+
         }
     }
 

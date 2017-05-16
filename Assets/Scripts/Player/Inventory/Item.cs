@@ -4,22 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public enum ItemType { WEAPON,CONSUMABLE}
-
+public enum ConsumableType { FOOD, HYDRATION, HEALTH, NULL};
 public class Item : MonoBehaviour {
 
     public ItemType type;
     public Weapon weapon;
     public WeaponType weaponType;
     public GameObject weaponGameObject;
-
+    public ConsumableType consumableType;
     public Sprite spriteNeutral;
     public Sprite spriteHighlighted;
 
-    public int maxSize;
+    private GameObject player;
 
+    public int maxSize;
     private string name;
-    public Canvas pickUp;
-    public Text text;
+    private Canvas pickUp;
+    private Text text;
+    public int statIncrease;
 
     public ItemData itemData;
 
@@ -37,15 +39,24 @@ public class Item : MonoBehaviour {
                 name = "Consumable";
                 break;
         }
+        player = GameObject.FindGameObjectWithTag("Player");
         //weaponGameObject.GetComponent<WeaponStats>().data = itemData;
+        pickUp = GameObject.FindGameObjectWithTag("PickUpCanvas").GetComponent<Canvas>();
+        text = GameObject.FindGameObjectWithTag("PickUpText").GetComponent<Text>();
     }
 
     public void Use()
     {
-        switch(type)
+        switch(consumableType)
         {
-            case ItemType.CONSUMABLE:
-                Debug.Log("I Used sword.");
+            case ConsumableType.FOOD:
+                player.GetComponent<PlayerStat>().AddToHunger(statIncrease);
+                break;
+            case ConsumableType.HEALTH:
+                player.GetComponent<PlayerStat>().AddToHealth(statIncrease);
+                break;
+            case ConsumableType.HYDRATION:
+                player.GetComponent<PlayerStat>().AddToHydration(statIncrease);
                 break;
             default:
                 break;

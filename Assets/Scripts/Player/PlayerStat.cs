@@ -255,6 +255,28 @@ public class PlayerStat : MonoBehaviour {
             uiSoundManager.PlayAudioClip(2);
         }
     }
-
-    
+    public void AddToHunger(int value)
+    {
+        currentHunger += value;
+        if(currentHunger>maxHunger)
+        {
+            currentHunger = maxHunger;
+        }
+    }
+    public void AddToHydration(int value)
+    {
+        currentHydration += value;
+        if(currentHydration> maxHydration)
+        {
+            currentHydration = maxHydration;
+        }
+    }
+    public void AddToHealth(int value)
+    {
+        currentHealth += value;
+        if(currentHealth> maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+    }
 }

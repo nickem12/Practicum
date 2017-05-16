@@ -18,6 +18,8 @@ TagManager:
   - WeaponSoundManager
   - Master_Spawner
   - Spawner
+  - PickUpCanvas
+  - PickUpText
   layers:
   - Default
   - TransparentFX
