@@ -43,6 +43,9 @@ public class PlayerStat : MonoBehaviour {
     public int rocketAmmo;
     public int handgunAmmo;
 
+    private int itemCounter = 0;
+    private GameObject t_object = null;
+
     // Use this for initialization
     void Start () {
         currentHealth = 100;
@@ -71,6 +74,11 @@ public class PlayerStat : MonoBehaviour {
     }
     // Update is called once per frame
     void FixedUpdate () {
+
+        if(t_object == null)
+        {
+            itemCounter = 0;
+        }
 
         HydrationUpdate();
         HungerUpdate();
@@ -217,6 +225,7 @@ public class PlayerStat : MonoBehaviour {
     }
     private void OnTriggerStay(Collider other)
     {
+
         //Debug.Log("I'm hitting you.");
 
         if(other.tag == "Item")                                         //Colision with an item
@@ -224,10 +233,18 @@ public class PlayerStat : MonoBehaviour {
             //Debug.Log("You are in me.");
             if(Input.GetButtonDown("Submit"))                           //hits the pick up button
             {
+                if (itemCounter > 0)
+                {
+
+                    return;
+                }
                 inventory.AddItem(other.GetComponent<Item>());          //adds the item and destroys the game object
+                t_object = other.gameObject;
                 Destroy(other.gameObject);
                 pickUp.GetComponent<Canvas>().enabled = false;
-                //Debug.Log("Added the item.");
+                Debug.Log("Added the item.");
+                itemCounter++;
+                
                 //GameObject.FindGameObjectWithTag("Weapon_Slot").GetComponent<Equip>().EquipWeapon(other.GetComponent<Item>().weaponGameObject);
 
             }

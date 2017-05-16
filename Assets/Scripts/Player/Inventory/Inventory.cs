@@ -94,7 +94,7 @@ public class Inventory : MonoBehaviour {
                 Slot temp = slot.GetComponent<Slot>();
                 if(!temp.IsEmpty)
                 {
-                    if(temp.CurrentItem.type == item.type && temp.IsAvailable)
+                    if(temp.CurrentItem.InteractableItem == item.InteractableItem && temp.IsAvailable)
                     {
                         temp.AddItem(item);
                         return true;

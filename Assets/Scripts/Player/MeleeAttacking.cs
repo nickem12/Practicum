@@ -18,11 +18,11 @@ public class MeleeAttacking : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            anim.SetTrigger("Attacking");
+            anim.SetTrigger("Attack");
         }
-        if (Input.GetMouseButtonUp(0))
-        {
-            anim.SetTrigger("EndAttack");
-        }
+        //if (Input.GetMouseButtonUp(0))
+        //{
+        //    anim.SetTrigger("EndAttack");
+        //}
     }
 }

@@ -53,7 +53,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 34ed12399c5841c46819ca782d251df2, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c3a2409a855c84cba918f5d5a19df4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 82322541693619534}
   clip1: {fileID: 8300000, guid: 86135c54a2a49374a9703992d2f05d2e, type: 3}
   clip2: {fileID: 8300000, guid: 34ed12399c5841c46819ca782d251df2, type: 3}
   clip3: {fileID: 8300000, guid: e2960dd8cc2ff3041a4788b30eb902c0, type: 3}
@@ -150,9 +150,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
-  clip1: {fileID: 8300000, guid: 03f81e2774d711a43b020a5be183da08, type: 3}
-  clip2: {fileID: 8300000, guid: 608e49ca4b536564ab820e061b3e351f, type: 3}
-  clip3: {fileID: 8300000, guid: 7c932435d634cd0419e8839303e9eaf1, type: 3}
-  clip4: {fileID: 8300000, guid: 4f4190008d74a404f851523d5737a59e, type: 3}
-  clip5: {fileID: 8300000, guid: 56cd46bd52b577c439f534d8025d6d88, type: 3}
-  clip6: {fileID: 8300000, guid: 5f209906ba79f3140b2da9603e789fc8, type: 3}
+  heartBeat1: {fileID: 0}
+  heartBeat2: {fileID: 0}
+  heartBeat3: {fileID: 0}
+  breathing1: {fileID: 0}
+  breathing2: {fileID: 0}
+  death: {fileID: 0}
+  stomachGrowling1: {fileID: 0}
+  stomachGrowling2: {fileID: 0}

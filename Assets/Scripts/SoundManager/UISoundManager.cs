@@ -32,7 +32,8 @@ public class UISoundManager : MonoBehaviour {
             case 3:
                 audioSource.clip = clip4;
                 break;
-        }   
+        }
+        audioSource.volume = 0.1f;
         audioSource.Play();                                        //Play the audio.
     }
 }

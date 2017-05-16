@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum WeaponType { MELEE, RANGE }
-
 public enum Weapon { SHOTGUN, ASSAULTRIFLE, RIFLE, HANDGUN, ROCKETLAUNCHER, LMG, MELEE }
 
 public class ItemData{
 
     public Weapon weapon;
-    private WeaponType weaponType;
 
     public int currentAmmo;
     public int damage;
@@ -20,18 +17,16 @@ public class ItemData{
     public GameObject weaponGameObject;
     public int allAmmo;
 
-    public ItemData(WeaponType inWeaponType, Weapon inWeapon, GameObject inWeaponGameObject)
+    public ItemData(Weapon inWeapon, GameObject inWeaponGameObject)
     {
         weapon = inWeapon;
-        weaponType = inWeaponType;
         weaponGameObject = inWeaponGameObject;
         currentAmmo = 0;
         SetUpWeapon();
     }
-    public ItemData(WeaponType inWeaponType, Weapon inWeapon, GameObject inWeaponGameObject, int bulletsInWeapon)
+    public ItemData(Weapon inWeapon, GameObject inWeaponGameObject, int bulletsInWeapon)
     {
         weapon = inWeapon;
-        weaponType = inWeaponType;
         weaponGameObject = inWeaponGameObject;
         currentAmmo = bulletsInWeapon;
         SetUpWeapon();

@@ -21,15 +21,18 @@ public class LoadNewArea : MonoBehaviour {
 		
 	}
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if(other.tag == "Player")
         {
-            DontDestroyOnLoad(thePlayer);
+            if(Input.GetButtonDown("Submit"))
+            {
+                DontDestroyOnLoad(thePlayer);
 
-            SceneManager.LoadScene(levelToLoad);
+                SceneManager.LoadScene(levelToLoad);
 
-            thePlayer.startPoint = exitPoint;
+                thePlayer.startPoint = exitPoint;
+            }
         }
     }
 }

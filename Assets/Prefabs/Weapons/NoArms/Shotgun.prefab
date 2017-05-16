@@ -406,8 +406,8 @@ MonoBehaviour:
   weaponGameObject: {fileID: 1568033855541734, guid: 1c225b91de599c9499879894f672ad7a,
     type: 2}
   consumableType: 3
-  spriteNeutral: {fileID: 0}
-  spriteHighlighted: {fileID: 0}
+  spriteNeutral: {fileID: 21300000, guid: 4c3bca1bccbe9494285f8a7e8cb131c6, type: 3}
+  spriteHighlighted: {fileID: 21300000, guid: 4c3bca1bccbe9494285f8a7e8cb131c6, type: 3}
   maxSize: 1
   statIncrease: 0
   numberOfBullets: 3

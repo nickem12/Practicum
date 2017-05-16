@@ -123,10 +123,11 @@ MonoBehaviour:
   type: 0
   weapon: 6
   weaponType: 0
-  weaponGameObject: {fileID: 0}
+  weaponGameObject: {fileID: 1847600922782344, guid: 80f6ccca9bfb8dc43b88fe6ab561ebc8,
+    type: 2}
+  consumableType: 3
   spriteNeutral: {fileID: 0}
   spriteHighlighted: {fileID: 0}
   maxSize: 1
-  pickUp: {fileID: 0}
-  text: {fileID: 0}
+  statIncrease: 0
   numberOfBullets: 0

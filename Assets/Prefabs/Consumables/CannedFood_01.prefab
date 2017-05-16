@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33775811413646060}
   - component: {fileID: 23214782239446082}
   - component: {fileID: 65829445819481000}
-  - component: {fileID: 114328096924908332}
+  - component: {fileID: 114571174190728840}
   m_Layer: 0
   m_Name: CannedFood_01
   m_TagString: Item
@@ -94,7 +94,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.4091187, y: 2.1157093, z: 3.0134792}
   m_Center: {x: -0.00004005432, y: 1.0578547, z: 0.040530205}
---- !u!114 &114328096924908332
+--- !u!114 &114571174190728840
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -105,13 +105,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a73fa05eaff07914caabfa7ac832a126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractableItem: 0
   type: 1
   weapon: 0
-  weaponType: 0
   weaponGameObject: {fileID: 0}
   consumableType: 0
   spriteNeutral: {fileID: 0}
   spriteHighlighted: {fileID: 0}
   maxSize: 5
-  statIncrease: 20
+  statIncrease: 0
   numberOfBullets: 0
