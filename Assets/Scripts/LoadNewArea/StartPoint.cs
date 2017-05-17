@@ -19,7 +19,7 @@ public class StartPoint : MonoBehaviour {
 
         thePlayer = GameObject.FindGameObjectWithTag("Player");
 
-        if (thePlayer.GetComponent<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>().startPoint == pointName)
+        if (thePlayer.GetComponent<FirstPersonControllerBehavior>().startPoint == pointName)
         {
             thePlayer.transform.position = new Vector3(0, 0, 0);
 

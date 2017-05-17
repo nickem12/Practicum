@@ -18,6 +18,9 @@ public class OpenDropDownMenuSystem : MonoBehaviour {
     {
         //can = GameObject.FindGameObjectWithTag("DropDown");                                  //gets reference to the canvas, event system and data storage
         eventSystem = EventSystem.current;
+
+        Debug.Log("menu");
+
         dataStorage = GameObject.FindGameObjectWithTag("ExtraDataStorage");
         can = dataStorage.GetComponent<DataStorage>().dropDownCanvas;
         //can.gameObject.SetActive(true);                                                                  //turns the canvas on

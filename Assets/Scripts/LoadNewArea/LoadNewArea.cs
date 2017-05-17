@@ -9,11 +9,11 @@ public class LoadNewArea : MonoBehaviour {
 
     public string exitPoint;
 
-    private UnityStandardAssets.Characters.FirstPerson.FirstPersonController thePlayer; 
+    private FirstPersonControllerBehavior thePlayer; 
 
     // Use this for initialization
     void Start () {
-        thePlayer = FindObjectOfType<UnityStandardAssets.Characters.FirstPerson.FirstPersonController>();
+        thePlayer = FindObjectOfType<FirstPersonControllerBehavior>();
 	}
 	
 	// Update is called once per frame

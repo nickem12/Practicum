@@ -34,6 +34,7 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
     public GameObject uiSoundManager;
 
     private static bool playerExists;
+    public string startPoint;
 
     void Start () {
 		ForwardVector = new Vector3(0,0,1);																//We start by looking forward in the z axis

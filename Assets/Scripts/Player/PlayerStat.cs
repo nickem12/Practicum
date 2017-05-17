@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.PostProcessing;
 
 
@@ -28,7 +26,7 @@ public class PlayerStat : MonoBehaviour {
     public Texture text2;
     public Texture text3;
 
-    public PostProcessingProfile[] cameraEffects;
+    public PostProcessingProfile cameraEffects;
 
     public Inventory inventory;
     public Canvas pickUp;
@@ -97,10 +95,12 @@ public class PlayerStat : MonoBehaviour {
 
             if (currentMotivation < 0) currentMotivation = 0;                       //check so that motivation doesn't go under 0
         }
-        int index = (int)currentMotivation / 5;                                     //get the index for the greyinng out of the screen
-        if (index >= 20) index = 19;                                                //check if the index is outside the array
 
-        this.GetComponentInChildren<PostProcessingBehaviour>().profile = cameraEffects[index];              //set the grey scale
+        var saturation = cameraEffects.colorGrading.settings;
+        saturation.basic.saturation = currentMotivation / 100f;
+        cameraEffects.colorGrading.settings = saturation;
+        this.GetComponentInChildren<PostProcessingBehaviour>().profile = cameraEffects;
+
     }
     void HungerUpdate()
     {
