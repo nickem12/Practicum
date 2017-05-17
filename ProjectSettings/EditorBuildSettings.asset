@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/NickTestStuff/MenuSceneSelect.unity
     guid: 448d66856c379e4458311dce4ec7ccdc
   - enabled: 1
-    path: Assets/Scenes/Apartments/Apartment2.unity
-    guid: 6ac745d0c71033b488f1eadd94711dcf
-  - enabled: 1
     path: Assets/Scenes/Apartments/Apartment1.unity
     guid: dfe7d1d09e2119048a6a6bf22cd0aeac
+  - enabled: 1
+    path: Assets/Scenes/Apartments/Apartment2.unity
+    guid: 9845af31bcc2b0c4f87e9e606bef5689
   - enabled: 1
     path: Assets/Scenes/Motel/Motel_1.unity
     guid: d8991e2f33b232b44a482753c70337b3
@@ -36,26 +36,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Motel/Motel_7.unity
     guid: 3cca4257e7a15184fa7546c0e5069980
   - enabled: 1
-    path: Assets/Scenes/Shops/Book_Store.unity
-    guid: f97be99c20996d64eb2253194a558686
-  - enabled: 1
     path: Assets/Scenes/Shops/Gun_Shop.unity
     guid: 2f2fedb494a6cf443976cac18835be64
   - enabled: 1
     path: Assets/Scenes/Shops/General.unity
     guid: 8d02087e6e82fd9478925b471b590ee2
   - enabled: 1
-    path: Assets/Scenes/Shops/Bar.unity
-    guid: 2d1cc94c2f0fee546aca6471d37a372f
-  - enabled: 1
-    path: Assets/Scenes/Shops/Gun_Shop2.unity
-    guid: c4a51bafd5eda264ab9df6e71cc95fe1
-  - enabled: 1
     path: Assets/Scenes/Shops/Restuarent.unity
     guid: 511de8e050215ba428058fd36eed9873
   - enabled: 1
-    path: Assets/Scenes/Houses/Small/Small_House_Template_2.unity
-    guid: 835dceae4b943be49b49c3174895338f
+    path: Assets/Scenes/Shops/Bar.unity
+    guid: 2d1cc94c2f0fee546aca6471d37a372f
   - enabled: 1
     path: Assets/Scenes/Houses/Small/Small_House_Tall_3.unity
     guid: b980a394c451b0c4986d2ab3a8316cc6
@@ -152,9 +143,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Houses/Large/Large_House_3.unity
     guid: 355c251711c849c4696ca5306256c473
-  - enabled: 1
-    path: Assets/Scenes/Houses/Large/Large_House_Template.unity
-    guid: d5c80e711c5e07e4792edc901886feec
   - enabled: 1
     path: Assets/Scenes/World/Outside.unity
     guid: f2711432b88aaf84891e7c273ee89c39

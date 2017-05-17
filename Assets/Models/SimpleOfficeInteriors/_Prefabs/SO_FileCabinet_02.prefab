@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 413912}
   - component: {fileID: 3317636}
   - component: {fileID: 2389334}
+  - component: {fileID: 65334524995075050}
   m_Layer: 0
   m_Name: SO_FileCabinet_02
   m_TagString: Untagged
@@ -23,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161416}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: 7.31, y: 0, z: -11.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 161416}
   m_IsPrefabParent: 1
+--- !u!65 &65334524995075050
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0967572, y: 2.577312, z: 1.2419169}
+  m_Center: {x: -0.0000002980232, y: 1.288656, z: 0.0000001788139}

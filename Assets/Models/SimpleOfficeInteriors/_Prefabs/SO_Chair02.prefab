@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 422922}
   - component: {fileID: 3380144}
   - component: {fileID: 2345240}
+  - component: {fileID: 65174025143213436}
   m_Layer: 0
   m_Name: SO_Chair02
   m_TagString: Untagged
@@ -23,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178414}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.391718, z: 0, w: 0.9200854}
+  m_LocalPosition: {x: 5.4, y: 0, z: -8.72}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 178414}
   m_IsPrefabParent: 1
+--- !u!65 &65174025143213436
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178414}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2388307, y: 2.118385, z: 1.3397181}
+  m_Center: {x: 0, y: 1.0591925, z: -0.00000005960465}

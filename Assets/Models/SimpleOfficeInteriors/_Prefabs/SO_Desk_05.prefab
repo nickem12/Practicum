@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 466154}
   - component: {fileID: 3330640}
   - component: {fileID: 2373548}
+  - component: {fileID: 65512113141623532}
   m_Layer: 0
   m_Name: SO_Desk_05
   m_TagString: Untagged
@@ -23,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165648}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -5.1, y: 0, z: -13.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165648}
   m_IsPrefabParent: 1
+--- !u!65 &65512113141623532
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7913282, y: 1.5784142, z: 3.6129985}
+  m_Center: {x: 0, y: 0.7892071, z: 0}

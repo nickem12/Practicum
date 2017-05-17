@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 421682}
   - component: {fileID: 3372372}
   - component: {fileID: 2398768}
+  - component: {fileID: 65487403403383338}
   m_Layer: 0
   m_Name: SO_Lockers_01
   m_TagString: Untagged
@@ -23,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 132748}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7071066, z: 0, w: -0.70710695}
+  m_LocalPosition: {x: 12.86, y: 0, z: 6.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 132748}
   m_IsPrefabParent: 1
+--- !u!65 &65487403403383338
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132748}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.219076, y: 3.4310346, z: 0.65854543}
+  m_Center: {x: 0.0000010728835, y: 1.7155173, z: 0.20215175}

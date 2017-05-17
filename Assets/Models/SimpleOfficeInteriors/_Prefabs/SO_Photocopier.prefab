@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 495244}
   - component: {fileID: 3382062}
   - component: {fileID: 2398140}
+  - component: {fileID: 65773750469571158}
   m_Layer: 0
   m_Name: SO_Photocopier
   m_TagString: Untagged
@@ -23,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160994}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: -6, y: 0, z: -10.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 160994}
   m_IsPrefabParent: 1
+--- !u!65 &65773750469571158
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160994}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9277284, y: 2.377287, z: 1.8678296}
+  m_Center: {x: 0, y: 1.1886435, z: -0.00000023841855}
