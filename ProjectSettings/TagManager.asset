@@ -20,6 +20,8 @@ TagManager:
   - Spawner
   - PickUpCanvas
   - PickUpText
+  - LoadingCanvas
+  - LoadingText
   layers:
   - Default
   - TransparentFX

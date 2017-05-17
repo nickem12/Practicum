@@ -35,6 +35,7 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
 
     private static bool playerExists;
     public string startPoint;
+    public bool canMove = true;
 
     void Start () {
 		ForwardVector = new Vector3(0,0,1);																//We start by looking forward in the z axis
@@ -58,12 +59,23 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
 
 
 	void Update () {
-		MoveDir = GetInput();																			//Get input from the player
-		DiffMouse = GetMouseInformation();																//Get the mouse information
-		RotateForwardVec();																				//Rotate the forward vector
+      
+        MoveDir = GetInput();                                                                           //Get input from the player
+
+        if(canMove)
+        {
+            DiffMouse = GetMouseInformation();                                                              //Get the mouse information
+        }
+      
+
+        RotateForwardVec();																				//Rotate the forward vector
 		RotateHeading();																				//Rotate the heading vector
-		RotateFPC();																					//Rotate the First Personal Controller
-		MoveController();                                                                               //Move the controller
+		RotateFPC();                                                                                    //Rotate the First Personal Controller
+
+        if (canMove)
+        {
+            MoveController();                                                                               //Move the controller
+        }
 
         if (Input.GetButtonDown("Inventory"))
         {
