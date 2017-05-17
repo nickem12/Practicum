@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class FirstPersonControllerBehavior : MonoBehaviour {
@@ -27,13 +28,32 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
 	private float DeltaGravity;
 	bool Groundedlast = false;
 
-	void Start () {
+    public Canvas inventoryCanvas;
+    public EventSystem eventSystem;
+    private bool inventoryOn;
+    public GameObject uiSoundManager;
+
+    private static bool playerExists;
+
+    void Start () {
 		ForwardVector = new Vector3(0,0,1);																//We start by looking forward in the z axis
 		HeadingVector = ForwardVector;																	//The way in which are actually looking
 		MainCam = Camera.main;																			//Get the main camera of the scene (Also a child to this object)
 		CharController = GetComponent<CharacterController>();											//Get the character controller component
 		DeltaGravity = gravity;
-	}
+
+        inventoryOn = false;
+
+        if (!playerExists)
+        {
+            playerExists = true;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
 
 	void Update () {
@@ -42,8 +62,24 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
 		RotateForwardVec();																				//Rotate the forward vector
 		RotateHeading();																				//Rotate the heading vector
 		RotateFPC();																					//Rotate the First Personal Controller
-		MoveController();																				//Move the controller
-	}
+		MoveController();                                                                               //Move the controller
+
+        if (Input.GetButtonDown("Inventory"))
+        {
+            //uiSoundManager.GetComponent<UISoundManager>().PlayAudioClip(2);
+            inventoryOn = !inventoryOn;
+            if (inventoryOn)
+            {
+                eventSystem.SetSelectedGameObject(inventoryCanvas.gameObject.transform.GetChild(1).gameObject);
+            }
+            else
+            {
+                eventSystem.SetSelectedGameObject(null);
+            }
+        }
+
+        inventoryCanvas.GetComponent<Canvas>().enabled = inventoryOn;
+    }
 
 	void FixedUpdate(){
 
