@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum ItemType { WEAPON,CONSUMABLE}
-public enum PickUps { Canned_Food_1, Canned_Food_2, Canned_Food_3, Canned_Food_4, Water_Mellon, Fish, Water_1, MedKit, Canteen, Ak, Shotgun, Knife, Pistol }
+public enum ItemType { WEAPON,CONSUMABLE,OTHER}
+public enum PickUps { Canned_Food_1, Canned_Food_2, Canned_Food_3, Canned_Food_4, Water_Mellon, Fish, Water_1, MedKit, Canteen, Ak, Shotgun, Knife, Pistol, Stapler }
 public enum ConsumableType { FOOD, HYDRATION, HEALTH, NULL};
 public class Item : MonoBehaviour {
 
