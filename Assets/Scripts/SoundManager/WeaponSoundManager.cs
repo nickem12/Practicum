@@ -25,6 +25,7 @@ public class WeaponSoundManager : MonoBehaviour {
         source.volume = 0.3f;
         source.Play();
     }
+
     public void PlayReloadingSoundEffect(int index)
     {
         source.clip = weaponReloadingAudioClip[index];

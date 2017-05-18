@@ -6,15 +6,18 @@ public class Stapler : MonoBehaviour
 {
 
     private Animator anim;
-    private WeaponSoundManager weaponSoundManager;
+    public AudioSource source;
+    public AudioClip[] clips;
     public ItemData Weapon;
     private bool initialized = false;
+
     // Use this for initialization
     void Start()
     {
         Weapon = GetComponent<WeaponStats>().data;
-        weaponSoundManager = this.GetComponentInChildren<WeaponSoundManager>();
+        
         anim = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -23,17 +26,23 @@ public class Stapler : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            
+
             if(!initialized)
             {
                 Weapon = GetComponent<WeaponStats>().data;
                 initialized = true;
             }
             
+
             if (Weapon.currentAmmo > 0)
             {
-                weaponSoundManager.PlayFiringSoundEffect((int)Weapon.weapon);
-
                 anim.SetTrigger("Staple");
+                if(!source.isPlaying)
+                {
+                    source.clip = clips[0];
+                    source.Play();
+                }
                 Weapon.currentAmmo--;
                 
             }
@@ -67,6 +76,7 @@ public class Stapler : MonoBehaviour
             Weapon.currentAmmo += pStat.staples;
             pStat.staples = 0;
         }
-        weaponSoundManager.PlayReloadingSoundEffect((int)Weapon.weapon);
+        source.clip = clips[1];
+        source.Play();
     }
 }
