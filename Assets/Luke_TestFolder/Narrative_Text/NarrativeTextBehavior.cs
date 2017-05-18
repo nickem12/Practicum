@@ -9,6 +9,7 @@ public class NarrativeTextBehavior : MonoBehaviour {
 	public float Fade_Time;
 	public float StayTime;
 	public bool ShowOnlyOnce;
+	public GameObject FollowingText;
 
 	private string Text;
 	private string currentText = "";
@@ -19,6 +20,7 @@ public class NarrativeTextBehavior : MonoBehaviour {
 	private int myState = (int)NarrativeState.NAR_SLEEP;
 
 	private bool PlayerInside = false;
+	private bool hasChildNar;
 
 	private float TimeOn = 0.0f;
 
@@ -27,6 +29,10 @@ public class NarrativeTextBehavior : MonoBehaviour {
 		Text = TextObject.text;														//Get the value of the text and store it
 		TextObject.text = "";														//Set the text value in the text object to empty
 		Textcolor = TextObject.color;												//Get the color
+
+		if(FollowingText != null && FollowingText.tag == "Narrative"){
+			hasChildNar = true;
+		}
 	}
 
 	public int GetState(){
@@ -66,7 +72,10 @@ public class NarrativeTextBehavior : MonoBehaviour {
 		if(Textcolor.a < 0.0f) Textcolor.a = 0.0f;									//Safety, make sure its not less than 0
 		myState = (int)NarrativeState.NAR_SLEEP;									//We are typing
 
-		if(ShowOnlyOnce) Destroy(this.gameObject);
+		if(ShowOnlyOnce || hasChildNar){
+			FollowingText.SetActive(true);
+			Destroy(this.gameObject);
+		}
 	}
 
 

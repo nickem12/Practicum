@@ -1767,9 +1767,23 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1180798921050480, guid: 104af8bde5207a744ae534625756b26e, type: 2}
+      propertyPath: m_Name
+      value: Narative_Text_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114427110459169016, guid: 104af8bde5207a744ae534625756b26e,
+        type: 2}
+      propertyPath: FollowingText
+      value: 
+      objectReference: {fileID: 1279680126}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 104af8bde5207a744ae534625756b26e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1279680126 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1180798921050480, guid: 104af8bde5207a744ae534625756b26e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2123544051}
 --- !u!1 &1327781178
 GameObject:
   m_ObjectHideFlags: 0
@@ -1978,6 +1992,7 @@ MonoBehaviour:
   smgAmmo: 0
   rocketAmmo: 0
   handgunAmmo: 0
+  staples: 0
 --- !u!114 &1679583313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2368,3 +2383,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2123544051
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4948974301523566, guid: 104af8bde5207a744ae534625756b26e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4948974301523566, guid: 104af8bde5207a744ae534625756b26e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 9.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4948974301523566, guid: 104af8bde5207a744ae534625756b26e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -29.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4948974301523566, guid: 104af8bde5207a744ae534625756b26e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4948974301523566, guid: 104af8bde5207a744ae534625756b26e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4948974301523566, guid: 104af8bde5207a744ae534625756b26e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4948974301523566, guid: 104af8bde5207a744ae534625756b26e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4948974301523566, guid: 104af8bde5207a744ae534625756b26e, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180798921050480, guid: 104af8bde5207a744ae534625756b26e, type: 2}
+      propertyPath: m_Name
+      value: Narative_Text_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114923419092959348, guid: 104af8bde5207a744ae534625756b26e,
+        type: 2}
+      propertyPath: m_Text
+      value: Just as beautiful as the day I met her...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180798921050480, guid: 104af8bde5207a744ae534625756b26e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 104af8bde5207a744ae534625756b26e, type: 2}
+  m_IsPrefabParent: 0
