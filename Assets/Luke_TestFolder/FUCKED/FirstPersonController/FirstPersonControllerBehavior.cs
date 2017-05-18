@@ -37,6 +37,7 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
     public string startPoint;
     public bool canMove = true;
 
+
     void Start () {
 		ForwardVector = new Vector3(0,0,1);																//We start by looking forward in the z axis
 		HeadingVector = ForwardVector;																	//The way in which are actually looking
@@ -129,6 +130,12 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
 		float MouseY = Input.GetAxis("Mouse Y");
 		Vector3 Result = new Vector3(MouseX, MouseY, 0.0f);
 		return Result;
+	}
+
+	public void SetStartRotation(float RotationAmount){
+		ForwardVector = Vector3.forward;
+		ForwardVector = Quaternion.Euler(new Vector3(0,RotationAmount, 0)) * ForwardVector;																	//Rotate the forward vector by the start rotation amount
+		HeadingVector = ForwardVector;
 	}
 
 	private void PrintVec(Vector3 Vec){
