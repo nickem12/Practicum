@@ -18,7 +18,6 @@ public class NarrativeTextBehavior : MonoBehaviour {
 	enum NarrativeState {NAR_SLEEP, NAR_TYPING, NAR_STAY, NAR_FADING};
 	private int myState = (int)NarrativeState.NAR_SLEEP;
 
-	private bool isTriggered = false;
 	private bool PlayerInside = false;
 
 	private float TimeOn = 0.0f;
@@ -97,8 +96,17 @@ public class NarrativeTextBehavior : MonoBehaviour {
 	void Update(){
 		if(myState == (int)NarrativeState.NAR_STAY){
 			if(StayTime > 0.0f){
-				TimeOn += Time.deltaTime;
-				if(TimeOn >= StayTime){
+				if(PlayerInside){
+
+					TimeOn += Time.deltaTime;
+					if(TimeOn >= StayTime){
+
+						TimeOn = 0.0f;
+						StartCoroutine(FadeText());
+
+					}
+				}
+				else{
 
 					TimeOn = 0.0f;
 					StartCoroutine(FadeText());
