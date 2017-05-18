@@ -63,10 +63,7 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
       
         MoveDir = GetInput();                                                                           //Get input from the player
 
-        if(canMove)
-        {
-            DiffMouse = GetMouseInformation();                                                              //Get the mouse information
-        }
+        DiffMouse = GetMouseInformation();                                                              //Get the mouse information
       
 
         RotateForwardVec();																				//Rotate the forward vector
