@@ -13960,8 +13960,8 @@ MonoBehaviour:
   sitting: 1
   ableToSit: 0
   displayCanvas: {fileID: 115195014}
-  xButton: {fileID: 21300000, guid: db4c19d4d0b36414cb72f8f713bb56f7, type: 3}
-  bButton: {fileID: 21300000, guid: 13005054c4428184aa92ec23f2671af1, type: 3}
+  xButton: {fileID: 21300000, guid: 63fe86e1640f6154c8bbf26295ae8d10, type: 3}
+  bButton: {fileID: 21300000, guid: 701aff31bd532b646afd44e04c237dfb, type: 3}
 --- !u!4 &1310058180
 Transform:
   m_ObjectHideFlags: 0
