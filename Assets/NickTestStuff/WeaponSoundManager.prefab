@@ -141,6 +141,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a307b7d34295ebf40a1713165afbde65, type: 3}
   - {fileID: 8300000, guid: 337ad114e633f3946a4dcf1182e6b913, type: 3}
   - {fileID: 8300000, guid: 8451aa88b24b84849b2def9172de000e, type: 3}
+  - {fileID: 8300000, guid: ff332d8e63a7efe4fbb1ac7f817bf469, type: 3}
   weaponReloadingAudioClip:
   - {fileID: 8300000, guid: 6f8877e11e96e5f48abd92bbcdb39d63, type: 3}
   - {fileID: 8300000, guid: c16456490d57e394bb1bab8c28f020b8, type: 3}
@@ -148,6 +149,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4477d13f5d2592b4a916ac53e6b8b6f0, type: 3}
   - {fileID: 0}
   - {fileID: 8300000, guid: 58ee922304f80cd4483cd4fa0744eeb2, type: 3}
+  - {fileID: 8300000, guid: da7427c08cac78a4dac9c2584e73d3c9, type: 3}
 --- !u!114 &114560564647243258
 MonoBehaviour:
   m_ObjectHideFlags: 1

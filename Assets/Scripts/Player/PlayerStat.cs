@@ -40,6 +40,7 @@ public class PlayerStat : MonoBehaviour {
     public int smgAmmo;
     public int rocketAmmo;
     public int handgunAmmo;
+    public int staples;
 
     private int itemCounter = 0;
     private GameObject t_object = null;
@@ -260,6 +261,8 @@ public class PlayerStat : MonoBehaviour {
                 rocketAmmo += temp.rocketAmmo;
                 smgAmmo += temp.smgAmmo;
                 handgunAmmo += temp.handgunAmmo;
+                staples += temp.staples;
+
                 Destroy(other.gameObject);
                 pickUp.GetComponent<Canvas>().enabled = false;
             }

@@ -9,6 +9,7 @@ public class WeaponStats : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         data = GameObject.FindGameObjectWithTag("ExtraDataStorage").GetComponent<DataStorage>().data;
+        Debug.Log("meme");
 	}
 	
 	// Update is called once per frame

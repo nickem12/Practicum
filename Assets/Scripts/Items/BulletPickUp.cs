@@ -11,6 +11,7 @@ public class BulletPickUp : MonoBehaviour {
     public int shotgunAmmo;
     public int rocketAmmo;
     public int smgAmmo;
+    public int staples;
     public int ammoAmount;
     public Weapon weapon;
     public string name;
@@ -29,6 +30,7 @@ public class BulletPickUp : MonoBehaviour {
         shotgunAmmo = 0;
         rocketAmmo = 0;
         smgAmmo = 0;
+        staples = 0;
 
         switch(weapon)
         {
@@ -55,6 +57,10 @@ public class BulletPickUp : MonoBehaviour {
             case Weapon.SHOTGUN:
                 shotgunAmmo = ammoAmount;
                 name = "Shotgun Ammo";
+                break;
+            case Weapon.STAPLER:
+                staples = ammoAmount;
+                name = "Staples";
                 break;
         }
 	}

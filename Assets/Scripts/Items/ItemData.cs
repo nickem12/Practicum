@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Weapon { SHOTGUN, ASSAULTRIFLE, RIFLE, HANDGUN, ROCKETLAUNCHER, LMG, MELEE }
+public enum Weapon { SHOTGUN, ASSAULTRIFLE, RIFLE, HANDGUN, ROCKETLAUNCHER, LMG, MELEE, STAPLER }
 
 public class ItemData{
 
@@ -59,6 +59,9 @@ public class ItemData{
                 break;
             case Weapon.SHOTGUN:
                 maxAmmo = 8;
+                break;
+            case Weapon.STAPLER:
+                maxAmmo = 5;
                 break;
         }
     }

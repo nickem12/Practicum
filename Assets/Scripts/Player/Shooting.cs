@@ -163,6 +163,19 @@ public class Shooting : MonoBehaviour
                 }
                 weaponSoundManager.PlayReloadingSoundEffect((int)Weapon.weapon);
                 break;
+            case global::Weapon.STAPLER:
+                if (pStat.staples >= ammoNeeded)
+                {
+                    Weapon.currentAmmo = Weapon.maxAmmo;
+                    pStat.staples -= ammoNeeded;
+                }
+                else if (pStat.staples > 0)
+                {
+                    Weapon.currentAmmo += pStat.staples;
+                    pStat.staples = 0;
+                }
+                weaponSoundManager.PlayReloadingSoundEffect((int)Weapon.weapon);
+                break;
         }
     }
 }
