@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class Movement : MonoBehaviour {
@@ -27,6 +28,14 @@ public class Movement : MonoBehaviour {
     private float DeltaGravity;
     bool Groundedlast = false;
 
+    public Canvas inventoryCanvas;
+    public EventSystem eventSystem;
+    private bool inventoryOn;
+    public GameObject uiSoundManager;
+
+    public string startPoint;
+    public bool canMove = true;
+
 
     void Start()
     {
@@ -36,18 +45,42 @@ public class Movement : MonoBehaviour {
         CharController = GetComponent<CharacterController>();                                           //Get the character controller component
         DeltaGravity = gravity;
 
+        inventoryOn = false;
     }
 
 
     void Update()
     {
+
         MoveDir = GetInput();                                                                           //Get input from the player
+
         DiffMouse = GetMouseInformation();                                                              //Get the mouse information
+
+
         RotateForwardVec();                                                                             //Rotate the forward vector
         RotateHeading();                                                                                //Rotate the heading vector
         RotateFPC();                                                                                    //Rotate the First Personal Controller
-        MoveController();                                                                               //Move the controller
 
+        if (canMove)
+        {
+            MoveController();                                                                               //Move the controller
+        }
+
+        if (Input.GetButtonDown("Inventory"))
+        {
+            //uiSoundManager.GetComponent<UISoundManager>().PlayAudioClip(2);
+            inventoryOn = !inventoryOn;
+            if (inventoryOn)
+            {
+                eventSystem.SetSelectedGameObject(inventoryCanvas.gameObject.transform.GetChild(1).gameObject);
+            }
+            else
+            {
+                eventSystem.SetSelectedGameObject(null);
+            }
+        }
+
+        inventoryCanvas.GetComponent<Canvas>().enabled = inventoryOn;
     }
 
     void FixedUpdate()
@@ -91,6 +124,13 @@ public class Movement : MonoBehaviour {
         float MouseY = Input.GetAxis("Mouse Y");
         Vector3 Result = new Vector3(MouseX, MouseY, 0.0f);
         return Result;
+    }
+
+    public void SetStartRotation(float RotationAmount)
+    {
+        ForwardVector = Vector3.forward;
+        ForwardVector = Quaternion.Euler(new Vector3(0, RotationAmount, 0)) * ForwardVector;                                                                    //Rotate the forward vector by the start rotation amount
+        HeadingVector = ForwardVector;
     }
 
     private void PrintVec(Vector3 Vec)

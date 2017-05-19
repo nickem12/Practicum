@@ -21,7 +21,7 @@ public class PlayerStartRotation : MonoBehaviour {
     void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
 
-        player.GetComponent<FirstPersonControllerBehavior>().SetStartRotation(120f);
+        player.GetComponent<Movement>().SetStartRotation(120f);
 
         colliders = this.GetComponents<BoxCollider>();
 
