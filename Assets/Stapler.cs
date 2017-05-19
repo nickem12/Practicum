@@ -10,7 +10,8 @@ public class Stapler : MonoBehaviour
     public AudioClip[] clips;
     public ItemData Weapon;
     private bool initialized = false;
-
+    private bool triggered = false;
+    private float timer = .9f;
     // Use this for initialization
     void Start()
     {
@@ -37,13 +38,16 @@ public class Stapler : MonoBehaviour
 
             if (Weapon.currentAmmo > 0)
             {
-                anim.SetTrigger("Staple");
-                if(!source.isPlaying)
+                if(!triggered)
                 {
+                    anim.SetTrigger("Staple");
+                    triggered = true;
                     source.clip = clips[0];
                     source.Play();
+
+                    Weapon.currentAmmo--;
                 }
-                Weapon.currentAmmo--;
+                
                 
             }
         }
@@ -57,6 +61,16 @@ public class Stapler : MonoBehaviour
             Debug.Log(Weapon.currentAmmo);
             Reload();
             Debug.Log(Weapon.currentAmmo);
+        }
+
+        if(triggered)
+        {
+            timer -= Time.deltaTime;
+            if(timer <= 0)
+            {
+                triggered = false;
+                timer = .9f;
+            }
         }
 
     }
