@@ -9,7 +9,6 @@ public class OpeningQuestData : MonoBehaviour {
     public QuestState questState;
     public GameObject[] NarrativeLines;
 
-
 	void Start () {
         questState = QuestState.Waiting;
 	}
@@ -20,6 +19,8 @@ public class OpeningQuestData : MonoBehaviour {
         {
             case QuestState.Waiting:
                 questState = QuestState.Pickup;
+                NarrativeLines[0].SetActive(false);
+                NarrativeLines[1].SetActive(true);
                 break;
             case QuestState.Pickup:
 				questState = QuestState.Staple;

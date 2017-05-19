@@ -16,6 +16,8 @@ public class Stapler : MonoBehaviour
     public int stapleCount = 0;
     public bool doneStapling = false;
 
+
+
     // Use this for initialization
     void Start()
     {
@@ -30,6 +32,9 @@ public class Stapler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    	this.transform.position = Camera.main.transform.position;
+    	this.transform.rotation = Camera.main.transform.rotation;
+		this.transform.position  = this.transform.position + thePlayer.GetComponent<FirstPersonControllerBehavior>().GetHeadingVec() + Vector3.Cross(Vector3.up,thePlayer.GetComponent<FirstPersonControllerBehavior>().GetHeadingVec() + new Vector3(0.0f, -2.0f, 0.0f));
 
         if (Input.GetMouseButtonDown(0))
         {

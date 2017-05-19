@@ -10,6 +10,7 @@ public class NarrativeTextBehavior : MonoBehaviour {
 	public float StayTime;
 	public bool ShowOnlyOnce;
 	public GameObject FollowingText;
+	public GameObject[] EndReacts;													//These objects all have a 'EndReact()' function to be called when this narrative is done
 
 	private string Text;
 	private string currentText = "";
@@ -72,8 +73,13 @@ public class NarrativeTextBehavior : MonoBehaviour {
 		if(Textcolor.a < 0.0f) Textcolor.a = 0.0f;									//Safety, make sure its not less than 0
 		myState = (int)NarrativeState.NAR_SLEEP;									//We are typing
 
+		for(int CurEnd = 0; CurEnd < EndReacts.Length; CurEnd++){
+			EndReacts[CurEnd].SendMessage("EndReact", this.name);
+			//EndReacts[CurEnd].GetComponent<Reactant>().EndReact(this.gameObject.name);
+		}
+
 		if(ShowOnlyOnce || hasChildNar){
-			FollowingText.SetActive(true);
+			if(FollowingText != null) FollowingText.SetActive(true);
 			Destroy(this.gameObject);
 		}
 	}

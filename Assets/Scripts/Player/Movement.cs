@@ -128,9 +128,13 @@ public class Movement : MonoBehaviour {
 
     public void SetStartRotation(float RotationAmount)
     {
+    	Debug.Log("I am getting to the rotation method - " + RotationAmount);
+    	PrintVec(ForwardVector); 
+
         ForwardVector = Vector3.forward;
         ForwardVector = Quaternion.Euler(new Vector3(0, RotationAmount, 0)) * ForwardVector;                                                                    //Rotate the forward vector by the start rotation amount
         HeadingVector = ForwardVector;
+		PrintVec(ForwardVector);
     }
 
     private void PrintVec(Vector3 Vec)

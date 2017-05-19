@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerStartRotation : MonoBehaviour {
+public class PlayerStartRotation : Reactant {
 
     private GameObject player;
     private BoxCollider[] colliders;
@@ -17,11 +17,23 @@ public class PlayerStartRotation : MonoBehaviour {
     public Sprite xButton;
     public Sprite bButton;
 
+    private OpeningQuestData Quest;
+
+	public override void EndReact(string ID){
+		Debug.Log("SUPER : " + ID);
+
+		if(ID == "1_8_Its in the back"){
+			ableToSit = true;
+			Quest.NextState();
+		}
+	}
+
     // Use this for initialization
     void Start () {
-        player = GameObject.FindGameObjectWithTag("Player");
+    	Quest = GetComponent<OpeningQuestData>();
 
-        player.GetComponent<Movement>().SetStartRotation(120f);
+        player = GameObject.FindGameObjectWithTag("Player");
+        player.GetComponent<FirstPersonControllerBehavior>().SetStartRotation(120f);
 
         colliders = this.GetComponents<BoxCollider>();
 
@@ -66,7 +78,7 @@ public class PlayerStartRotation : MonoBehaviour {
                     {
                         sitting = true;
                         player.GetComponent<FirstPersonControllerBehavior>().canMove = false;
-                        player.transform.position = new Vector3(5.41f, 1.73f, -3.24f);
+                        player.transform.position = this.transform.position;
                     }
                 }
             }

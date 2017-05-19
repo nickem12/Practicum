@@ -59,6 +59,10 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
     }
 
 
+    public Vector3 GetHeadingVec(){
+    	return HeadingVector;
+    }
+
 	void Update () {
       
         MoveDir = GetInput();                                                                           //Get input from the player

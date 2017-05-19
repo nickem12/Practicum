@@ -108,9 +108,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4159069469906482}
   - component: {fileID: 95816583150039886}
-  - component: {fileID: 114922713074957950}
   - component: {fileID: 114761102826750254}
   - component: {fileID: 82723113288155380}
+  - component: {fileID: 114444065478378892}
   m_Layer: 0
   m_Name: Staple
   m_TagString: Untagged
@@ -604,7 +604,7 @@ Animator:
   m_GameObject: {fileID: 1692850763487258}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 56c7a06d58987974184f0d4f1d1210be, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -612,6 +612,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114444065478378892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1692850763487258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1273f8d1cb672644bc31ca8076cadd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 82723113288155380}
+  clips:
+  - {fileID: 8300000, guid: ebf0dcc9d83c72e4d99a1207dfdf728c, type: 3}
+  - {fileID: 8300000, guid: 58dcfdc2dab61ff438142a77882112d7, type: 3}
+  stapleCount: 2
+  doneStapling: 0
 --- !u!114 &114761102826750254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -620,21 +637,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1692850763487258}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c22256bbc5adfd3408688c6c2b06bd17, type: 3}
+  m_Script: {fileID: 11500000, guid: 185c22143c24a9c4cac2f3d6597b186c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114922713074957950
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1692850763487258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba354e5243e0ccb4cbda0de12b7945d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  source: {fileID: 82723113288155380}
-  clips:
-  - {fileID: 8300000, guid: ff332d8e63a7efe4fbb1ac7f817bf469, type: 3}
-  - {fileID: 8300000, guid: da7427c08cac78a4dac9c2584e73d3c9, type: 3}
