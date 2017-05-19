@@ -11,13 +11,19 @@ public class Stapler : MonoBehaviour
     public ItemData Weapon;
     private bool initialized = false;
     private bool triggered = false;
-    private float timer = .9f;
+    private float timer = 2.9f;
+    private GameObject thePlayer;
+    public int stapleCount = 0;
+    public bool doneStapling = false;
+
     // Use this for initialization
     void Start()
     {
         Weapon = GetComponent<WeaponStats>().data;
         
         anim = GetComponent<Animator>();
+
+        thePlayer = GameObject.FindGameObjectWithTag("Player");
 
     }
 
@@ -28,27 +34,32 @@ public class Stapler : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             
-
-            if(!initialized)
+            if(thePlayer.GetComponent<FirstPersonControllerBehavior>().canMove == false)
             {
-                Weapon = GetComponent<WeaponStats>().data;
-                initialized = true;
-            }
-            
-
-            if (Weapon.currentAmmo > 0)
-            {
-                if(!triggered)
+                if (!initialized)
                 {
-                    anim.SetTrigger("Staple");
-                    triggered = true;
-                    source.clip = clips[0];
-                    source.Play();
-
-                    Weapon.currentAmmo--;
+                    Weapon = GetComponent<WeaponStats>().data;
+                    initialized = true;
                 }
-                
-                
+
+
+                if (Weapon.currentAmmo > 0)
+                {
+                    if (!triggered)
+                    {
+                        triggered = true;
+                        anim.SetTrigger("Staple");
+                        source.clip = clips[0];
+                        source.Play();
+                        stapleCount++;
+                        Weapon.currentAmmo--;
+                    }
+                    if(stapleCount == 2)
+                    {
+                        Debug.Log("doneStapling = true");
+                        doneStapling = true;
+                    }
+                }
             }
         }
         if (Input.GetButtonDown("Reload"))
@@ -65,11 +76,14 @@ public class Stapler : MonoBehaviour
 
         if(triggered)
         {
-            timer -= Time.deltaTime;
-            if(timer <= 0)
+            if (!doneStapling)
             {
-                triggered = false;
-                timer = .9f;
+                timer -= Time.deltaTime;
+                if (timer <= 0)
+                {
+                    triggered = false;
+                    timer = 2.9f;
+                }
             }
         }
 

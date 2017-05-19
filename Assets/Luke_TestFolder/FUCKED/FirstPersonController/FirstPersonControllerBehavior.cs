@@ -89,6 +89,18 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
             }
         }
 
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            if(canMove == true)
+            {
+                canMove = false;
+            }
+            else
+            {
+                canMove = true;
+            }
+
+        }
         inventoryCanvas.GetComponent<Canvas>().enabled = inventoryOn;
     }
 
