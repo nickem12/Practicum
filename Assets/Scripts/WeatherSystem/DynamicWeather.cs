@@ -7,7 +7,11 @@ public enum WeatherStates { PickWeather, SunnyWeather, ThunderWeather, MistWeath
 
 [RequireComponent(typeof(AudioSource))]
 public class DynamicWeather : MonoBehaviour {
-    
+
+    private Transform player;
+    private Transform weather;
+    public float weatherHeight = 15f;
+
 
     public ParticleSystem cloudParticleSystem;
     public ParticleSystem mistParticleSystem;
@@ -45,6 +49,12 @@ public class DynamicWeather : MonoBehaviour {
     public float fogChangeSpeed = .1f;
     // Use this for initialization
     void Start () {
+        GameObject playerGameobject = GameObject.FindGameObjectWithTag("Player");
+        player = playerGameobject.transform;
+
+        GameObject weatherGameObject = GameObject.FindGameObjectWithTag("Weather");
+        weather = weatherGameObject.transform;
+
         RenderSettings.fog = true;
         RenderSettings.fogMode = FogMode.ExponentialSquared;
         RenderSettings.fogDensity = 0.01f;
@@ -66,6 +76,8 @@ public class DynamicWeather : MonoBehaviour {
             weatherState = WeatherStates.PickWeather;
             switchWeatherTimer = resetWeatherTimer;
         }
+
+        weather.transform.position = new Vector3(player.position.x, player.position.y + weatherHeight, player.position.z);
 	}
     IEnumerator WeatherFSM()
     {
@@ -141,6 +153,10 @@ public class DynamicWeather : MonoBehaviour {
 
         if (GetComponent<AudioSource>().volume < 1 && GetComponent<AudioSource>().clip == sunnyAudio)
             GetComponent<AudioSource>().volume += Time.deltaTime * audioFadeTime;
+
+        Color currentColor = RenderSettings.fogColor;
+
+        RenderSettings.fogColor = Color.Lerp(currentColor, sunFog,fogChangeSpeed * Time.deltaTime );
     }
 
     void ThunderWeather()
@@ -166,6 +182,10 @@ public class DynamicWeather : MonoBehaviour {
 
         if (GetComponent<AudioSource>().volume < 1 && GetComponent<AudioSource>().clip == thunderAudio)
             GetComponent<AudioSource>().volume += Time.deltaTime * audioFadeTime;
+
+        Color currentColor = RenderSettings.fogColor;
+
+        RenderSettings.fogColor = Color.Lerp(currentColor, thunderFog, fogChangeSpeed * Time.deltaTime);
     }
 
     void MistWeather()
@@ -191,6 +211,10 @@ public class DynamicWeather : MonoBehaviour {
 
         if (GetComponent<AudioSource>().volume < 1 && GetComponent<AudioSource>().clip == mistAudio)
             GetComponent<AudioSource>().volume += Time.deltaTime * audioFadeTime;
+
+        Color currentColor = RenderSettings.fogColor;
+
+        RenderSettings.fogColor = Color.Lerp(currentColor, mistFog, fogChangeSpeed * Time.deltaTime);
     }
     void OvercastWeather()
     {
@@ -215,6 +239,10 @@ public class DynamicWeather : MonoBehaviour {
 
         if (GetComponent<AudioSource>().volume < 1 && GetComponent<AudioSource>().clip == overcastAudio)
             GetComponent<AudioSource>().volume += Time.deltaTime * audioFadeTime;
+
+        Color currentColor = RenderSettings.fogColor;
+
+        RenderSettings.fogColor = Color.Lerp(currentColor, overcastFog, fogChangeSpeed * Time.deltaTime);
 
     }
 

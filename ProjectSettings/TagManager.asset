@@ -23,6 +23,7 @@ TagManager:
   - LoadingCanvas
   - LoadingText
   - Narrative
+  - Weather
   layers:
   - Default
   - TransparentFX
