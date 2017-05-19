@@ -7,42 +7,45 @@ public enum QuestState { Waiting, Pickup, Staple, NeedToReload, FinishStaple, Me
 public class OpeningQuestData : MonoBehaviour {
 
     public QuestState questState;
-    bool lockSittingOption;
-    bool finishedStapling;
-    bool pickUpStaple;
-    public bool instructions;
+    public GameObject[] NarrativeLines;
 
-	// Use this for initialization
+
 	void Start () {
         questState = QuestState.Waiting;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-        switch(questState)
+
+
+	public void NextState(){
+		switch(questState)
         {
             case QuestState.Waiting:
-                if (instructions) questState = QuestState.Pickup;
+                questState = QuestState.Pickup;
                 break;
             case QuestState.Pickup:
+				questState = QuestState.Staple;
                 break;
             case QuestState.Staple:
+				questState = QuestState.NeedToReload;
                 break;
             case QuestState.NeedToReload:
+				questState = QuestState.FinishStaple;
                 break;
             case QuestState.FinishStaple:
+				questState = QuestState.MeetBoss;
                 break;
             case QuestState.MeetBoss:
+				questState = QuestState.MeetingBoss;
                 break;
             case QuestState.MeetingBoss:
+				questState = QuestState.BacktoWork;
                 break;
             case QuestState.BacktoWork:
+				questState = QuestState.WifeCallState;
                 break;
             case QuestState.WifeCallState:
-                break;
-            case QuestState.Finish:
+				questState = QuestState.Finish;
                 break;
         }
 	}
+
 }
