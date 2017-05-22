@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 114444065478378892}
   m_Layer: 0
   m_Name: Staple
-  m_TagString: Untagged
+  m_TagString: Stapler
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -604,7 +604,7 @@ Animator:
   m_GameObject: {fileID: 1692850763487258}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6eeafc89a48a4f408fef700f76f6ec8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

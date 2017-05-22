@@ -37,6 +37,7 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
     public string startPoint;
     public bool canMove = true;
 
+    //public bool hasStapler = false;
 
     void Start () {
 		ForwardVector = new Vector3(0,0,1);																//We start by looking forward in the z axis
@@ -57,7 +58,6 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
             Destroy(gameObject);
         }
     }
-
 
     public Vector3 GetHeadingVec(){
     	return HeadingVector;

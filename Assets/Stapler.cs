@@ -15,7 +15,7 @@ public class Stapler : MonoBehaviour
     private GameObject thePlayer;
     public int stapleCount = 0;
     public bool doneStapling = false;
-
+    private bool SentFoundMessage = false;
 
 
     // Use this for initialization
@@ -32,9 +32,6 @@ public class Stapler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    	this.transform.position = Camera.main.transform.position;
-    	this.transform.rotation = Camera.main.transform.rotation;
-		this.transform.position  = this.transform.position + thePlayer.GetComponent<FirstPersonControllerBehavior>().GetHeadingVec() + Vector3.Cross(Vector3.up,thePlayer.GetComponent<FirstPersonControllerBehavior>().GetHeadingVec() + new Vector3(0.0f, -2.0f, 0.0f));
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -47,6 +44,7 @@ public class Stapler : MonoBehaviour
                     initialized = true;
                 }
 
+               Debug.Log("Current Ammo : " + Weapon.currentAmmo);
 
                 if (Weapon.currentAmmo > 0)
                 {
@@ -74,9 +72,13 @@ public class Stapler : MonoBehaviour
                 Weapon = GetComponent<WeaponStats>().data;
                 initialized = true;
             }
-            Debug.Log(Weapon.currentAmmo);
+
             Reload();
-            Debug.Log(Weapon.currentAmmo);
+            GameObject Quest = GameObject.FindGameObjectWithTag("QuestManager");
+
+            if((int)Quest.GetComponent<OpeningQuestData>().questState == 4){
+            	Quest.GetComponent<OpeningQuestData>().JustAFewMore.GetComponent<ReloadNarBehavior>().DoneReloading = true;
+            }  
         }
 
         if(triggered)
@@ -92,12 +94,17 @@ public class Stapler : MonoBehaviour
             }
         }
 
+		if(!SentFoundMessage) {
+			GameObject.FindGameObjectWithTag("Unique2").GetComponent<EquipInstructions>().staplerEquiped = true;	
+			SentFoundMessage = true;
+    	}
+
     }
 
     public void Reload()
     {
 
-        PlayerStat pStat = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStat>();
+        TempPlayerStats pStat = GameObject.FindGameObjectWithTag("Player").GetComponent<TempPlayerStats>();
         int ammoNeeded = Weapon.maxAmmo - Weapon.currentAmmo;
         if (pStat.staples >= ammoNeeded)
         {

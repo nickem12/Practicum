@@ -24,6 +24,10 @@ TagManager:
   - LoadingText
   - Narrative
   - Weather
+  - QuestManager
+  - Unique
+  - Unique2
+  - Stapler
   layers:
   - Default
   - TransparentFX

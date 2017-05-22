@@ -38,10 +38,10 @@ public class Equip : MonoBehaviour {
 
         t_Object.transform.parent = Slot.transform;
 
-        Debug.Log(t_Object.transform.position);
+        //Debug.Log(t_Object.transform.position);
 
         t_Object.transform.position = new Vector3(.44f, -.38f, .76f);
 
-        Debug.Log(t_Object.transform.position);
+        //Debug.Log(t_Object.transform.position);
     }
 }

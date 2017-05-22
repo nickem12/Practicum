@@ -20,8 +20,6 @@ public class PlayerStartRotation : Reactant {
     private OpeningQuestData Quest;
 
 	public override void EndReact(string ID){
-		Debug.Log("SUPER : " + ID);
-
 		if(ID == "1_8_Its in the back"){
 			ableToSit = true;
 			Quest.NextState();

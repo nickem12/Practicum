@@ -25,7 +25,11 @@ public class NarrativeTextBehavior : MonoBehaviour {
 
 	private float TimeOn = 0.0f;
 
-	void Start () {
+	public bool DontDestroyOnFade = false;
+
+	public bool Sleep = false;
+
+	void Awake () {
 		TextObject = GetComponentInChildren<Text>();								//Get the text object
 		Text = TextObject.text;														//Get the value of the text and store it
 		TextObject.text = "";														//Set the text value in the text object to empty
@@ -41,10 +45,12 @@ public class NarrativeTextBehavior : MonoBehaviour {
 	}
 
 	public void SetState(int NewState){
+		if(Sleep) return;
 		myState = NewState;
 	}
 
 	IEnumerator ShowText(){
+		
 		myState = (int)NarrativeState.NAR_TYPING;									//We are typing
 		Textcolor.a = 1.0f;															//Set the alpha of the color to full
 		TextObject.color = Textcolor;												//Give the color to the text object
@@ -58,8 +64,18 @@ public class NarrativeTextBehavior : MonoBehaviour {
 		myState = (int)NarrativeState.NAR_STAY;									//We are typing
 	}
 
+	public void BeginFade(){
+		if(Sleep) return;
+		StartCoroutine(FadeText());
+	}
+
+	public void BeginType(){
+		StartCoroutine(ShowText());
+	}
 
 	IEnumerator FadeText(){
+		
+
 		myState = (int)NarrativeState.NAR_FADING;
 
 		do{
@@ -75,18 +91,19 @@ public class NarrativeTextBehavior : MonoBehaviour {
 
 		for(int CurEnd = 0; CurEnd < EndReacts.Length; CurEnd++){
 			EndReacts[CurEnd].SendMessage("EndReact", this.name);
-			//EndReacts[CurEnd].GetComponent<Reactant>().EndReact(this.gameObject.name);
 		}
 
 		if(ShowOnlyOnce || hasChildNar){
 			if(FollowingText != null) FollowingText.SetActive(true);
-			Destroy(this.gameObject);
+			if(!DontDestroyOnFade) Destroy(this.gameObject);
 		}
 	}
 
 
 
 	void OnTriggerEnter(Collider other){
+		if(Sleep) return;
+
 		if(other.gameObject.tag == "Player"){										//if the player collides with the trigger box
 
 			PlayerInside = true;
@@ -99,6 +116,8 @@ public class NarrativeTextBehavior : MonoBehaviour {
 	}
 
 	void OnTriggerExit(Collider other){
+		if(Sleep) return;
+
 		if(other.gameObject.tag == "Player"){
 			PlayerInside = false;
 
@@ -109,6 +128,8 @@ public class NarrativeTextBehavior : MonoBehaviour {
 	}
 
 	void Update(){
+		if(Sleep) return;
+
 		if(myState == (int)NarrativeState.NAR_STAY){
 			if(StayTime > 0.0f){
 				if(PlayerInside){

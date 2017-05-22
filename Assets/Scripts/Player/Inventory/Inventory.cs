@@ -81,6 +81,12 @@ public class Inventory : MonoBehaviour {
     }
     public bool AddItem(Item item)
     {
+
+		if(item.InteractableItem.ToString() == "Stapler"){
+			GameObject Quest = GameObject.FindGameObjectWithTag("QuestManager");
+			Quest.GetComponent<OpeningQuestData>().StaplerFlag();
+		}
+
         //Debug.Log("Called This Function.");
         if(item.maxSize == 1)
         {
@@ -108,6 +114,8 @@ public class Inventory : MonoBehaviour {
         }
         return false;
     }
+
+
     private bool PlaceEmpty(Item item)
     {
         if (emptySlots > 0)

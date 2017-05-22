@@ -61,6 +61,8 @@ public class TempPlayerStats : MonoBehaviour {
                 Debug.Log("Added the item.");
                 itemCounter++;
 
+
+
                 //GameObject.FindGameObjectWithTag("Weapon_Slot").GetComponent<Equip>().EquipWeapon(other.GetComponent<Item>().weaponGameObject);
 
             }
@@ -80,6 +82,8 @@ public class TempPlayerStats : MonoBehaviour {
 
                 Destroy(other.gameObject);
                 pickUp.GetComponent<Canvas>().enabled = false;
+
+                GameObject.FindGameObjectWithTag("QuestManager").GetComponent<OpeningQuestData>().NextState();
             }
         }
     }

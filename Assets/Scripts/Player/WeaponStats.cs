@@ -11,10 +11,4 @@ public class WeaponStats : MonoBehaviour {
         data = GameObject.FindGameObjectWithTag("ExtraDataStorage").GetComponent<DataStorage>().data;
         Debug.Log("meme");
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
 }
