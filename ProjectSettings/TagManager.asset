@@ -24,6 +24,8 @@ TagManager:
   - LoadingText
   - Narrative
   - Weather
+  - Sun
+  - Star
   layers:
   - Default
   - TransparentFX

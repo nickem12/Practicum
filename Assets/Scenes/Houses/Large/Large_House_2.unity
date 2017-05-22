@@ -9189,11 +9189,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2105627227}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9180e5d307efbfe41a3e38714d909641, type: 3}
+  m_Script: {fileID: 11500000, guid: 855d3746268ce46488b7b2bfb0162dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: ColbysOutside
+  scene: 46
+  loadingText: {fileID: 0}
   exitPoint: LeavingLH2
+  rotateBy: 90
 --- !u!65 &2105627229
 BoxCollider:
   m_ObjectHideFlags: 0
