@@ -30,12 +30,6 @@ public class StartPoint : MonoBehaviour {
 
             Debug.Log(thePlayer.transform.rotation.eulerAngles.y);
 
-            thePlayer.transform.Rotate(new Vector3(0, -thePlayer.transform.rotation.eulerAngles.y, 0));
-
-            Debug.Log(thePlayer.transform.rotation.eulerAngles.y);
-
-            thePlayer.transform.Rotate(startDirection);
-
             thePlayer.transform.position = transform.position;
 
             Debug.Log(thePlayer.transform.rotation.eulerAngles.y);

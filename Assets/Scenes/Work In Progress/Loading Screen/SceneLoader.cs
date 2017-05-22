@@ -15,14 +15,16 @@ public class SceneLoader : MonoBehaviour
 
     public string exitPoint;
 
-    private FirstPersonControllerBehavior thePlayer;
+    private GameObject thePlayer;
 
     private GameObject LoadingCanvas;
 
+    public float rotateBy;
+
     private void Start()
     {
-        
-        thePlayer = FindObjectOfType<FirstPersonControllerBehavior>();
+
+        thePlayer = GameObject.FindGameObjectWithTag("Player");
         LoadingCanvas = GameObject.FindGameObjectWithTag("LoadingCanvas");
         loadingText = LoadingCanvas.GetComponentInChildren<Text>();
        // LoadingCanvas.SetActive(false);
@@ -79,9 +81,9 @@ public class SceneLoader : MonoBehaviour
             // ...change the instruction text to read "Loading..."
             loadingText.text = "Loading...";
 
-            thePlayer.canMove = false;
-            thePlayer.startPoint = exitPoint;
-
+            thePlayer.GetComponent<FirstPersonControllerBehavior>().canMove = false;
+            thePlayer.GetComponent<FirstPersonControllerBehavior>().startPoint = exitPoint;
+            thePlayer.GetComponent<FirstPersonControllerBehavior>().SetStartRotation(rotateBy);
             // ...and start a coroutine that will load the desired scene.
             StartCoroutine(LoadNewScene());
 
