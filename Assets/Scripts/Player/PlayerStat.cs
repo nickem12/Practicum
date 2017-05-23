@@ -203,6 +203,7 @@ public class PlayerStat : MonoBehaviour {
                 statsSound.audioSource.Stop();
                 statsSound.PlayAudioClip(0);
             }
+            
         }
         if (currentHealth < 50 && currentHealth >= 25)
         {

@@ -12,16 +12,22 @@ public class DynamicWeather : MonoBehaviour {
     private Transform weather;
     public float weatherHeight = 15f;
 
+    public float skyboxBlendValue;
+    public float skyboxBlendTimer = 0.25f;
+    private bool sunnyState;
+    private bool thunderState;
+    private bool mistState;
+    private bool overcastState;
 
     public ParticleSystem cloudParticleSystem;
     public ParticleSystem mistParticleSystem;
     public ParticleSystem thunderParticleSystem;
     public ParticleSystem overcastParticleSystem;
 
-    private ParticleSystem.EmissionModule cloud;
-    private ParticleSystem.EmissionModule mist;
-    private ParticleSystem.EmissionModule thunder;
-    private ParticleSystem.EmissionModule overcast;
+    //private ParticleSystem.EmissionModule cloud;
+    //private ParticleSystem.EmissionModule mist;
+    //private ParticleSystem.EmissionModule thunder;
+    //private ParticleSystem.EmissionModule overcast;
 
     public float switchWeatherTimer = 0f;
     public float resetWeatherTimer = 20f;
@@ -59,10 +65,11 @@ public class DynamicWeather : MonoBehaviour {
         RenderSettings.fogMode = FogMode.ExponentialSquared;
         RenderSettings.fogDensity = 0.01f;
 
-        cloud = cloudParticleSystem.emission;
-        thunder = thunderParticleSystem.emission;
-        mist = mistParticleSystem.emission;
-        overcast = overcastParticleSystem.emission;
+        RenderSettings.skybox.SetFloat("_Blend", 0);
+        //cloud = cloudParticleSystem.emission;
+        //thunder = thunderParticleSystem.emission;
+        //mist = mistParticleSystem.emission;
+        //overcast = overcastParticleSystem.emission;
 
         StartCoroutine(WeatherFSM());
 	}
@@ -106,12 +113,22 @@ public class DynamicWeather : MonoBehaviour {
     }
     void PickWeather()
     {
-        switchWeather = Random.Range(0, 4);
+        switchWeather = Random.Range(0, 5);
 
-        cloud.enabled = false;
-        thunder.enabled = false;
-        overcast.enabled = false;
-        mist.enabled = false;
+        sunnyState = false;
+        mistState = false;
+        thunderState = false;
+        overcastState = false;
+
+        // cloud.enabled = false;
+        //thunder.enabled = false;
+        // overcast.enabled = false;
+        // mist.enabled = false;
+
+        cloudParticleSystem.Stop();
+        thunderParticleSystem.Stop();
+        mistParticleSystem.Stop();
+        overcastParticleSystem.Stop();
 
         switch (switchWeather)
         {
@@ -132,7 +149,12 @@ public class DynamicWeather : MonoBehaviour {
 
     void SunnyWeather()
     {
-        cloud.enabled = true;
+        Debug.Log("Sunny");
+        //cloud.enabled = true;
+        if(!cloudParticleSystem.isPlaying)
+            cloudParticleSystem.Play();
+
+        sunnyState = true;
 
         if (GetComponent<Light>().intensity > maxIntensity)
             GetComponent<Light>().intensity -= Time.deltaTime * lightDimTime;
@@ -161,7 +183,12 @@ public class DynamicWeather : MonoBehaviour {
 
     void ThunderWeather()
     {
-        thunder.enabled = true;
+        Debug.Log("Rain");
+        //thunder.enabled = true;
+        if (!thunderParticleSystem.isPlaying)
+            thunderParticleSystem.Play();
+
+        thunderState = true;
 
         if (GetComponent<Light>().intensity > minIntensity)
             GetComponent<Light>().intensity -= Time.deltaTime * lightDimTime;
@@ -190,7 +217,12 @@ public class DynamicWeather : MonoBehaviour {
 
     void MistWeather()
     {
-        mist.enabled = true;
+        Debug.Log("Misty");
+        //mist.enabled = true;
+        if (!mistParticleSystem.isPlaying)
+            mistParticleSystem.Play();
+
+        mistState = true;
 
         if (GetComponent<Light>().intensity > mistIntensity)
             GetComponent<Light>().intensity -= Time.deltaTime * lightDimTime;
@@ -218,7 +250,12 @@ public class DynamicWeather : MonoBehaviour {
     }
     void OvercastWeather()
     {
-        overcast.enabled = true;
+        Debug.Log("Overcast");
+        //overcast.enabled = true;
+        if (!overcastParticleSystem.isPlaying)
+            overcastParticleSystem.Play();
+
+        overcastState = true;
 
         if (GetComponent<Light>().intensity > overcastIntensity)
             GetComponent<Light>().intensity -= Time.deltaTime * lightDimTime;
@@ -245,5 +282,85 @@ public class DynamicWeather : MonoBehaviour {
         RenderSettings.fogColor = Color.Lerp(currentColor, overcastFog, fogChangeSpeed * Time.deltaTime);
 
     }
+    void SkyboxBlendManager()
+    {
+        if(sunnyState)
+        {
+            if(skyboxBlendValue == 0)
+            {
+                return;
+            }
+            skyboxBlendValue -= skyboxBlendTimer * Time.deltaTime;
+            if(skyboxBlendValue<0)
+            {
+                skyboxBlendValue = 0;
+            }
+            RenderSettings.skybox.SetFloat("_Blend", skyboxBlendValue);
 
+        }
+        if (thunderState)
+        {
+            if (skyboxBlendValue == 1)
+            {
+                return;
+            }
+            skyboxBlendValue += skyboxBlendTimer * Time.deltaTime;
+            if (skyboxBlendValue > 1)
+            {
+                skyboxBlendValue = 1;
+            }
+            RenderSettings.skybox.SetFloat("_Blend", skyboxBlendValue);
+
+        }
+        if (mistState)
+        {
+            if (skyboxBlendValue == .25f)
+            {
+                return;
+            }
+            if (skyboxBlendValue<0.25f)
+            {
+                skyboxBlendValue += skyboxBlendTimer * Time.deltaTime;
+                if(skyboxBlendValue>0.25f)
+                {
+                    skyboxBlendValue = 0.25f;
+                }
+            }
+            if(skyboxBlendValue>0.25f)
+            {
+                skyboxBlendValue -= skyboxBlendTimer * Time.deltaTime;
+                if(skyboxBlendValue<0)
+                {
+                    skyboxBlendValue = 0;
+                }
+            }
+            RenderSettings.skybox.SetFloat("_Blend", skyboxBlendValue);
+
+        }
+        if (overcastState)
+        {
+            if (skyboxBlendValue == .75f)
+            {
+                return;
+            }
+            if (skyboxBlendValue < 0.75f)
+            {
+                skyboxBlendValue += skyboxBlendTimer * Time.deltaTime;
+                if (skyboxBlendValue > 0.75f)
+                {
+                    skyboxBlendValue = 0.75f;
+                }
+            }
+            if (skyboxBlendValue > 0.75f)
+            {
+                skyboxBlendValue -= skyboxBlendTimer * Time.deltaTime;
+                if (skyboxBlendValue < 0.75f)
+                {
+                    skyboxBlendValue = 0.75f;
+                }
+            }
+            RenderSettings.skybox.SetFloat("_Blend", skyboxBlendValue);
+
+        }
+    }
 }
