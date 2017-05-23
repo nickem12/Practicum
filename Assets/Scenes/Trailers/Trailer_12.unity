@@ -775,9 +775,9 @@ Transform:
   - {fileID: 1444832431}
   - {fileID: 478853448}
   - {fileID: 1448217937}
+  - {fileID: 1722640956}
   - {fileID: 71309743}
   - {fileID: 81383657}
-  - {fileID: 1722640956}
   m_Father: {fileID: 1969387708}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2470,6 +2470,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1526174136}
   - component: {fileID: 1526174135}
+  - component: {fileID: 1526174137}
   m_Layer: 0
   m_Name: Entry
   m_TagString: Untagged
@@ -2488,7 +2489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d250f0e31f064dbbb60831d480ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0, z: 0}
   pointName: Trailer_12_Entry
 --- !u!4 &1526174136
 Transform:
@@ -2503,6 +2503,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1526174137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1526174134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac1ea63ab15c8a4fb4d56bf28d27a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateBy: 180
 --- !u!1001 &1543142815
 Prefab:
   m_ObjectHideFlags: 0
@@ -2593,7 +2605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9180e5d307efbfe41a3e38714d909641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: ColbysOutside
+  levelToLoad: Outside
   exitPoint: LeavingTrailer12
 --- !u!65 &1578644139
 BoxCollider:
@@ -2871,7 +2883,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 202872395}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1722640957
 AudioSource:

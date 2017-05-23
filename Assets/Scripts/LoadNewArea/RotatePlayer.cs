@@ -12,6 +12,11 @@ public class RotatePlayer : MonoBehaviour {
         thePlayer.GetComponent<FirstPersonControllerBehavior>().SetStartRotation(RotateBy);
     }
 
+    public void SetRotation()
+    {
+        thePlayer.GetComponent<FirstPersonControllerBehavior>().SetStartRotation(RotateBy);
+    }
+
 	// Update is called once per frame
 	void Update () {
 

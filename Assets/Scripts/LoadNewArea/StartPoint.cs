@@ -7,8 +7,6 @@ public class StartPoint : MonoBehaviour {
 
     private GameObject thePlayer;
 
-    public Vector3 startDirection;
-
     public string pointName;
 
     private Camera theCamera;
@@ -28,11 +26,7 @@ public class StartPoint : MonoBehaviour {
         {
             thePlayer.transform.position = new Vector3(0, 0, 0);
 
-            Debug.Log(thePlayer.transform.rotation.eulerAngles.y);
-
             thePlayer.transform.position = transform.position;
-
-            Debug.Log(thePlayer.transform.rotation.eulerAngles.y);
 
             loadingCanvas.GetComponent<Canvas>().enabled = false;
 

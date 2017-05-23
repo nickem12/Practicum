@@ -65,6 +65,7 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
 
 	void Update () {
       
+
         MoveDir = GetInput();                                                                           //Get input from the player
 
         DiffMouse = GetMouseInformation();                                                              //Get the mouse information

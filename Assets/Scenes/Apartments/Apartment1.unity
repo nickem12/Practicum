@@ -2013,7 +2013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9180e5d307efbfe41a3e38714d909641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: ColbysOutside
+  levelToLoad: Outside
   exitPoint: LeavingApartment1
 --- !u!65 &245495605
 BoxCollider:
@@ -2077,6 +2077,7 @@ MonoBehaviour:
   shotgunAmmo: 0
   rocketAmmo: 0
   smgAmmo: 0
+  staples: 0
   ammoAmount: 50
   weapon: 3
   name: 
@@ -9964,6 +9965,7 @@ MonoBehaviour:
   shotgunAmmo: 0
   rocketAmmo: 0
   smgAmmo: 0
+  staples: 0
   ammoAmount: 5
   weapon: 0
   name: 
@@ -10033,7 +10035,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1476793448
 Prefab:
@@ -12701,6 +12703,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1994962355}
   - component: {fileID: 1994962354}
+  - component: {fileID: 1994962356}
   m_Layer: 0
   m_Name: Entry
   m_TagString: Untagged
@@ -12719,7 +12722,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d250f0e31f064dbbb60831d480ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0, z: 0}
   pointName: Apartment1Entry
 --- !u!4 &1994962355
 Transform:
@@ -12734,6 +12736,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1994962356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1994962353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac1ea63ab15c8a4fb4d56bf28d27a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateBy: 270
 --- !u!1001 &2005400073
 Prefab:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class SceneLoader : MonoBehaviour
     private bool loadScene = false;
 
     [SerializeField]
-    private int scene;
+    private string scene;
     [SerializeField]
     private Text loadingText;
 
@@ -19,7 +19,8 @@ public class SceneLoader : MonoBehaviour
 
     private GameObject LoadingCanvas;
 
-    public float rotateBy;
+    // public float rotateBy;
+
 
     private void Start()
     {
@@ -27,7 +28,6 @@ public class SceneLoader : MonoBehaviour
         thePlayer = GameObject.FindGameObjectWithTag("Player");
         LoadingCanvas = GameObject.FindGameObjectWithTag("LoadingCanvas");
         loadingText = LoadingCanvas.GetComponentInChildren<Text>();
-       // LoadingCanvas.SetActive(false);
 
     }
 
@@ -83,7 +83,7 @@ public class SceneLoader : MonoBehaviour
 
             thePlayer.GetComponent<FirstPersonControllerBehavior>().canMove = false;
             thePlayer.GetComponent<FirstPersonControllerBehavior>().startPoint = exitPoint;
-            thePlayer.GetComponent<FirstPersonControllerBehavior>().SetStartRotation(rotateBy);
+            //thePlayer.GetComponent<FirstPersonControllerBehavior>().SetStartRotation(rotateBy);
             // ...and start a coroutine that will load the desired scene.
             StartCoroutine(LoadNewScene());
 

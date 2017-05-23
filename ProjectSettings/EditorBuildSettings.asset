@@ -149,3 +149,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Work In Progress/Colbys Outside/ColbysOutside.unity
     guid: e044b7d81bf30d341898e616ce8ca8e7
+  - enabled: 1
+    path: Assets/Scenes/Apartments/Apartment2.unity
+    guid: 6ac745d0c71033b488f1eadd94711dcf

@@ -2121,6 +2121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1121342492}
   - component: {fileID: 1121342491}
+  - component: {fileID: 1121342493}
   m_Layer: 0
   m_Name: Entry
   m_TagString: Untagged
@@ -2139,7 +2140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d250f0e31f064dbbb60831d480ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0, z: 0}
   pointName: Trailer_7_Entry
 --- !u!4 &1121342492
 Transform:
@@ -2154,6 +2154,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1121342493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1121342490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac1ea63ab15c8a4fb4d56bf28d27a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateBy: 0
 --- !u!1001 &1241845555
 Prefab:
   m_ObjectHideFlags: 0
@@ -2903,7 +2915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9180e5d307efbfe41a3e38714d909641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: ColbysOutside
+  levelToLoad: Outside
   exitPoint: LeavingTrailer7
 --- !u!65 &1781665468
 BoxCollider:

@@ -1922,6 +1922,7 @@ GameObject:
   m_Component:
   - component: {fileID: 658755220}
   - component: {fileID: 658755219}
+  - component: {fileID: 658755221}
   m_Layer: 0
   m_Name: Entry
   m_TagString: Untagged
@@ -1940,8 +1941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d250f0e31f064dbbb60831d480ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0, z: 0}
-  pointName: Motel_4_Entry_1
+  pointName: Motel_6_Entry_1
 --- !u!4 &658755220
 Transform:
   m_ObjectHideFlags: 0
@@ -1955,6 +1955,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &658755221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 658755218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac1ea63ab15c8a4fb4d56bf28d27a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateBy: 180
 --- !u!1001 &709273715
 Prefab:
   m_ObjectHideFlags: 0
@@ -2413,8 +2425,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9180e5d307efbfe41a3e38714d909641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: ColbysOutside
-  exitPoint: LeavingMotel4_2
+  levelToLoad: Outside
+  exitPoint: LeavingMotel6_2
 --- !u!65 &789674616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2477,6 +2489,7 @@ MonoBehaviour:
   shotgunAmmo: 0
   rocketAmmo: 0
   smgAmmo: 0
+  staples: 0
   ammoAmount: 13
   weapon: 1
   name: 
@@ -3212,8 +3225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9180e5d307efbfe41a3e38714d909641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: ColbysOutside
-  exitPoint: LeavingMotel4_1
+  levelToLoad: Outside
+  exitPoint: LeavingMotel6_1
 --- !u!65 &1033754761
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4408,6 +4421,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1451992665}
   - component: {fileID: 1451992664}
+  - component: {fileID: 1451992666}
   m_Layer: 0
   m_Name: Entry (1)
   m_TagString: Untagged
@@ -4426,8 +4440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d250f0e31f064dbbb60831d480ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0, z: 0}
-  pointName: Motel_4_Entry_2
+  pointName: Motel_6_Entry_2
 --- !u!4 &1451992665
 Transform:
   m_ObjectHideFlags: 0
@@ -4441,6 +4454,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1451992666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451992663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac1ea63ab15c8a4fb4d56bf28d27a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateBy: 180
 --- !u!1001 &1471519747
 Prefab:
   m_ObjectHideFlags: 0

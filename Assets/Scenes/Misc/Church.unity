@@ -1624,47 +1624,6 @@ Transform:
   m_Father: {fileID: 434258238}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &410165479
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 410165480}
-  - component: {fileID: 410165481}
-  m_Layer: 0
-  m_Name: Rotating Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &410165480
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 410165479}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -125.46523, y: 4.7568707, z: 21.358}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &410165481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 410165479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ac1ea63ab15c8a4fb4d56bf28d27a32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RotateBy: 90
 --- !u!1001 &410604332
 Prefab:
   m_ObjectHideFlags: 0
@@ -1868,7 +1827,6 @@ Transform:
   - {fileID: 1516868076}
   - {fileID: 1427279471}
   - {fileID: 730656633}
-  - {fileID: 1445670086}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
@@ -6365,6 +6323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1445670086}
   - component: {fileID: 1445670085}
+  - component: {fileID: 1445670087}
   m_Layer: 0
   m_Name: Entry
   m_TagString: Untagged
@@ -6383,7 +6342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d250f0e31f064dbbb60831d480ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0, z: 0}
   pointName: Church_Entry
 --- !u!4 &1445670086
 Transform:
@@ -6391,13 +6349,25 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1445670084}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 49.403908, y: -76.366776, z: 42.127083}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -130.65054, y: 2.0624619, z: 8.492828}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 434258238}
-  m_RootOrder: 8
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1445670087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1445670084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac1ea63ab15c8a4fb4d56bf28d27a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateBy: 90
 --- !u!1001 &1474997487
 Prefab:
   m_ObjectHideFlags: 0
@@ -9092,8 +9062,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2079941289}
-  - component: {fileID: 2079941288}
   - component: {fileID: 2079941287}
+  - component: {fileID: 2079941288}
   m_Layer: 0
   m_Name: LoadChurch
   m_TagString: Untagged
@@ -9121,13 +9091,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2079941286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 855d3746268ce46488b7b2bfb0162dfa, type: 3}
+  m_Script: {fileID: 11500000, guid: 9180e5d307efbfe41a3e38714d909641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 46
-  loadingText: {fileID: 0}
+  levelToLoad: Outside
   exitPoint: LeavingChurch
-  rotateBy: 270
 --- !u!4 &2079941289
 Transform:
   m_ObjectHideFlags: 0

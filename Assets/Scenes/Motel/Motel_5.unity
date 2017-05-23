@@ -1390,6 +1390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 989208554}
   - component: {fileID: 989208553}
+  - component: {fileID: 989208555}
   m_Layer: 0
   m_Name: Entry
   m_TagString: Untagged
@@ -1408,7 +1409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d250f0e31f064dbbb60831d480ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0, z: 0}
   pointName: Motel_5_Entry
 --- !u!4 &989208554
 Transform:
@@ -1423,6 +1423,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &989208555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 989208552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac1ea63ab15c8a4fb4d56bf28d27a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateBy: 270
 --- !u!1001 &1003155718
 Prefab:
   m_ObjectHideFlags: 0
@@ -2272,7 +2284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9180e5d307efbfe41a3e38714d909641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: ColbysOutside
+  levelToLoad: Outside
   exitPoint: LeavingMotel5
 --- !u!65 &1781552590
 BoxCollider:
