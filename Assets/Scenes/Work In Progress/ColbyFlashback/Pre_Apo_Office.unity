@@ -5416,9 +5416,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 426454448}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e71ebda51e2098f4b948192a7f90d659, type: 3}
+  m_Script: {fileID: 11500000, guid: 1798d506f66ddd54e9c2eb08fa604469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Source: {fileID: 426454451}
+  clipArray:
+  - {fileID: 8300000, guid: 41fecdd2e2abfe44d921bdd6d110820b, type: 3}
+  - {fileID: 8300000, guid: b717530831d6fcb4a936ec5607dcc683, type: 3}
+  - {fileID: 8300000, guid: 995d2141de219fa48ac84cfb646d75ad, type: 3}
+  - {fileID: 8300000, guid: b1e642069819370459bf73617860fcf1, type: 3}
+  - {fileID: 8300000, guid: 57b73a68dbc13b844bd68421dcda8632, type: 3}
+  - {fileID: 8300000, guid: c3c266c33fa036247a242da9b6703532, type: 3}
+  - {fileID: 8300000, guid: eeb10c85674aa0943a1ab4f0f226cc83, type: 3}
 --- !u!82 &426454451
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5508,7 +5517,7 @@ Animator:
   m_GameObject: {fileID: 426454448}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7b2158e23906a1c4f88366d1e5e36ace, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7efb87bf360c6be46ac34c6051c6dc38, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

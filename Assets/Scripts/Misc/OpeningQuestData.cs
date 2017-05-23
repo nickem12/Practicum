@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum QuestState { Waiting, Pickup, Staple, NeedToReload, FinishStaple, MeetBoss, MeetingBoss, BacktoWork, WifeCallState, Finish}
+
+[RequireComponent(typeof(PlayerStartRotation))]
 
 public class OpeningQuestData : MonoBehaviour {
 
@@ -12,9 +15,88 @@ public class OpeningQuestData : MonoBehaviour {
     public GameObject StaplerLine;
     public GameObject StaplerAmmo;
     public GameObject JustAFewMore;
+    public GameObject BossChair;
+    public AudioClip EndMusic;
+
+    private bool FadingOut = false;
+
+    private bool MusicFlag = false;
+    private GameObject PlayerObject;
+
+    private PlayerStartRotation SittingComp;
+    private bool hasSat = false;
 
 	void Start () {
         questState = QuestState.Waiting;
+        SittingComp = this.GetComponent<PlayerStartRotation>();
+        BossChair.GetComponent<PlayerStartRotation>().ableToSit = false;
+        PlayerObject = GameObject.FindGameObjectWithTag("Player");
+	}
+
+	void Update(){
+
+		if(questState == QuestState.Pickup && !SittingComp.sitting){
+			SittingComp.ableToSit = false;
+		}
+		else if (questState == QuestState.Staple && !SittingComp.sitting){
+			SittingComp.ableToSit = true;
+		}
+		else if (questState == QuestState.Staple && SittingComp.sitting){
+			SittingComp.ableToSit = false;
+		}
+		else if (questState == QuestState.NeedToReload && SittingComp.sitting){
+			SittingComp.ableToSit = true;
+		}
+		else if (questState == QuestState.NeedToReload && !SittingComp.sitting){
+			SittingComp.ableToSit = false;
+		}
+		else if (questState == QuestState.FinishStaple && !SittingComp.sitting){
+			SittingComp.ableToSit = true;
+		}
+		else if (questState == QuestState.FinishStaple && SittingComp.sitting){
+			SittingComp.ableToSit = false;
+		}
+		else if (questState == QuestState.MeetBoss && SittingComp.sitting){
+			SittingComp.ableToSit = true;
+		}
+		else if (questState == QuestState.MeetBoss && !SittingComp.sitting){
+			SittingComp.ableToSit = false;
+		}
+		else if(questState == QuestState.MeetingBoss && !hasSat){
+			if(BossChair.GetComponent<PlayerStartRotation>().sitting){
+				hasSat = true;
+				NarrativeLines[5].SetActive(false);
+                NarrativeLines[6].SetActive(true);
+			}
+		}
+		else if (questState == QuestState.MeetingBoss && BossChair.GetComponent<PlayerStartRotation>().sitting){
+			BossChair.GetComponent<PlayerStartRotation>().ableToSit = false;
+		}
+		else if (questState == QuestState.BacktoWork && !BossChair.GetComponent<PlayerStartRotation>().sitting){
+			BossChair.GetComponent<PlayerStartRotation>().ableToSit = false;
+			SittingComp.ableToSit = true;
+		}
+		else if (questState == QuestState.BacktoWork && BossChair.GetComponent<PlayerStartRotation>().sitting){
+			BossChair.GetComponent<PlayerStartRotation>().ableToSit = true;
+			SittingComp.ableToSit = true;
+		}
+		else if (questState == QuestState.WifeCallState && SittingComp.sitting){
+			SittingComp.ableToSit = false;
+			NarrativeLines[8].SetActive(true);
+
+			if(!MusicFlag){
+				PlayerObject.GetComponent<AudioSource>().clip = EndMusic;
+				PlayerObject.GetComponent<AudioSource>().Play();
+				MusicFlag = true;
+			}
+		}
+		else if(FadingOut){
+			float alpha = this.GetComponent<Fading>().GetAlpha();
+			if(alpha <= 0.01f){
+				Destroy(PlayerObject);
+				SceneManager.LoadScene("Outside");
+			}
+		}
 	}
 
 	public void StaplerFlag(){
@@ -52,8 +134,11 @@ public class OpeningQuestData : MonoBehaviour {
                 break;
             case QuestState.MeetBoss:
 				questState = QuestState.MeetingBoss;
-				NarrativeLines[5].SetActive(false);
-                NarrativeLines[6].SetActive(true);
+				BossChair.GetComponent<PlayerStartRotation>().ableToSit = true;
+				if(hasSat){
+					NarrativeLines[5].SetActive(false);
+                	NarrativeLines[6].SetActive(true);
+                }
                 break;
             case QuestState.MeetingBoss:
 				questState = QuestState.BacktoWork;
@@ -64,7 +149,7 @@ public class OpeningQuestData : MonoBehaviour {
             case QuestState.BacktoWork:
 				questState = QuestState.WifeCallState;
 				NarrativeLines[7].SetActive(false);
-                NarrativeLines[8].SetActive(true);
+                
 
                 break;
             case QuestState.WifeCallState:
@@ -75,8 +160,6 @@ public class OpeningQuestData : MonoBehaviour {
 
 
 	private void EndReact(string ID){
-
-		Debug.Log(ID);
 
 		if(ID == "2_4B"){
 			NextState();
@@ -94,6 +177,13 @@ public class OpeningQuestData : MonoBehaviour {
 		}
 		else if (ID == "8_1_How"){
 			NextState();
+		}
+		else if (ID == "9_19_Janice"){
+			this.GetComponent<Fading>().enabled = true;
+			FadingOut = true;
+
+			Destroy(PlayerObject);
+			SceneManager.LoadScene("Outside");
 		}
 	}
 
