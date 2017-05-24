@@ -13,7 +13,13 @@ public class MusicController : MonoBehaviour {
 
     private int oldSong = 29;
 
+
     // Use this for initialization
+
+    void Awake(){
+    	Application.runInBackground = true;
+    }
+
     void Start () {
         audioSource = this.GetComponent<AudioSource>();                     //get our audio source
     }

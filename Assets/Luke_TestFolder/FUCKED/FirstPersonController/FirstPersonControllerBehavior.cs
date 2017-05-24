@@ -36,6 +36,9 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
     private static bool playerExists;
     public string startPoint;
     public bool canMove = true;
+    public bool canLook = true;
+    public float GimbleAngle;
+    private Vector3 Axis = Vector3.zero;
 
     //public bool hasStapler = false;
 
@@ -68,12 +71,13 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
 
         MoveDir = GetInput();                                                                           //Get input from the player
 
-        DiffMouse = GetMouseInformation();                                                              //Get the mouse information
-      
+        DiffMouse = GetMouseInformation();                                                              //Get the mouse informatio
 
-        RotateForwardVec();																				//Rotate the forward vector
-		RotateHeading();																				//Rotate the heading vector
-		RotateFPC();                                                                                    //Rotate the First Personal Controller
+		if(canLook){
+			RotateForwardVec();																				//Rotate the forward vector
+			RotateHeading();																				//Rotate the heading vector
+			RotateFPC();                                                                                    //Rotate the First Personal Controller
+		}
 
         if (canMove)
         {
@@ -87,10 +91,12 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
             if (inventoryOn)
             {
                 eventSystem.SetSelectedGameObject(inventoryCanvas.gameObject.transform.GetChild(1).gameObject);
+                canLook = false;
             }
             else
             {
                 eventSystem.SetSelectedGameObject(null);
+                canLook = true;
             }
         }
 
@@ -166,6 +172,7 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
 
 			if(angle <= 45.0f){																																	//If were in the forward quadrant 
 				ForwardVector = Quaternion.Euler(-DiffMouse.y * Sensitivity, DiffMouse.x * Sensitivity, DiffMouse.z * Sensitivity) * ForwardVector;
+				Axis = new Vector3(1.0f, 0.0f, 0.0f);
 			}
 			else if (angle <= 90.0f){																															//If were in the left or right quadrant but in the front half 
 				if(leftAngle <= 45.0f){
@@ -204,11 +211,27 @@ public class FirstPersonControllerBehavior : MonoBehaviour {
 	}
 
 	private void PreventGimbleLock(){
+
+		
 		if(ForwardVector.y > HightRestraint){
 			ForwardVector.y = HightRestraint;
 		}
 		else if(ForwardVector.y < -HightRestraint){
 			ForwardVector.y = -HightRestraint;
+		}
+	}
+
+	private void PreventGimbleLockAngle(Vector3 Axis){
+		float UpAngle = Vector3.Angle(ForwardVector, Vector3.up);
+		float DownAngle = Vector3.Angle(ForwardVector, Vector3.down);
+
+		if(UpAngle < GimbleAngle){
+			float Diff = GimbleAngle - UpAngle;
+			ForwardVector = Quaternion.Euler(new Vector3(Axis.x * Diff, Axis.y * Diff, Axis.z * Diff)) * ForwardVector;
+		}
+		else if (DownAngle < GimbleAngle){
+			float Diff = GimbleAngle - DownAngle;
+			ForwardVector = Quaternion.Euler(new Vector3(Axis.x * Diff, Axis.y * Diff, Axis.z * Diff)) * ForwardVector;
 		}
 	}
 

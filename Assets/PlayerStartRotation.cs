@@ -17,7 +17,10 @@ public class PlayerStartRotation : Reactant {
     public Sprite xButton;
     public Sprite bButton;
 
+    public GameObject ExitPosition;
+
     private OpeningQuestData Quest;
+
 
 	public override void EndReact(string ID){
 		if(ID == "1_8_Its in the back"){
@@ -68,6 +71,7 @@ public class PlayerStartRotation : Reactant {
                     {
                         sitting = false;
                         player.GetComponent<FirstPersonControllerBehavior>().canMove = true;
+                        player.transform.position = ExitPosition.transform.position;
                     }
                 }
                 else

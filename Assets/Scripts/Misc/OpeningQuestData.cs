@@ -26,6 +26,10 @@ public class OpeningQuestData : MonoBehaviour {
     private PlayerStartRotation SittingComp;
     private bool hasSat = false;
 
+    private float MaxVolume = 0.45f;
+    private float VolumePerc = 0.0f;
+    private float VolumeIncrease = 0.2f;
+
 	void Start () {
         questState = QuestState.Waiting;
         SittingComp = this.GetComponent<PlayerStartRotation>();
@@ -84,8 +88,14 @@ public class OpeningQuestData : MonoBehaviour {
 			SittingComp.ableToSit = false;
 			NarrativeLines[8].SetActive(true);
 
-			if(!MusicFlag){
+			if(MusicFlag){
+				VolumePerc += VolumeIncrease * Time.deltaTime;
+				PlayerObject.GetComponent<AudioSource>().volume = VolumePerc * MaxVolume;
+				if(PlayerObject.GetComponent<AudioSource>().volume > MaxVolume) PlayerObject.GetComponent<AudioSource>().volume = MaxVolume;
+			}
+			else if(!MusicFlag){
 				PlayerObject.GetComponent<AudioSource>().clip = EndMusic;
+				PlayerObject.GetComponent<AudioSource>().volume = 0.0f;
 				PlayerObject.GetComponent<AudioSource>().Play();
 				MusicFlag = true;
 			}

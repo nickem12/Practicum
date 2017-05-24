@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4458975907678564}
   - component: {fileID: 33704963961948180}
   - component: {fileID: 23010220181499772}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SO_Stapler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4937368288156376}
   - component: {fileID: 33691265471636266}
   - component: {fileID: 23550944095966590}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SO_Papers_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 33646177415790072}
   - component: {fileID: 65223242221963172}
   - component: {fileID: 23267265614084864}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crude Arm (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 33973819806899754}
   - component: {fileID: 65696727530954632}
   - component: {fileID: 23290750654809152}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Crude Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 33395442847480570}
   - component: {fileID: 65109059362499532}
   - component: {fileID: 23783444601402662}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 114761102826750254}
   - component: {fileID: 82723113288155380}
   - component: {fileID: 114444065478378892}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Staple
   m_TagString: Stapler
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 33821454630498692}
   - component: {fileID: 65137164148741060}
   - component: {fileID: 23801710997629136}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
