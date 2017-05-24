@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public enum WeatherStates { PickWeather, SunnyWeather, ThunderWeather, MistWeather, OvercastWeather}            //defines all states of weather
+public enum WeatherStates { PickWeather, SunnyWeather, ThunderWeather, MistWeather, OvercastWeather, Rain}            //defines all states of weather
 
 [RequireComponent(typeof(AudioSource))]
 public class DynamicWeather : MonoBehaviour {
@@ -12,22 +12,11 @@ public class DynamicWeather : MonoBehaviour {
     private Transform weather;
     public float weatherHeight = 15f;
 
-    public float skyboxBlendValue;
-    public float skyboxBlendTimer = 0.25f;
-    private bool sunnyState;
-    private bool thunderState;
-    private bool mistState;
-    private bool overcastState;
-
     public ParticleSystem cloudParticleSystem;
     public ParticleSystem mistParticleSystem;
     public ParticleSystem thunderParticleSystem;
     public ParticleSystem overcastParticleSystem;
-
-    //private ParticleSystem.EmissionModule cloud;
-    //private ParticleSystem.EmissionModule mist;
-    //private ParticleSystem.EmissionModule thunder;
-    //private ParticleSystem.EmissionModule overcast;
+    public ParticleSystem rainParticleSystem;
 
     public float switchWeatherTimer = 0f;
     public float resetWeatherTimer = 20f;
@@ -38,10 +27,12 @@ public class DynamicWeather : MonoBehaviour {
     public AudioClip thunderAudio;
     public AudioClip mistAudio;
     public AudioClip overcastAudio;
+    public AudioClip rainAudio;
 
     public float lightDimTime = 0.1f;
     public float minIntensity = 0.0f;
     public float maxIntensity = 1f;
+    public float rainIntensity = .75f;
     public float mistIntensity = 0.5f;
     public float overcastIntensity = 0.25f;
 
@@ -80,6 +71,7 @@ public class DynamicWeather : MonoBehaviour {
         switchWeatherTimer -= Time.deltaTime;
         if(switchWeatherTimer<=0)
         {
+            resetWeatherTimer = Random.Range(30f, 60f);
             weatherState = WeatherStates.PickWeather;
             switchWeatherTimer = resetWeatherTimer;
         }
@@ -107,28 +99,22 @@ public class DynamicWeather : MonoBehaviour {
                 case WeatherStates.ThunderWeather:
                     ThunderWeather();
                     break;
+                case WeatherStates.Rain:
+                    RainWeather();
+                    break;
             }
             yield return null;
         }
     }
     void PickWeather()
     {
-        switchWeather = Random.Range(0, 5);
-
-        sunnyState = false;
-        mistState = false;
-        thunderState = false;
-        overcastState = false;
-
-        // cloud.enabled = false;
-        //thunder.enabled = false;
-        // overcast.enabled = false;
-        // mist.enabled = false;
+        switchWeather = Random.Range(0, 6);
 
         cloudParticleSystem.Stop();
         thunderParticleSystem.Stop();
         mistParticleSystem.Stop();
         overcastParticleSystem.Stop();
+        rainParticleSystem.Stop();
 
         switch (switchWeather)
         {
@@ -144,17 +130,18 @@ public class DynamicWeather : MonoBehaviour {
             case 4:
                 weatherState = WeatherStates.ThunderWeather;
                 break;
+            case 5:
+                weatherState = WeatherStates.Rain;
+                break;
         }
     }
 
     void SunnyWeather()
     {
         Debug.Log("Sunny");
-        //cloud.enabled = true;
+
         if(!cloudParticleSystem.isPlaying)
             cloudParticleSystem.Play();
-
-        sunnyState = true;
 
         if (GetComponent<Light>().intensity > maxIntensity)
             GetComponent<Light>().intensity -= Time.deltaTime * lightDimTime;
@@ -183,12 +170,10 @@ public class DynamicWeather : MonoBehaviour {
 
     void ThunderWeather()
     {
-        Debug.Log("Rain");
-        //thunder.enabled = true;
+        Debug.Log("Thunder");
+
         if (!thunderParticleSystem.isPlaying)
             thunderParticleSystem.Play();
-
-        thunderState = true;
 
         if (GetComponent<Light>().intensity > minIntensity)
             GetComponent<Light>().intensity -= Time.deltaTime * lightDimTime;
@@ -218,11 +203,9 @@ public class DynamicWeather : MonoBehaviour {
     void MistWeather()
     {
         Debug.Log("Misty");
-        //mist.enabled = true;
+
         if (!mistParticleSystem.isPlaying)
             mistParticleSystem.Play();
-
-        mistState = true;
 
         if (GetComponent<Light>().intensity > mistIntensity)
             GetComponent<Light>().intensity -= Time.deltaTime * lightDimTime;
@@ -251,11 +234,9 @@ public class DynamicWeather : MonoBehaviour {
     void OvercastWeather()
     {
         Debug.Log("Overcast");
-        //overcast.enabled = true;
+
         if (!overcastParticleSystem.isPlaying)
             overcastParticleSystem.Play();
-
-        overcastState = true;
 
         if (GetComponent<Light>().intensity > overcastIntensity)
             GetComponent<Light>().intensity -= Time.deltaTime * lightDimTime;
@@ -282,85 +263,36 @@ public class DynamicWeather : MonoBehaviour {
         RenderSettings.fogColor = Color.Lerp(currentColor, overcastFog, fogChangeSpeed * Time.deltaTime);
 
     }
-    void SkyboxBlendManager()
+
+    void RainWeather()
     {
-        if(sunnyState)
-        {
-            if(skyboxBlendValue == 0)
-            {
-                return;
-            }
-            skyboxBlendValue -= skyboxBlendTimer * Time.deltaTime;
-            if(skyboxBlendValue<0)
-            {
-                skyboxBlendValue = 0;
-            }
-            RenderSettings.skybox.SetFloat("_Blend", skyboxBlendValue);
+        Debug.Log("Rain");
 
-        }
-        if (thunderState)
-        {
-            if (skyboxBlendValue == 1)
-            {
-                return;
-            }
-            skyboxBlendValue += skyboxBlendTimer * Time.deltaTime;
-            if (skyboxBlendValue > 1)
-            {
-                skyboxBlendValue = 1;
-            }
-            RenderSettings.skybox.SetFloat("_Blend", skyboxBlendValue);
+        if (!rainParticleSystem.isPlaying)
+            rainParticleSystem.Play();
 
-        }
-        if (mistState)
-        {
-            if (skyboxBlendValue == .25f)
-            {
-                return;
-            }
-            if (skyboxBlendValue<0.25f)
-            {
-                skyboxBlendValue += skyboxBlendTimer * Time.deltaTime;
-                if(skyboxBlendValue>0.25f)
-                {
-                    skyboxBlendValue = 0.25f;
-                }
-            }
-            if(skyboxBlendValue>0.25f)
-            {
-                skyboxBlendValue -= skyboxBlendTimer * Time.deltaTime;
-                if(skyboxBlendValue<0)
-                {
-                    skyboxBlendValue = 0;
-                }
-            }
-            RenderSettings.skybox.SetFloat("_Blend", skyboxBlendValue);
+        if (GetComponent<Light>().intensity > rainIntensity)
+            GetComponent<Light>().intensity -= Time.deltaTime * lightDimTime;
 
-        }
-        if (overcastState)
-        {
-            if (skyboxBlendValue == .75f)
-            {
-                return;
-            }
-            if (skyboxBlendValue < 0.75f)
-            {
-                skyboxBlendValue += skyboxBlendTimer * Time.deltaTime;
-                if (skyboxBlendValue > 0.75f)
-                {
-                    skyboxBlendValue = 0.75f;
-                }
-            }
-            if (skyboxBlendValue > 0.75f)
-            {
-                skyboxBlendValue -= skyboxBlendTimer * Time.deltaTime;
-                if (skyboxBlendValue < 0.75f)
-                {
-                    skyboxBlendValue = 0.75f;
-                }
-            }
-            RenderSettings.skybox.SetFloat("_Blend", skyboxBlendValue);
+        if (GetComponent<Light>().intensity < rainIntensity)
+            GetComponent<Light>().intensity += Time.deltaTime * lightDimTime;
 
+        if (GetComponent<AudioSource>().volume > 0 && GetComponent<AudioSource>().clip != rainAudio)
+            GetComponent<AudioSource>().volume -= Time.deltaTime * audioFadeTime;
+
+        if (GetComponent<AudioSource>().volume == 0)
+        {
+            GetComponent<AudioSource>().Stop();
+            GetComponent<AudioSource>().clip = rainAudio;
+            GetComponent<AudioSource>().loop = true;
+            GetComponent<AudioSource>().Play();
         }
+
+        if (GetComponent<AudioSource>().volume < 1 && GetComponent<AudioSource>().clip == rainAudio)
+            GetComponent<AudioSource>().volume += Time.deltaTime * audioFadeTime;
+
+        Color currentColor = RenderSettings.fogColor;
+
+        RenderSettings.fogColor = Color.Lerp(currentColor, thunderFog, fogChangeSpeed * Time.deltaTime);
     }
 }
