@@ -1132,7 +1132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9180e5d307efbfe41a3e38714d909641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: ColbysOutside
+  levelToLoad: Outside
   exitPoint: LeavingMH2_2
 --- !u!65 &527604100
 BoxCollider:
@@ -1152,12 +1152,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 527604098}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -94.02714, y: -47.564434, z: -130.04617}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 230.71335, y: 1.7299995, z: 54.889038}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 867779956}
-  m_RootOrder: 10
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &630109151
 Prefab:
@@ -1755,12 +1755,8 @@ Transform:
   - {fileID: 95693226}
   - {fileID: 372210580}
   - {fileID: 914943805}
-  - {fileID: 2106444238}
-  - {fileID: 2083337861}
-  - {fileID: 527604101}
-  - {fileID: 1051734209}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!1001 &891108552
 Prefab:
@@ -2159,7 +2155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d250f0e31f064dbbb60831d480ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0, z: 0}
   pointName: Medium_House_2_Entry_2
 --- !u!4 &1051734209
 Transform:
@@ -2167,12 +2162,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1051734207}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -93.837135, y: -47.374435, z: -135.29617}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 235.96335, y: 1.9199982, z: 55.07904}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 867779956}
-  m_RootOrder: 11
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1119394098
 Prefab:
@@ -3924,7 +3919,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d250f0e31f064dbbb60831d480ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0, z: 0}
   pointName: Medium_House_2_Entry
 --- !u!4 &2083337861
 Transform:
@@ -3932,12 +3926,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2083337859}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -98.85714, y: -47.374435, z: -144.98618}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 245.65335, y: 1.9199982, z: 50.059036}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 867779956}
-  m_RootOrder: 9
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2093835696
 Prefab:
@@ -4013,7 +4007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9180e5d307efbfe41a3e38714d909641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: ColbysOutside
+  levelToLoad: Outside
   exitPoint: LeavingMH2
 --- !u!65 &2106444237
 BoxCollider:
@@ -4033,12 +4027,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2106444235}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -99.27714, y: -47.564434, z: -148.15617}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 248.82333, y: 1.7299995, z: 49.639038}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 867779956}
-  m_RootOrder: 8
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2142563563
 Prefab:

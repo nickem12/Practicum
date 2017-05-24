@@ -2076,6 +2076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 748939738}
   - component: {fileID: 748939737}
+  - component: {fileID: 748939739}
   m_Layer: 0
   m_Name: Entry
   m_TagString: Untagged
@@ -2094,7 +2095,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d250f0e31f064dbbb60831d480ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0, z: 0}
   pointName: GeneralEntry
 --- !u!4 &748939738
 Transform:
@@ -2109,6 +2109,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &748939739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 748939736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac1ea63ab15c8a4fb4d56bf28d27a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateBy: 270
 --- !u!1 &759817709
 GameObject:
   m_ObjectHideFlags: 0
@@ -2591,7 +2603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9180e5d307efbfe41a3e38714d909641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: ColbysOutside
+  levelToLoad: Outside
   exitPoint: LeavingGeneralShop
 --- !u!65 &977702585
 BoxCollider:
@@ -2612,7 +2624,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 977702583}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 27.580002, y: 1.73, z: -40.33}
+  m_LocalPosition: {x: 26.44, y: 1.73, z: -40.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

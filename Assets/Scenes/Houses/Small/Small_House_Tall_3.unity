@@ -427,7 +427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9180e5d307efbfe41a3e38714d909641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: ColbysOutside
+  levelToLoad: Outside
   exitPoint: LeavingSH4
 --- !u!65 &103618705
 BoxCollider:
@@ -2964,7 +2964,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d250f0e31f064dbbb60831d480ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0, z: 0}
   pointName: Small_House_Tall_3_Entry
 --- !u!4 &1257272422
 Transform:

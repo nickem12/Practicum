@@ -2107,6 +2107,61 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 434588, guid: 1570b78163aaedc44bfd35cf13a9f13f, type: 2}
   m_PrefabInternal: {fileID: 474063395}
+--- !u!1 &481559417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 481559420}
+  - component: {fileID: 481559419}
+  - component: {fileID: 481559418}
+  m_Layer: 0
+  m_Name: LoadNewArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &481559418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 481559417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9180e5d307efbfe41a3e38714d909641, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: Outside
+  exitPoint: LeavingWarehouse
+--- !u!65 &481559419
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 481559417}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 2.4813042}
+  m_Center: {x: 0, y: 0, z: 0.0021152496}
+--- !u!4 &481559420
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 481559417}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 28.413, y: 1.452427, z: -10.974}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &482219086
 Prefab:
   m_ObjectHideFlags: 0
@@ -4370,7 +4425,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d250f0e31f064dbbb60831d480ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0, z: 0}
   pointName: Warehouse_Entry
 --- !u!4 &831759234
 Transform:
@@ -8891,6 +8945,60 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 468564, guid: 34c0445f9e97eb24ca105307ff32b44e, type: 2}
   m_PrefabInternal: {fileID: 1981832400}
+--- !u!1 &1985353439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1985353442}
+  - component: {fileID: 1985353441}
+  - component: {fileID: 1985353440}
+  m_Layer: 0
+  m_Name: Entry
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1985353440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1985353439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ac1ea63ab15c8a4fb4d56bf28d27a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateBy: 270
+--- !u!114 &1985353441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1985353439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e6d250f0e31f064dbbb60831d480ca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointName: Warehouse_Entry
+--- !u!4 &1985353442
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1985353439}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.169762, y: 1.2728379, z: -11.117}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2008229982
 Prefab:
   m_ObjectHideFlags: 0

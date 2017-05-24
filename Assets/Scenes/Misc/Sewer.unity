@@ -31320,7 +31320,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d250f0e31f064dbbb60831d480ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0, z: 0}
   pointName: Sewer_Entry_2
 --- !u!4 &1582466737
 Transform:
@@ -32330,7 +32329,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e6d250f0e31f064dbbb60831d480ca8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startDirection: {x: 0, y: 0, z: 0}
   pointName: Sewer_Entry
 --- !u!4 &1622279772
 Transform:
@@ -41614,8 +41612,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 3.540646, z: 1}
+  m_Center: {x: 0, y: -1.270323, z: 0}
 --- !u!114 &2124247705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41627,7 +41625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9180e5d307efbfe41a3e38714d909641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: ColbysOutside
+  levelToLoad: Outside
   exitPoint: LeavingSewer
 --- !u!4 &2124247706
 Transform:
@@ -41636,7 +41634,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2124247703}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.948, y: 3.918, z: -64.471405}
+  m_LocalPosition: {x: 9.06, y: 3.918, z: -63.982}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
