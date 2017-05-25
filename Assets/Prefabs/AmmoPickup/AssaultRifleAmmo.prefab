@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1587737169600790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.62, y: 0.106, z: -70.566}
+  m_LocalPosition: {x: -40, y: 6.2, z: 20.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1587737169600790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbb41fad5ff97704d92c8e04aa50482c, type: 3}
+  m_Script: {fileID: 11500000, guid: f9fef013fbb5a9f4ab6ec505727cb44d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rifleAmmo: 0
@@ -111,6 +111,7 @@ MonoBehaviour:
   shotgunAmmo: 0
   rocketAmmo: 0
   smgAmmo: 0
-  ammoAmount: 100
+  staples: 0
+  ammoAmount: 60
   weapon: 1
   name: 

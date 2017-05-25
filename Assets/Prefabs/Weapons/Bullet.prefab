@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 23396051637319468}
   - component: {fileID: 54090346084904658}
   - component: {fileID: 65347686583693002}
-  - component: {fileID: 114130622778394338}
+  - component: {fileID: 114830437157882548}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -58,7 +58,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f9720281e54f0b5478b7afda1c8e6bb2, type: 2}
+  - {fileID: 2100000, guid: 4a3e610b1e0968044b5cedab300a02e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -123,7 +123,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114130622778394338
+--- !u!114 &114830437157882548
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -131,6 +131,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1666648298017018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db0880000285a284d90d3d2cc8ebcb59, type: 3}
+  m_Script: {fileID: 11500000, guid: 60576a35e37fe0c468acb6377dd6b515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 0

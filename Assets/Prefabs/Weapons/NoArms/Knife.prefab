@@ -37,13 +37,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000337241440958}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.43, y: 0.88, z: 26.808977}
+  m_LocalRotation: {x: -0.2623653, y: -0.7077704, z: 0.5797247, w: -0.30683026}
+  m_LocalPosition: {x: -17.8, y: 0.9, z: 38.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 79, y: -223, z: 4.7}
 --- !u!23 &23690809215638882
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -120,10 +120,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a73fa05eaff07914caabfa7ac832a126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractableItem: 11
   type: 0
   weapon: 6
-  weaponType: 0
-  weaponGameObject: {fileID: 1847600922782344, guid: 80f6ccca9bfb8dc43b88fe6ab561ebc8,
+  weaponGameObject: {fileID: 1847600922782344, guid: b0756e7fb442b584b93c92afa9ddc92e,
     type: 2}
   consumableType: 3
   spriteNeutral: {fileID: 0}

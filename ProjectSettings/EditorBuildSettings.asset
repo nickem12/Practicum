@@ -33,9 +33,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Motel/Motel_6.unity
     guid: 7eb658f07f9d5534c8c033080659a3d9
   - enabled: 1
-    path: Assets/Scenes/Motel/Motel_7.unity
-    guid: 3cca4257e7a15184fa7546c0e5069980
-  - enabled: 1
     path: Assets/Scenes/Shops/Gun_Shop.unity
     guid: 2f2fedb494a6cf443976cac18835be64
   - enabled: 1
@@ -45,11 +42,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Shops/Restuarent.unity
     guid: 511de8e050215ba428058fd36eed9873
   - enabled: 1
-    path: Assets/Scenes/Houses/Small/Small_House_Tall_3.unity
-    guid: b980a394c451b0c4986d2ab3a8316cc6
-  - enabled: 1
     path: Assets/Scenes/Shops/Bar.unity
     guid: 2d1cc94c2f0fee546aca6471d37a372f
+  - enabled: 1
+    path: Assets/Scenes/Houses/Small/Small_House_Tall_3.unity
+    guid: b980a394c451b0c4986d2ab3a8316cc6
   - enabled: 1
     path: Assets/Scenes/Houses/Small/Small_House_Tall_2.unity
     guid: 3a8fc98e31ae84646a28ac00edba8508

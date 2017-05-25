@@ -829,11 +829,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1568033855541734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4096cc72871092441b0b0930f3ba8a92, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b754958dd728c04ebc26a90cc8af551, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Bullet_Emitter: {fileID: 1468395884654014}
-  Bullet: {fileID: 1666648298017018, guid: 308728546cf15a94ca2800f6f79a4adc, type: 2}
+  Bullet: {fileID: 1666648298017018, guid: 82d476e8b652dc14e909c45cd5385138, type: 2}
   Bullet_Forward_Force: 3000
   muzzleFlash: {fileID: 1291918176943282}
 --- !u!114 &114837060861283952
@@ -844,6 +844,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1568033855541734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c22256bbc5adfd3408688c6c2b06bd17, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b0e05c831e72f247bf26d980a5d90b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

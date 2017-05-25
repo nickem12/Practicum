@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1627155359971628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.993597, y: 0, z: 34.786663}
+  m_LocalPosition: {x: -152.11055, y: -3.8258972, z: -22.764084}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -110,7 +110,7 @@ MonoBehaviour:
   weapon: 0
   weaponGameObject: {fileID: 0}
   consumableType: 0
-  spriteNeutral: {fileID: 21300000, guid: 3efa34e6bd7c8594b8bb0c6984345b65, type: 3}
+  spriteNeutral: {fileID: 21300000, guid: eff941d879f5af34e95b2f7b245f4527, type: 3}
   spriteHighlighted: {fileID: 21300000, guid: 3efa34e6bd7c8594b8bb0c6984345b65, type: 3}
   maxSize: 10
   statIncrease: 10

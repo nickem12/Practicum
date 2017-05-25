@@ -131,8 +131,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1357023796420240}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.018124, y: 1.23, z: 38.23}
+  m_LocalRotation: {x: 0.24832518, y: -0.5903454, z: -0.74216586, w: -0.19752677}
+  m_LocalPosition: {x: -42.7, y: 10.2, z: 25.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4230330417266838}
@@ -141,7 +141,7 @@ Transform:
   - {fileID: 4062119556301554}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -103, y: -217, z: 0}
 --- !u!4 &4632963334521332
 Transform:
   m_ObjectHideFlags: 1
@@ -387,8 +387,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1845245, y: 1.5282843, z: 4.1977615}
-  m_Center: {x: -0.042634964, y: 0.6424142, z: 0.63614273}
+  m_Size: {x: 1.1845245, y: 2.5489638, z: 4.1977615}
+  m_Center: {x: -0.04263484, y: 0.13207406, z: 0.63614833}
 --- !u!114 &114382055366962220
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -400,13 +400,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a73fa05eaff07914caabfa7ac832a126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractableItem: 10
   type: 0
   weapon: 0
-  weaponType: 1
-  weaponGameObject: {fileID: 1568033855541734, guid: 1c225b91de599c9499879894f672ad7a,
+  weaponGameObject: {fileID: 1568033855541734, guid: 05e1ed7f455d7bb478b3ae6ab60495ca,
     type: 2}
   consumableType: 3
-  spriteNeutral: {fileID: 21300000, guid: 4c3bca1bccbe9494285f8a7e8cb131c6, type: 3}
+  spriteNeutral: {fileID: 21300000, guid: 414d22148db4a1f4b977e034aeb7aa8c, type: 3}
   spriteHighlighted: {fileID: 21300000, guid: 4c3bca1bccbe9494285f8a7e8cb131c6, type: 3}
   maxSize: 1
   statIncrease: 0

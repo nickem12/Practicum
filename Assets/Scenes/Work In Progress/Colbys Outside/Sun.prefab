@@ -420,17 +420,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1213690887150108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f9abd387bda15440b953f0cfc905ad0, type: 3}
+  m_Script: {fileID: 11500000, guid: 269349f7e11efab41bf8f6662b212fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smooth: 0.5
+  smooth: 0.1
   eveningTrigger: 1
-  speedOfSun: 10
+  speedOfSun: 1
   spotlight:
-  - {fileID: 108720784077131438}
-  - {fileID: 108221314397657560}
-  - {fileID: 108350064683055382}
-  - {fileID: 108564004971359634}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  allStars: []
+  shootingStar: {fileID: 0}
 --- !u!135 &135768746474856608
 SphereCollider:
   m_ObjectHideFlags: 1

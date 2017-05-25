@@ -136,7 +136,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1580082132334322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.920295, y: 1.79, z: 47.62719}
+  m_LocalPosition: {x: -38.1, y: 7.47, z: 19.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4485165596030868}
@@ -470,10 +470,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a73fa05eaff07914caabfa7ac832a126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractableItem: 9
   type: 0
   weapon: 1
-  weaponType: 1
-  weaponGameObject: {fileID: 1267915202601674, guid: e5de8ac4b893ad648b822d3bc6cd021b,
+  weaponGameObject: {fileID: 1267915202601674, guid: cf110408e2b381b4c9f203b131f9481a,
     type: 2}
   consumableType: 3
   spriteNeutral: {fileID: 21300000, guid: 0c78ebfb4201ca04a967e464d07c3d2c, type: 3}
